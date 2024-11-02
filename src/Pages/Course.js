@@ -100,25 +100,25 @@ const Course = () => {
           <div className="features-wrapper">
             <div className="features-block">
               <div className="features-title">
-                12<span className="features-title-small">%</span>
+                12<span className="features-title-small">500+</span>
               </div>
-              <div>Metric description</div>
+              <div>Enrolled Students</div>
             </div>
             <div className="features-block">
               <div className="features-title">
-                87<span className="features-title-small">%</span>
+                87<span className="features-title-small">90%</span>
               </div>
-              <div>Metric description</div>
+              <div>Success Rate</div>
             </div>
             <div className="features-block">
-              <div className="features-title">$5000</div>
-              <div>Metric description</div>
+              <div className="features-title">20+</div>
+              <div>Courses Offered</div>
             </div>
             <div className="features-block">
               <div className="features-title">
-                87<span className="features-title-small">%</span>
+                87<span className="features-title-small">2000+</span>
               </div>
-              <div>Metric description</div>
+              <div>Followers</div>
             </div>
           </div>
         </div>
