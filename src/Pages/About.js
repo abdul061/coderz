@@ -34,11 +34,11 @@ const About = () => {
         <div className="container">
           <div className="features-wrapper">
             <div className="features-block">
-              <div className="features-title">12<span className="features-title-small">500+</span></div>
+              <div className="features-title">500<span className="features-title-small">+</span></div>
               <div>Enrolled Students </div>
             </div>
             <div className="features-block">
-              <div className="features-title">87<span className="features-title-small">90%</span></div>
+              <div className="features-title">90<span className="features-title-small">%</span></div>
               <div>success Rate </div>
             </div>
             <div className="features-block">
@@ -46,7 +46,7 @@ const About = () => {
               <div>Course Offered</div>
             </div>
             <div className="features-block">
-              <div className="features-title">2000+<span className="features-title-small">%</span></div>
+              <div className="features-title">2k<span className="features-title-small">+</span></div>
               <div>Followers</div>
             </div>
           </div>
