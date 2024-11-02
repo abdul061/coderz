@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "./css/course.css";
+import { Link } from "react-router-dom";
 const Course = () => {
   const HeroHeader = () => {
     return (
@@ -340,12 +341,12 @@ const Course = () => {
                   <div className="uui-space-large"></div>
                   <div className="uui-button-row is-reverse-mobile-landscape">
                     <div className="uui-button-wrapper max-width-full-mobile-landscape">
-                      <a
-                        href="#"
+                      <Link
+                        href="/contact"
                         className="uui-button is-button-large w-inline-block"
                       >
-                        <div>Sign up</div>
-                      </a>
+                        <div>Connect Us </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
