@@ -1,6 +1,7 @@
 import React from "react";
-import '../css/course.css'
+import '../css/course.css';
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div
@@ -14,7 +15,7 @@ const Navbar = () => {
       className="spark-square-menu-with-links-2 w-nav"
     >
       <div className="spark-square-menu-inner-2">
-        <Link href="#" className="spark-brand-logo-2 w-nav-brand">
+        <Link to="/" className="spark-brand-logo-2 w-nav-brand">
           <img
             loading="lazy"
             height="50"
@@ -23,21 +24,11 @@ const Navbar = () => {
           />
         </Link>
         <nav role="navigation" className="spark-nav-menu-2 w-nav-menu">
-          <Link href="/" className="spark-nav-link-2 w-nav-link">
-            Home
-          </Link>
-          <Link href="/about" className="spark-nav-link-2 w-nav-link">
-            About
-          </Link>
-          <Link href="/course" className="spark-nav-link-2 w-nav-link">
-            Course
-          </Link>
-          <Link href="/contact" className="spark-nav-link-2 w-nav-link">
-            Contact
-          </Link>
-          <Link href="/contact" className="spark-nav-link-2 spark-button w-nav-link">
-            Contact Us
-          </Link>
+          <Link to="/" className="spark-nav-link-2 w-nav-link">Home</Link>
+          <Link to="/about" className="spark-nav-link-2 w-nav-link">About</Link>
+          <Link to="/course" className="spark-nav-link-2 w-nav-link">Course</Link>
+          <Link to="/contact" className="spark-nav-link-2 w-nav-link">Contact</Link>
+          <Link to="/contact" className="spark-nav-link-2 spark-button w-nav-link">Connect Us</Link>
         </nav>
         <div
           data-ix="simple-menu-button"
