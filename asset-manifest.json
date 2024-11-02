@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/coderz/static/css/main.b8109950.css",
-    "main.js": "/coderz/static/js/main.dde43ffc.js",
-    "index.html": "/coderz/index.html",
-    "main.b8109950.css.map": "/coderz/static/css/main.b8109950.css.map",
-    "main.dde43ffc.js.map": "/coderz/static/js/main.dde43ffc.js.map"
+    "main.css": "/www.coderzacademy.com/static/css/main.b8109950.css",
+    "main.js": "/www.coderzacademy.com/static/js/main.f08b4156.js",
+    "index.html": "/www.coderzacademy.com/index.html",
+    "main.b8109950.css.map": "/www.coderzacademy.com/static/css/main.b8109950.css.map",
+    "main.f08b4156.js.map": "/www.coderzacademy.com/static/js/main.f08b4156.js.map"
   },
   "entrypoints": [
     "static/css/main.b8109950.css",
-    "static/js/main.dde43ffc.js"
+    "static/js/main.f08b4156.js"
   ]
 }
