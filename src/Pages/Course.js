@@ -288,7 +288,7 @@ const Course = () => {
                 </div>
                 <div className="w-layout-grid uui-layout80_list">
                   {courses.map((course) => (
-                    <Link to={`/courses/${course.id}`} key={course.id}>
+                    <Link to={`/course/${course.id}`} key={course.id}>
                       <div id={course.id} className="uui-layout80_item">
                         <div className="uui-layout80_image-wrapper">
                           <img
