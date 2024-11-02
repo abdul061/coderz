@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Navbar/> {/* Navigation component */}
-      <Routes>
+      <Routes basename ="/coderz">
         <Route path="/" element={<Home />} /> {/* Home route */}
         <Route path="/about" element={<About />} /> {/* About route */}
         <Route path="/course" element={<Course />} />
