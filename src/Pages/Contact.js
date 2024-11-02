@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./css/course.css";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -59,25 +60,22 @@ const Contact = () => {
                   <h2 className="uui-heading-medium">Contact us</h2>
                   <div className="uui-space-xsmall"></div>
                   <div className="uui-text-size-large">
-                    You can reach us anytime via
-                    <a
-                      href="mailto:contactcoderzacademy@gmail.com"
+                    You can reach us anytime via  
+                    <Link
+                      to="mailto:contactcoderzacademy@gmail.com"
                       className="uui-text-style-link-02"
                     >
-                      contactcoderzacademy@gmail.com
-                    </a>
+                       contactcoderzacademy@gmail.com
+                    </Link>
                   </div>
                   <div className="uui-contact05_form-wrapper w-form">
                     <form
                       id="wf-form-Contact-05-form"
-                      name="wf-form-Contact-05-form"
-                      data-name="Contact 05 form"
+                      
                       method="post"
                       action="post"
                       onSubmit={handleSubmit}
                       className="uui-contact05_form"
-                      data-wf-page-id="6720c408ac2d0bd72c246cd1"
-                      data-wf-element-id="c8332523-e4bd-79a5-546f-e0309d6a500b"
                     >
                       <div className="uui-form-field-wrapper">
                         <label
@@ -89,7 +87,7 @@ const Contact = () => {
                         <input
                           className="uui-form_input w-input"
                           maxLength="256"
-                          name="Contact-05-name"
+                          name="name"
                           data-name="Contact 05 name"
                           placeholder="Your name"
                           type="text"
@@ -109,7 +107,7 @@ const Contact = () => {
                         <input
                           className="uui-form_input w-input"
                           maxLength="256"
-                          name="Contact-05-email"
+                          name="email"
                           data-name="Contact 05 email"
                           placeholder="you@company.com"
                           type="email"
@@ -128,7 +126,7 @@ const Contact = () => {
                         </label>
                         <textarea
                           id="Contact-05-message"
-                          name="Contact-05-message"
+                          name="message"
                           maxLength="5000"
                           data-name="Contact 05 message"
                           placeholder="Type your message..."
@@ -327,7 +325,7 @@ const Contact = () => {
                         <h3 className="uui-heading-xxsmall-2">Phone</h3>
                         <div className="uui-space-xxsmall-2" />
                         <a href="#" className="uui-text-style-link-02-2">
-                          +1 (555) 000-0000
+                      +91  8072387798
                         </a>
                       </div>
                     </div>

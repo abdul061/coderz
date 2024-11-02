@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React, { useState, Fragment } from 'react';
+import axios from "axios";
 import "./css/course.css";
 import { Link } from "react-router-dom";
 const Course = () => {
@@ -132,6 +133,35 @@ const Course = () => {
     );
   };
   const Hero = () => {
+      const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send the email address to the backend
+      const response = await axios.post(
+        `https://cback-production.up.railway.app/subscribe`,
+        { email },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      // Show success message
+
+      setEmail(""); // Clear the email input field
+      window.alert(response.data.message);
+    } catch (error) {
+      if (error.response && error.response.data.message) {
+        window.alert(error.response.data.message); // Show backend error message
+      } else {
+        window.alert("Failed to subscribe. Please try again.");
+      }
+    }
+  };
     return (
       <header className="uui-section_heroheader12">
         <div className="uui-page-padding-2">
@@ -157,19 +187,20 @@ const Course = () => {
                       data-name="Email Form"
                       method="post"
                       action="post"
+                      onSubmit={handleSubmit}
                       className="uui-form_component"
-                      data-wf-page-id="671cdc59e1dd19a8375837cf"
-                      data-wf-element-id="b1e05e3d-f34e-bd3e-467f-e8f4035d5afb"
                     >
                       <div className="uui-signup-form_wrapper">
                         <input
                           className="uui-form_input w-input"
                           maxLength="256"
-                          name="email-3"
+                          name="email"
                           data-name="Email 3"
                           placeholder="Enter your email"
                           type="email"
                           id="email-3"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           required
                         />
                         <input
@@ -339,7 +370,7 @@ const Course = () => {
                   <div className="uui-button-row is-reverse-mobile-landscape">
                     <div className="uui-button-wrapper max-width-full-mobile-landscape">
                       <Link
-                        href="/contact"
+                        to="/contact"
                         className="uui-button is-button-large w-inline-block"
                       >
                         Connect Us

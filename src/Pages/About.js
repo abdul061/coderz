@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -20,10 +21,10 @@ const About = () => {
               </p>
             </div>
             <div className="spark-flex-row-3 spark-right">
-              <a href="#" className="spark-lightbox-button w-inline-block w-lightbox">
-                <div>Courses</div>
-              </a>
-              <a href="#" className="spark-button-3 spark-dark-button w-button">Get Started</a>
+              <Link to="/course" className="spark-lightbox-button w-inline-block w-lightbox">
+                Courses
+              </Link>
+              <Link to="/contact" className="spark-button-3 spark-dark-button w-button">Get Started</Link>
             </div>
           </div>
         </div>
