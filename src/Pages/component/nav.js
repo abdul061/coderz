@@ -54,7 +54,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink 
             to="/contact" 
-            className="spark-nav-link-2 spark-button w-nav-link" 
+            className="spark-nav-link spark-button w-nav-link" 
             activeClassName="active"
           >
             Connect Us
