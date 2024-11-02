@@ -13,30 +13,30 @@ const Navbar = () => {
       className="spark-square-menu-with-links-2 w-nav"
     >
       <div className="spark-square-menu-inner-2">
-        <a href="#" className="spark-brand-logo-2 w-nav-brand">
+        <Link href="#" className="spark-brand-logo-2 w-nav-brand">
           <img
             loading="lazy"
             height="50"
             alt=""
-            src="/assests/img/Logo.jpeg" // Corrected path here
+            src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg" // Corrected path here
           />
-        </a>
+        </Link>
         <nav role="navigation" className="spark-nav-menu-2 w-nav-menu">
-          <a href="/" className="spark-nav-link-2 w-nav-link">
+          <Link href="/" className="spark-nav-link-2 w-nav-link">
             Home
-          </a>
-          <a href="/about" className="spark-nav-link-2 w-nav-link">
+          </Link>
+          <Link href="/about" className="spark-nav-link-2 w-nav-link">
             About
-          </a>
-          <a href="/course" className="spark-nav-link-2 w-nav-link">
+          </Link>
+          <Link href="/course" className="spark-nav-link-2 w-nav-link">
             Course
-          </a>
-          <a href="/contact" className="spark-nav-link-2 w-nav-link">
+          </Link>
+          <Link href="/contact" className="spark-nav-link-2 w-nav-link">
             Contact
-          </a>
-          <a href="/contact" className="spark-nav-link-2 spark-button w-nav-link">
+          </Link>
+          <Link href="/contact" className="spark-nav-link-2 spark-button w-nav-link">
             Contact Us
-          </a>
+          </Link>
         </nav>
         <div
           data-ix="simple-menu-button"

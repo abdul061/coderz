@@ -11,7 +11,7 @@ const Footer = () => {
           >
             <img
               loading="lazy"
-              src="/assests/img/Logo.jpeg" // Corrected 'assests' to 'assets'
+              src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg" // Corrected 'assests' to 'assets'
               alt="Coderz Academy Logo"
             />
           </a>
