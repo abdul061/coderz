@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact";
 
 function App() {
   return (
-    <Router basename="/coderz">
+    <Router >
       <Navbar/> {/* Navigation component */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home route */}
