@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/www.coderzacademy.com/static/css/main.b8109950.css",
-    "main.js": "/www.coderzacademy.com/static/js/main.f08b4156.js",
-    "index.html": "/www.coderzacademy.com/index.html",
-    "main.b8109950.css.map": "/www.coderzacademy.com/static/css/main.b8109950.css.map",
-    "main.f08b4156.js.map": "/www.coderzacademy.com/static/js/main.f08b4156.js.map"
+    "main.css": "/static/css/main.b8109950.css",
+    "main.js": "/static/js/main.f08b4156.js",
+    "index.html": "/index.html",
+    "main.b8109950.css.map": "/static/css/main.b8109950.css.map",
+    "main.f08b4156.js.map": "/static/js/main.f08b4156.js.map"
   },
   "entrypoints": [
     "static/css/main.b8109950.css",
