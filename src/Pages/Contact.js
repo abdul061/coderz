@@ -8,7 +8,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [submitText, setSubmitText] = useState("Submit");
+  const [submitText, setSubmitText] = useState("Send message");
   const [statusMessage, setStatusMessage] = useState("");
 
   const publicUrl = process.env.REACT_APP_PUBLIC_URL;
@@ -138,46 +138,17 @@ const Contact = () => {
                           onChange={handleChange}
                         ></textarea>
                       </div>
-                      <label
-                        id="Contact05-checkbox"
-                        className="w-checkbox uui-form-checkbox"
-                      >
-                        <div className="w-checkbox-input w-checkbox-input--inputType-custom uui-form-checkbox-icon"></div>
-                        <input
-                          id="Contact-05-checkbox"
-                          type="checkbox"
-                          name="Contact-05-checkbox"
-                          data-name="Contact 05 checkbox"
-                          required
-                          value={submitText}
-                          disabled={submitText === 'Sending...'}
-                          style={{
-                            opacity: 0,
-                            position: "absolute",
-                            zIndex: -1,
-                          }}
-                        />
-                        <span
-                          htmlFor="Contact-05-checkbox"
-                          className="uui-form-checkbox-label w-form-label"
-                        >
-                          You agree to our friendly
-                          <a href="#" className="uui-text-style-link">
-                            privacy policy
-                          </a>
-                          .
-                        </span>
-                      </label>
+                      
                       <div
-                        id="w-node-c8332523-e4bd-79a5-546f-e0309d6a501f-2c246cd1"
+                        
                         className="uui-form-button-wrapper"
                       >
                         <input
                           type="submit"
                           data-wait="Please wait..."
-                          id="w-node-c8332523-e4bd-79a5-546f-e0309d6a5020-2c246cd1"
+                          value={submitText}
+                          disabled={submitText === 'Sending...'}
                           className="uui-button w-button"
-                          value="Send message"
                         />
                       </div>
                     </form>

@@ -345,7 +345,7 @@ const Course = () => {
                         href="/contact"
                         className="uui-button is-button-large w-inline-block"
                       >
-                        <div>Connect Us </div>
+                        Connect Us
                       </Link>
                     </div>
                   </div>
