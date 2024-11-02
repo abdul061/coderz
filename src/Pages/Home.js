@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Home = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send the email address to the backend
+      const response = await axios.post(
+        `https://cback-production.up.railway.app/subscribe`,
+        { email },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      // Show success message
+
+      setEmail(""); // Clear the email input field
+      window.alert(response.data.message);
+    } catch (error) {
+      if (error.response && error.response.data.message) {
+        window.alert(error.response.data.message); // Show backend error message
+      } else {
+        window.alert("Failed to subscribe. Please try again.");
+      }
+    }
+  };
   return (
     <div className="body">
-
-
       <div className="spark-section-2">
         <div className="spark-container-2 spark-primary-with-rounded-corners ">
           <div className="spark-flex-row-2 spark-5-spacing">
@@ -21,8 +49,9 @@ const Home = () => {
                   id="wf-form-Hero-Section---5-Email"
                   name="wf-form-Hero-Section---5-Email"
                   data-name="Hero Section - 5 Email"
-                  method="get"
-                  action="get"
+                  method="post"
+                  action="post"
+                  onSubmit={handleSubmit}
                   className="spark-flexed-form-2"
                   data-wf-page-id="66dd11c818ffc46b3daef51b"
                   data-wf-element-id="a41f962e-0b96-56ad-ab87-213b026450c9"
@@ -42,6 +71,8 @@ const Home = () => {
                       placeholder="Your Email Address"
                       type="email"
                       id="Hero-Section---2-Email-2"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -212,7 +243,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

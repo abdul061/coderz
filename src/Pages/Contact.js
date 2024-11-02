@@ -1,11 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./css/course.css";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [submitText, setSubmitText] = useState("Submit");
+  const [statusMessage, setStatusMessage] = useState("");
+
+  const publicUrl = process.env.REACT_APP_PUBLIC_URL;
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitText("Sending...");
+    try {
+      // Send form data to backend using the API URL from environment variables
+      await axios.post(`${publicUrl}/contact`, formData);
+      setSubmitText("Sent");
+      // Clear the form after successful submission
+      setFormData({ name: "", email: "", message: "" });
+
+      // Set a success message
+      window.alert(
+        "Thank you for contacting Adiz Codez! Kindly check your mail for more information!"
+      );
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      setStatusMessage(
+        "There was an error submitting your form. Please try again."
+      );
+    } finally {
+      // After a short delay, reset the submit button text to 'Submit'
+      setTimeout(() => {
+        setSubmitText("Submit");
+      }, 2000);
+    }
+  };
   return (
     <div>
-      
       <section className="uui-section_contact05">
         <div className="uui-page-padding-4">
           <div className="uui-container-large">
@@ -30,6 +74,7 @@ const Contact = () => {
                       data-name="Contact 05 form"
                       method="post"
                       action="post"
+                      onSubmit={handleSubmit}
                       className="uui-contact05_form"
                       data-wf-page-id="6720c408ac2d0bd72c246cd1"
                       data-wf-element-id="c8332523-e4bd-79a5-546f-e0309d6a500b"
@@ -50,6 +95,8 @@ const Contact = () => {
                           type="text"
                           id="Contact-05-name"
                           required
+                          value={formData.name}
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="uui-form-field-wrapper">
@@ -68,6 +115,8 @@ const Contact = () => {
                           type="email"
                           id="Contact-05-email"
                           required
+                          value={formData.email}
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="uui-form-field-wrapper">
@@ -85,6 +134,8 @@ const Contact = () => {
                           placeholder="Type your message..."
                           required
                           className="uui-form_input text-area w-input"
+                          value={formData.message}
+                          onChange={handleChange}
                         ></textarea>
                       </div>
                       <label
@@ -98,6 +149,8 @@ const Contact = () => {
                           name="Contact-05-checkbox"
                           data-name="Contact 05 checkbox"
                           required
+                          value={submitText}
+                          disabled={submitText === 'Sending...'}
                           style={{
                             opacity: 0,
                             position: "absolute",
@@ -182,10 +235,10 @@ const Contact = () => {
                 </div>
                 <div className="uui-banner16_text-wrapper">
                   <div className="uui-banner16_text">
-                  Enjoy innovative tech learning
+                    Enjoy innovative tech learning
                   </div>
                   <div className="uui-banner16_supporting-text">
-                  through a site designed by Adiz Codez.
+                    through a site designed by Adiz Codez.
                   </div>
                 </div>
               </div>
