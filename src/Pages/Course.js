@@ -202,6 +202,69 @@ const Course = () => {
   const CoursePage = () => {
     const courses = [
       // (your courses data remains the same here)
+      {
+        id: "course1",
+        title: "Computer Basics",
+        description:
+          "Our computer basics course gives one all the essential skills. Join us in developing our knowledge and realizing your goals.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6720dc5639034bb74b428d2e_course1.png",
+      },
+      {
+        id: "course2",
+        title: "Full stack",
+        description:
+          "Master front-end as well as back-end technologies in our full stack Development course.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6720dd6bd29e6db132fe8169_appdev.png",
+      },
+      {
+        id: "course3",
+        title: "TALLY",
+        description: "Learn Tally from scratch using our comprehensive course.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6720df4cd5b183f3a62c2497_tax-tally.png",
+      },
+      {
+        id: "course4",
+        title: "MS Excel, MS Word",
+        description:
+          "Learn the basics with Excel and MS Word at Coderz Academy.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6723793ff7c81cf3dae38186_xcel.png",
+      },
+      {
+        id: "course5",
+        title: "JAVA",
+        description:
+          "Master Java programming at Coderz Academy from fundamentals to advanced.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238666ed2c8423e3397ba7_Set_of_programmers_02_02.jpg",
+      },
+      {
+        id: "course6",
+        title: "Advanced JAVA",
+        description:
+          "Learn Advanced Java at Coderz Academy. It is a course that moves the use of frameworks beyond the use of APIs.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6720e0c4d656af853629a5c5_web-development-removebg-preview.png",
+      },
+      {
+        id: "course7",
+        title: "Python",
+        description:
+          "Learn all the fundamentals concepts of programming, data structures, and libraries with Coderz.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67237a410c0637c540fc1a7b_pyI.jpg",
+      },
+      {
+        id: "course8",
+        title: "Advanced Python",
+        description:
+          "We also provide advanced Python skills to create a complex application and improve your code performance.",
+        imgSrc:
+          "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/672385bfd650f17afa944ec5_python03.jpg",
+      },
     ];
   
     return (
