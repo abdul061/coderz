@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/coderz/static/css/main.c441d3de.css",
+    "main.js": "/coderz/static/js/main.ea83f90d.js",
+    "index.html": "/coderz/index.html",
+    "main.c441d3de.css.map": "/coderz/static/css/main.c441d3de.css.map",
+    "main.ea83f90d.js.map": "/coderz/static/js/main.ea83f90d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c441d3de.css",
+    "static/js/main.ea83f90d.js"
+  ]
+}
