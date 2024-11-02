@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/coderz/static/css/main.c441d3de.css",
-    "main.js": "/coderz/static/js/main.ea83f90d.js",
+    "main.js": "/coderz/static/js/main.c00a5b0c.js",
     "index.html": "/coderz/index.html",
     "main.c441d3de.css.map": "/coderz/static/css/main.c441d3de.css.map",
-    "main.ea83f90d.js.map": "/coderz/static/js/main.ea83f90d.js.map"
+    "main.c00a5b0c.js.map": "/coderz/static/js/main.c00a5b0c.js.map"
   },
   "entrypoints": [
     "static/css/main.c441d3de.css",
-    "static/js/main.ea83f90d.js"
+    "static/js/main.c00a5b0c.js"
   ]
 }
