@@ -4809,22 +4809,15 @@ textarea.w-select {
   }
 }
 /* Styles for the navbar links */
-.spark-nav-link-2 {
-    color: #000; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Add some padding */
-    transition: color 0.3s; /* Smooth color transition */
-  }
+
   
   /* Styles for active link */
   .spark-nav-link-2.active {
     font-weight: bold; /* Make the active link bold */
     color: blue; /* Change the text color for the active link */
-    border-bottom: 2px solid blue; /* Add blue underline effect */
+    border-bottom: 1px solid blue; /* Add blue underline effect */
   }
   
   /* Optionally, you can add hover effects */
-  .spark-nav-link-2:hover {
-    color: #0056b3; /* Darker shade on hover */
-  }
+
   

@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/course.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,20 +15,50 @@ const Navbar = () => {
       className="spark-square-menu-with-links-2 w-nav"
     >
       <div className="spark-square-menu-inner-2">
-        <Link to="/" className="spark-brand-logo-2 w-nav-brand">
+        <NavLink to="/" className="spark-brand-logo-2 w-nav-brand">
           <img
             loading="lazy"
             height="50"
             alt=""
-            src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg" // Corrected path here
+            src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg"
           />
-        </Link>
+        </NavLink>
         <nav role="navigation" className="spark-nav-menu-2 w-nav-menu">
-          <Link to="/" className="spark-nav-link-2 w-nav-link">Home</Link>
-          <Link to="/about" className="spark-nav-link-2 w-nav-link">About</Link>
-          <Link to="/course" className="spark-nav-link-2 w-nav-link">Course</Link>
-          <Link to="/contact" className="spark-nav-link-2 w-nav-link">Contact</Link>
-          <Link to="/contact" className="spark-nav-link-2 spark-button w-nav-link">Connect Us</Link>
+          <NavLink 
+            to="/" 
+            className="spark-nav-link-2 w-nav-link" 
+            activeClassName="active" // This will add the 'active' class when matched
+          >
+            Home
+          </NavLink>
+          <NavLink 
+            to="/about" 
+            className="spark-nav-link-2 w-nav-link" 
+            activeClassName="active"
+          >
+            About
+          </NavLink>
+          <NavLink 
+            to="/course" 
+            className="spark-nav-link-2 w-nav-link" 
+            activeClassName="active"
+          >
+            Course
+          </NavLink>
+          <NavLink 
+            to="/contact" 
+            className="spark-nav-link-2 w-nav-link" 
+            activeClassName="active"
+          >
+            Contact
+          </NavLink>
+          <NavLink 
+            to="/contact" 
+            className="spark-nav-link-2 spark-button w-nav-link" 
+            activeClassName="active"
+          >
+            Connect Us
+          </NavLink>
         </nav>
         <div
           data-ix="simple-menu-button"
