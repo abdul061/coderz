@@ -182,10 +182,10 @@ const Contact = () => {
                 </div>
                 <div className="uui-banner16_text-wrapper">
                   <div className="uui-banner16_text">
-                    We’ve just announced our Series A!
+                  Enjoy innovative tech learning
                   </div>
                   <div className="uui-banner16_supporting-text">
-                    Read about it from our CEO.
+                  through a site designed by Adiz Codez.
                   </div>
                 </div>
               </div>
