@@ -1,0 +1,71 @@
+/* Base styles */
+.spark-square-menu-with-links-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .spark-nav-menu-2 {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .spark-nav-link-2 {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .spark-nav-link-2:hover {
+    color: #007bff; /* Change hover color as needed */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .spark-nav-menu-2 {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+    }
+  
+    .spark-square-menu-with-links-2.open .spark-nav-menu-2 {
+      display: flex; /* Show the menu when the nav is toggled */
+    }
+  
+    .spark-simple-menu-button-2 {
+      display: block; /* Show the menu button */
+      cursor: pointer;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .spark-simple-menu-button-2 {
+      display: none; /* Hide the menu button on larger screens */
+    }
+  }
+  
+  /* Menu button styling */
+  .spark-simple-menu-button-2 {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .spark-simple-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+  }
+  
+  /* Active link styling */
+  .w-nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  

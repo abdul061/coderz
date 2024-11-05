@@ -1,9 +1,17 @@
-import React from "react";
-import '../css/course.css';
+import React, { useState } from "react";
+import "../css/course.css";
 import { NavLink } from "react-router-dom";
-
+import "../css/nav.css";
 
 const Navbar = () => {
+  // State to handle menu toggle
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Toggle function
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div
       data-collapse="medium"
@@ -13,7 +21,7 @@ const Navbar = () => {
       data-easing="ease"
       data-easing2="ease"
       role="banner"
-      className="spark-square-menu-with-links-2 w-nav"
+      className={`spark-square-menu-with-links-2 w-nav ${menuOpen ? "open" : ""}`}
     >
       <div className="spark-square-menu-inner-2">
         <NavLink to="/" className="spark-brand-logo-2 w-nav-brand">
@@ -24,45 +32,25 @@ const Navbar = () => {
             src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg"
           />
         </NavLink>
-        <nav role="navigation" className="spark-nav-menu-2 w-nav-menu">
-          <NavLink 
-            to="/" 
-            className="spark-nav-link-2 w-nav-link" 
-            activeClassName="active" // This will add the 'active' class when matched
-          >
+        <nav role="navigation" className={`spark-nav-menu-2 w-nav-menu ${menuOpen ? "show" : ""}`}>
+          <NavLink to="/" className="spark-nav-link-2 w-nav-link" activeClassName="active">
             Home
           </NavLink>
-          <NavLink 
-            to="/about" 
-            className="spark-nav-link-2 w-nav-link" 
-            activeClassName="active"
-          >
+          <NavLink to="/about" className="spark-nav-link-2 w-nav-link" activeClassName="active">
             About
           </NavLink>
-          <NavLink 
-            to="/course" 
-            className="spark-nav-link-2 w-nav-link" 
-            activeClassName="active"
-          >
+          <NavLink to="/course" className="spark-nav-link-2 w-nav-link" activeClassName="active">
             Course
           </NavLink>
-          <NavLink 
-            to="/contact" 
-            className="spark-nav-link-2 w-nav-link" 
-            activeClassName="active"
-          >
+          <NavLink to="/contact" className="spark-nav-link-2 w-nav-link" activeClassName="active">
             Contact
           </NavLink>
-          <NavLink 
-            to="/contact" 
-            className="spark-nav-link spark-button w-nav-link" 
-            activeClassName="active"
-          >
+          <NavLink to="/contact" className="spark-nav-link spark-button w-nav-link" activeClassName="active">
             Contact Us
           </NavLink>
         </nav>
         <div
-          data-ix="simple-menu-button"
+          onClick={toggleMenu}
           className="spark-simple-menu-button-2 w-nav-button"
         >
           <div className="spark-line-14 spark-simple-line"></div>
