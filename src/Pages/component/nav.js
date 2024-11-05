@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/course.css';
 import { NavLink } from "react-router-dom";
+import "../../../public/assests/js/nav.js"
 
 const Navbar = () => {
   return (
