@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../css/course.css";
 import { NavLink } from "react-router-dom";
-import "../css/nav.css";
 
 const Navbar = () => {
   // State to handle menu toggle
