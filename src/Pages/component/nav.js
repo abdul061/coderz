@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <img src={`${process.env.REACT_APP_PUBLIC_URL}/assests/img/Logo.jpeg`} height={50}/>
+          <img src={`${process.env.REACT_APP_PUBLIC}/assests/img/Logo.jpeg`} height={50}/>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />

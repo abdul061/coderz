@@ -21,6 +21,8 @@ body {
   height: 60px;
   background-color: white;
   position: relative;
+  z-index: 9999999;
+  margin-top: 16px;
 }
 
 .logo {
@@ -37,10 +39,12 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  z-index: 9999999;
 }
 
 .nav-elements ul li:not(:last-child) {
   margin-right: 60px;
+  z-index: 9999999;
 }
 
 .nav-elements ul a {
@@ -48,12 +52,14 @@ body {
   font-weight: 400;
   color: #2f234f;
   text-decoration: none;
+  z-index: 9999999;
 }
 
 .nav-elements ul a.active {
   color: #574c4c;
   font-weight: 500;
   position: relative;
+  z-index: 9999999;
 }
 
 .nav-elements ul a.active::after {
@@ -64,11 +70,13 @@ body {
   width: 100%;
   height: 2px;
   background-color: white;
+  z-index: 9999999;
 }
 
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
+    z-index: 9999999;
   }
 }
 
@@ -76,6 +84,7 @@ body {
   .menu-icon {
     display: block;
     cursor: pointer;
+    z-index: 9999999;
   }
 
   .nav-elements {
@@ -91,15 +100,18 @@ body {
 
   .nav-elements.active {
     width: 270px;
+    z-index: 9999999;
   }
 
   .nav-elements ul {
     display: flex;
     flex-direction: column;
+    z-index: 9999999;
   }
 
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
+    z-index: 9999999;
   }
 }
