@@ -29,7 +29,7 @@ const Footer = () => {
             <Link to="/contact" className="spark-button-2 spark-light-button w-button">
               Contact
             </Link>
-            <Link to="#" className="spark-button-2 spark-light-button w-button">
+            <Link to="/contact" className="spark-button-2 spark-light-button w-button">
               Get Started
             </Link>
           </div>

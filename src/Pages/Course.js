@@ -243,7 +243,7 @@ const Course = () => {
       },
       {
         id: "course2",
-        title: "Full stack",
+        title: "Full stack Web-devlopment",
         description:
           "Master front-end as well as back-end technologies in our full stack Development course.",
         imgSrc:
@@ -251,14 +251,14 @@ const Course = () => {
       },
       {
         id: "course3",
-        title: "TALLY",
+        title: "Tally Prime",
         description: "Learn Tally from scratch using our comprehensive course.",
         imgSrc:
           "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6720df4cd5b183f3a62c2497_tax-tally.png",
       },
       {
         id: "course4",
-        title: "MS Excel, MS Word",
+        title: "MS Office",
         description:
           "Learn the basics with Excel and MS Word at Coderz Academy.",
         imgSrc:
