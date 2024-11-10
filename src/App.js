@@ -7,9 +7,11 @@ import Footer from "./Pages/component/footer";
 import Course from "./Pages/Course";
 import Contact from "./Pages/Contact";
 import CourseDetails from './Pages/courseDetails'; 
+import ScrollToTop from "./Pages/component/ScrollToTop";
 function App() {
   return (
     <Router >
+      <ScrollToTop />
       <Navbar/> {/* Navigation component */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home route */}
