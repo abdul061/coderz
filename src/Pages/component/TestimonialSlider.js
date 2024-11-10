@@ -17,7 +17,7 @@ const TestimonialSlider = () => {
           </div>
         </div>
         <div className="review">
-          <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
+          <h4> I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
           <p>I had the opportunity to learn C, C++, and Python, which greatly enhanced my programming skills. The courses were well-structured and provided a strong foundation in each language.The instructors were knowledgeable and always available to clarify doubts.Working on coding challenges and assignments further improved my problem-solving skills. Overall, CODERZ ACADEMY gave me confidence in my coding abilities and prepared me for more complex programming .</p>
         </div>
       </div>
@@ -28,13 +28,13 @@ const TestimonialSlider = () => {
             <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt />
           </div>
           <div className="detbox">
-            <p className="name">Nandhagopalakrishnan</p>
+            <p className="name">Hemprasath sankar</p>
             <p className="designation">tally Prime</p>
           </div>
         </div>
         <div className="review">
-          <h4>The team was very supportive and kept me motivated</h4>
-          <p>Recently I finished my tally prime course in coderz Academy and I had a wonderful experience in this place. The way of teaching is so friendly. And the teaching style was so interactive and it was fun also. And I learned a lot about tally like payroll, budget, Godowns and cost center.And this academy was Good for beginners and professionals.</p>
+          
+          <p>What truly sets Coderz Academy apart is the dedication of the faculties. They don't just teach concepts they insist me on daily problem-solving to reinforce each lesson. This approach not only solidified my technical skills but also built my confidence and capabilities to tackle complex coding challenges.</p>
         </div>
       </div>
       {/* div3 */}
@@ -44,14 +44,13 @@ const TestimonialSlider = () => {
             <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt />
           </div>
           <div className="detbox">
-            <p className="name dark">Hemprasath sankar</p>
-            <p className="designation dark">Computer Basics</p>
+          <p className="name">Nandhagopalakrishnan</p>
+            <p className="designation">Tally Prime</p>
           </div>
         </div>
-        <div className="review dark">
-          <h4>Such a life-changing experience. Highly recommended!</h4>
-          <p>What truly sets Coderz Academy apart is the dedication of the faculties. They don't just teach concepts they insist me on daily problem-solving to reinforce each lesson. This approach not only solidified my technical skills but also built my confidence and capabilities to tackle complex coding challenges.
-          </p>
+        <div className="review">
+          <h4>The team was very supportive and kept me motivated</h4>
+          <p>Recently I finished my tally prime course in coderz Academy and I had a wonderful experience in this place. The way of teaching is so friendly. And the teaching style was so interactive and it was fun also. And I learned a lot about tally like payroll, budget, Godowns and cost center.And this academy was Good for beginners and professionals.</p>
         </div>
       </div>
       {/* div4 */}
@@ -66,7 +65,6 @@ const TestimonialSlider = () => {
           </div>
         </div>
         <div className="review dark">
-          <h4>An overall wonderful and rewarding experience</h4>
           <p>“ I thought learning coding will be very difficult but the teachers thought very well.there teaching was efficient and easy to understand. Not only teaching the concepts they are also giving more exercises to practice which helps me to understand and remember the concepts very well. ”</p>
         </div>
       </div>
@@ -87,10 +85,6 @@ const TestimonialSlider = () => {
         </div>
       </div>
     </div>
-  </div>
-  <div className="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br />
-    Coded by <a href="https://www.instagram.com/developer_sah/" target="_blank">Rahul Sah</a>.
   </div>
 </div>
 
