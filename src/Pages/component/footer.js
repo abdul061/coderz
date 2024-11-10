@@ -12,7 +12,7 @@ const Footer = () => {
           >
             <img
               loading="lazy"
-              src={`${process.env.REACT_APP_PUBLIC}/assets/img/Logo.jpeg`} // Corrected 'assests' to 'assets'
+              src={`${process.env.REACT_APP_PUBLIC}/assests/img/Logo.jpeg`} // Corrected 'assests' to 'assets'
               alt="Coderz Academy Logo"
             />
           </Link>
