@@ -4813,7 +4813,7 @@ html {
 }
 
 .udesly-paragraph-large:tiny {
-  overflow: auto;
+  overflow: visible;
   min-width: 250px;
   flex-grow: 0;
   flex-shrink: 1;
