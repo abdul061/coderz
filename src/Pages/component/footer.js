@@ -43,30 +43,10 @@ const Footer = () => {
               ADIZ CODEZ
             </p>
             <div className="spark-social-link-row">
-              <Link
-                aria-label="Twitter"
-                to="#"
-                className="spark-social-link w-inline-block"
-              >
-                <div className="spark-social-icon-svg w-embed">
-                  {/* Twitter SVG */}
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.3334 2C14.695 2.45032 13.9882 2.79474 13.2401 3.02C12.8386 2.55834 12.305 2.23113 11.7114 2.08262C11.1179 1.93411 10.4931 1.97146 9.92147 2.18964C9.34986 2.40781 8.85904 2.79627 8.5154 3.30248C8.17176 3.80869 7.99188 4.40822 8.00008 5.02V5.68667C6.8285 5.71704 5.6676 5.45721 4.62075 4.9303C3.57391 4.40339 2.67363 3.62576 2.00008 2.66667C2.00008 2.66667 -0.666585 8.66667 5.33341 11.3333C3.96043 12.2653 2.32485 12.7326 0.666748 12.6667C6.66675 16 14.0001 12.6667 14.0001 5C13.9995 4.8143 13.9816 4.62906 13.9467 4.44667C14.6271 3.77566 15.1073 2.92847 15.3334 2V2Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-              </Link>
+
               <Link
                 aria-label="Instagram"
-                to="#"
+                to="https://www.instagram.com/coderz_academy/"
                 className="spark-social-link w-inline-block"
               >
                 <div className="spark-social-icon-svg w-embed">
@@ -104,38 +84,10 @@ const Footer = () => {
                   </svg>
                 </div>
               </Link>
-              <Link
-                aria-label="LinkedIn"
-                to="#"
-                className="spark-social-link w-inline-block"
-              >
-                <div className="spark-social-icon-svg w-embed">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.6667 5.33333C11.7276 5.33333 12.745 5.75476 13.4952 6.50491C14.2453 7.25505 14.6667 8.27247 14.6667 9.33333V14H12.0001V9.33333C12.0001 8.97971 11.8596 8.64057 11.6096 8.39052C11.3595 8.14048 11.0204 8 10.6667 8C10.3131 8 9.97399 8.14048 9.72394 8.39052C9.47389 8.64057 9.33341 8.97971 9.33341 9.33333V14H6.66675V9.33333C6.66675 8.27247 7.08818 7.25505 7.83832 6.50491C8.58847 5.75476 9.60588 5.33333 10.6667 5.33333V5.33333Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M3.99992 6H1.33325V14H3.99992V6Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M2.66659 4C3.40296 4 3.99992 3.40305 3.99992 2.66667C3.99992 1.93029 3.40296 1.33333 2.66659 1.33333C1.93021 1.33333 1.33325 1.93029 1.33325 2.66667C1.33325 3.40305 1.93021 4 2.66659 4Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
-              </Link>
 
               <Link
                 aria-label="Facebook"
-                to="#"
+                to="https://www.facebook.com/coderzacademy"
                 className="spark-social-link w-inline-block"
               >
                 <div className="spark-social-icon-svg w-embed">

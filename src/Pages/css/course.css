@@ -4798,7 +4798,12 @@ textarea.w-select {
 #w-node-c8332523-e4bd-79a5-546f-e0309d6a5020-2c246cd1 {
   justify-self: center;
 }
-
+@media (max-width: 768px) {
+  #oneRem {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 @media screen and (max-width: 991px) {
   #w-node-_84c17f32-38a7-26ce-57a7-13bdcdcedc1c-375837cf {
     justify-self: start;

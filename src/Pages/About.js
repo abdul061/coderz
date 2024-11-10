@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./css/course.css";
 
 
 const About = () => {
@@ -54,7 +55,7 @@ const About = () => {
         </div>
       </section>
 
-      <div className="udesly-container">
+      <div className="udesly-container" id='oneRem'> 
         <div className="udesly-title-wrapper-2">
           <div className="udesly-overline-large">about me</div>
           <h2 className="udesly-text-extrabold">What made me pop into design?</h2>
