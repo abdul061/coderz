@@ -4162,6 +4162,7 @@ html {
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
+    width: 250px;
   }
   
   .udesly-information {
@@ -5552,8 +5553,8 @@ html {
   
     .udesly-paragraph-large {
       flex: 1;
-      min-width: 250px;
-      overflow: auto;
+      min-width: 350px;
+      overflow: visible;
     }
   
     .udesly-container {
