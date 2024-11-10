@@ -38,7 +38,7 @@ const Home = () => {
           <div className="spark-flex-row-2 spark-5-spacing">
             <div className="spark-hero-section-left-side-2">
               <h1>ClearLearning Starts at Coderz.</h1>
-              <p className="uui-text-size-xlarge">
+              <p className="uui-text-size-xlarge" style={{ color: "white" }}>
                 Welcome to our coding academy, where students starting from 6th
                 grade dive into the exciting world of programming! Discover fun,
                 interactive lessons that spark creativity and build essential
@@ -110,7 +110,7 @@ const Home = () => {
           <div className="spark-max-width-600">
             <p>Get Started Today</p>
             <h1>Building a foundation for future tech leaders.</h1>
-            <p className="spark-secondary-paragraph">
+            <p className="uui-text-size-xlarge" style={{ color: "Black" }}>
               This foundation for future tech leaders requires equipping
               students with essential skills and knowledge, as well as building
               their confidence and creativity to succeed in careers in
@@ -152,7 +152,7 @@ const Home = () => {
             <h2>
               <strong>Amazing Capabilities</strong>
             </h2>
-            <p className="spark-secondary-paragraph">
+            <p className="uui-text-size-xlarge" style={{ color: "Black" }}>
               Coderz Academy has well-rounded training for great students under
               the guidance of qualified professionals. Its environment is richly
               interactive in practical implementation, and valuable expertise a
