@@ -28,7 +28,7 @@ const Navbar = () => {
             loading="lazy"
             height="50"
             alt=""
-            src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg"
+            src={`${process.env.REACT_APP_PUBLIC}/assets/img/Logo.jpeg`}
           />
         </NavLink>
         <nav role="navigation" className={`spark-nav-menu-2 w-nav-menu ${menuOpen ? "show" : ""}`}>
