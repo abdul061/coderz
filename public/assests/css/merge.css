@@ -4804,3 +4804,28 @@ html {
 .spark-nav-link-2:hover {
   color: #0056b3; /* Darker shade on hover */
 }
+.udesly-paragraph-large {
+  color: hsl(0, 0%, 25%);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.udesly-paragraph-large:tiny {
+  overflow: auto;
+  min-width: 250px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.udesly-paragraph-large:small {
+  min-height: auto;
+  min-width: auto;
+  margin-left: 1rem;
+}
+
+.udesly-paragraph-large:medium {
+  min-width: auto;
+}
