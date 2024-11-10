@@ -38,7 +38,7 @@ const Home = () => {
           <div className="spark-flex-row-2 spark-5-spacing">
             <div className="spark-hero-section-left-side-2">
               <h1>ClearLearning Starts at Coderz.</h1>
-              <p className="spark-hero-sub-paragraph-2">
+              <p className="uui-text-size-xlarge">
                 Welcome to our coding academy, where students starting from 6th
                 grade dive into the exciting world of programming! Discover fun,
                 interactive lessons that spark creativity and build essential

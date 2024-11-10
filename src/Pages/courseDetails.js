@@ -2,6 +2,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./css/course.css";
+import './css/CD.css'
 
 const CourseDetails = () => {
   const { id } = useParams();
