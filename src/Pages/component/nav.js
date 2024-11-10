@@ -3,12 +3,14 @@ import "../css/course.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  // State to handle menu toggle
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle function
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -32,19 +34,19 @@ const Navbar = () => {
           />
         </NavLink>
         <nav role="navigation" className={`spark-nav-menu-2 w-nav-menu ${menuOpen ? "show" : ""}`}>
-          <NavLink to="/" className="spark-nav-link-2 w-nav-link" activeClassName="active">
+          <NavLink to="/" className="spark-nav-link-2 w-nav-link" activeClassName="active" onClick={closeMenu}>
             Home
           </NavLink>
-          <NavLink to="/about" className="spark-nav-link-2 w-nav-link" activeClassName="active">
+          <NavLink to="/about" className="spark-nav-link-2 w-nav-link" activeClassName="active" onClick={closeMenu}>
             About
           </NavLink>
-          <NavLink to="/course" className="spark-nav-link-2 w-nav-link" activeClassName="active">
+          <NavLink to="/course" className="spark-nav-link-2 w-nav-link" activeClassName="active" onClick={closeMenu}>
             Course
           </NavLink>
-          <NavLink to="/contact" className="spark-nav-link-2 w-nav-link" activeClassName="active">
+          <NavLink to="/contact" className="spark-nav-link-2 w-nav-link" activeClassName="active" onClick={closeMenu}>
             Contact
           </NavLink>
-          <NavLink to="/contact" className="spark-nav-link spark-button w-nav-link" activeClassName="active">
+          <NavLink to="/contact" className="spark-nav-link spark-button w-nav-link" activeClassName="active" onClick={closeMenu}>
             Contact Us
           </NavLink>
         </nav>
