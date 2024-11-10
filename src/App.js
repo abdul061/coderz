@@ -11,28 +11,32 @@ import ScrollToTop from "./Pages/component/ScrollToTop";
 import FooterLinks from "./Pages/component/FooterLinks";
 
 function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <Navbar />
+      <AppRoutes />
+    </Router>
+  );
+}
+
+function AppRoutes() {
   const location = useLocation();
 
   return (
-    <Router >
-      <ScrollToTop />
-      <Navbar /> {/* Navigation component */}
+    <Fragment>
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Home route */}
-        <Route path="/about" element={<About />} /> {/* About route */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/course" element={<Course />} />
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* Show Footer only if the path is not '/contact' */}
-      {location.pathname !== "/contact" && (
-        <>
-          <Footer />
-          
-        </>
-        
-      )}<FooterLinks />
-    </Router>
+
+      {/* Conditionally render Footer based on the current route */}
+      {location.pathname !== '/contact' && <Footer />}
+      <FooterLinks />
+    </Fragment>
   );
 }
 
