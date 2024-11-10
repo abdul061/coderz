@@ -1,6 +1,5 @@
 import React from "react";
-import "../css/TestimonialSlider.css"
-
+import '../css/TestimonialSlider.css'
 const TestimonialSlider = () => {
   return (
     <section className="uui-section_testimonial11-2">
@@ -29,10 +28,10 @@ const TestimonialSlider = () => {
                         loading="lazy"
                         sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 44vw"
                         srcSet="
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-500.jpg 500w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-800.jpg 800w,
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-500.jpg   500w,
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-800.jpg   800w,
                           https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-1080.jpg 1080w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246.jpg 1600w
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246.jpg        1600w
                         "
                         alt=""
                         className="uui-testimonial11_client-image-2"
@@ -75,6 +74,48 @@ const TestimonialSlider = () => {
                             </g>
                           </svg>
                         </div>
+                      </div>
+                      <h3 className="uui-heading-medium-2 text-weight-medium">
+                        I thought learning coding will be very difficult but the
+                        teachers thought very well.there teaching was efficient
+                        and easy to understand. Not only teaching the concepts
+                        they are also giving more exercises to practice which
+                        helps me to understand and remember the concepts very
+                        well.
+                      </h3>
+                      <div className="uui-testimonial11_client-2">
+                        <div className="uui-testimonial11_client-info-2">
+                          <div className="uui-heading-tiny-2">Nisha Begam</div>
+                          <div className="uui-text-size-medium-2">
+                            Computer Basics .
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="uui-testimonial11_slide-2 w-slide">
+                  <div className="w-layout-grid uui-testimonial11_content-2">
+                    <div className="uui-testimonial11_client-image-wrapper-2">
+                      <img
+                        src="https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246.jpg"
+                        loading="lazy"
+                        sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 44vw"
+                        srcSet="
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246-p-500.jpg   500w,
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246-p-800.jpg   800w,
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246-p-1080.jpg 1080w,
+                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246.jpg        1600w
+                        "
+                        alt=""
+                        className="uui-testimonial11_client-image-2"
+                      />
+                    </div>
+                    <div
+                      id="w-node-_050bbd30-e64a-fcac-dafe-f970ef339c50-10c9a114"
+                      className="uui-testimonial11_content-right-2"
+                    >
+                      <div className="uui-testimonial11_rating-wrapper-2">
                         <div className="uui-testimonial11_rating-icon-2 w-embed">
                           <svg
                             width="20"
@@ -92,29 +133,24 @@ const TestimonialSlider = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className="uui-testimonial11_client-text-2">
-                        <p>
-                          “The platform was easy to navigate, and I found all the
-                          resources I needed. Great experience overall!”
-                        </p>
-                      </div>
-                      <div className="uui-testimonial11_client-name-2">
-                        <div className="uui-testimonial11_client-name-wrapper-2">
-                          <h5>John Doe</h5>
-                          <p>CEO, CompanyName</p>
+                      <h3 className="uui-heading-medium-2 text-weight-medium">
+                        Very good and interactive session. The learning curve
+                        was slow but very effective. It gave me a very
+                        understanding of computers, the OS, etc.
+                      </h3>
+                      <div className="uui-testimonial11_client-2">
+                        <div className="uui-testimonial11_client-info-2">
+                          <div className="uui-heading-tiny-2">Sivaraj</div>
+                          <div className="uui-text-size-medium-2">
+                            Computer Basics.
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                {/* Repeat similar structure for other slides */}
               </div>
-              <div className="uui-testimonial11-arrow-wrapper-2 w-slider-arrow-left">
-                <div className="uui-testimonial11_arrow-2 w-icon-slider-left" />
-              </div>
-              <div className="uui-testimonial11-arrow-wrapper-2 w-slider-arrow-right">
-                <div className="uui-testimonial11_arrow-2 w-icon-slider-right" />
-              </div>
+              <div className="uui-testimonial11_slider-navigation-2 w-slider-nav w-round" />
             </div>
           </div>
         </div>
