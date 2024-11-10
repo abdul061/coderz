@@ -28,7 +28,7 @@ const Contact = () => {
     setSubmitText("Sending...");
     try {
       // Send form data to backend using the API URL from environment variables
-      await axios.post(`${publicUrl}/contact`, formData);
+      await axios.post(`${publicUrl}contact`, formData);
       setSubmitText("Sent");
       // Clear the form after successful submission
       setFormData({ name: "", email: "", message: "" });
