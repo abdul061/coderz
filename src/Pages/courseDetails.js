@@ -1,5 +1,5 @@
 // src/pages/CourseDetails.js
-import React from "react";
+import React, { Fragment } from "react";
 import { useParams } from "react-router-dom";
 
 const CourseDetails = () => {
@@ -45,7 +45,8 @@ const CourseDetails = () => {
     {
       id: "course3",
       title: "TALLY",
-      description: "Tally Prime: Accounting Principles - Voucher Types - Ledgers - Reports (Balance Sheet - Profit & Loss) - Cash Flow - Cost Center - Bank Reconciliation - Inventory Management - Budgets - GST - Payroll - Security.",
+      description:
+        "Tally Prime: Accounting Principles - Voucher Types - Ledgers - Reports (Balance Sheet - Profit & Loss) - Cash Flow - Cost Center - Bank Reconciliation - Inventory Management - Budgets - GST - Payroll - Security.",
       imgSrc:
         "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6720df4cd5b183f3a62c2497_tax-tally.png",
       para1:
@@ -62,7 +63,8 @@ const CourseDetails = () => {
     {
       id: "course4",
       title: "MS Excel, MS Word",
-      description: "MS Office: Word (Mail merge - Macros) - Excel (Formulas - Pivot tables - Conditional Formatting) - PowerPoint (Audio/Video - Special Effects) - VBA (Loops - User Forms - Database Connections).",
+      description:
+        "MS Office: Word (Mail merge - Macros) - Excel (Formulas - Pivot tables - Conditional Formatting) - PowerPoint (Audio/Video - Special Effects) - VBA (Loops - User Forms - Database Connections).",
       imgSrc:
         "https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/6723793ff7c81cf3dae38186_xcel.png",
       para1:
@@ -153,29 +155,69 @@ const CourseDetails = () => {
   }
 
   return (
-    <div>
+    <header className="uui-section_heroheader04">
+      <div className="uui-page-padding-10">
+        <div className="uui-container-large-4">
+          <div className="uui-padding-vertical-xhuge-7">
+            <div className="w-layout-grid uui-heroheader04_component">
+              <div className="uui-heroheader04_content">
+                <h1 className="uui-heading-xlarge-3">
+                  Beautiful banking to grow smarter
+                </h1>
+                <div className="uui-space-small-3"></div>
+                <div className="uui-max-width-medium-2">
+                  <div className="uui-text-size-xlarge-3">
+                    Powerful, self-serve product and growth analytics to help
+                    you budget, forecast, and save.
+                  </div>
+                </div>
+              </div>
+              <div className="uui-heroheader04_image-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/672626796510022fb799160f_macbook-mockup-01.png"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 1216px"
+                  srcSet="
+                    https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/672626796510022fb799160f_macbook-mockup-01-p-500.png 500w,
+                    https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/672626796510022fb799160f_macbook-mockup-01-p-800.png 800w,
+                    https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/672626796510022fb799160f_macbook-mockup-01-p-1080.png 1080w,
+                    https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/672626796510022fb799160f_macbook-mockup-01.png 1920w
+                  "
+                  alt="MacBook mockup"
+                  className="uui-heroheader04_image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+const AboutSection = () => {
+  return (
+    <Fragment>
       <header className="uui-section_heroheader04">
         <div className="uui-page-padding-10">
           <div className="uui-container-large-4">
-            <div className="uui-padding-vertical">
+            <div className="uui-padding-vertical-xhuge-7">
               <div className="w-layout-grid uui-heroheader04_component">
                 <div className="uui-heroheader04_content">
-                  <h1 className="uui-heading-xlarge-3">
-                    {course.title} {/* Correct reference to course */}
-                  </h1>
+                  <h1 className="uui-heading-xlarge-3">{course.title}</h1>
                   <div className="uui-space-small-3"></div>
                   <div className="uui-max-width-medium-2">
                     <div className="uui-text-size-xlarge-3">
-                      {course.description} {/* Correct reference to course */}
+                      {course.description}
                     </div>
                   </div>
                 </div>
                 <div className="uui-heroheader04_image-wrapper">
                   <img
-                    src={course.imgSrc} // Correct reference to course
+                    src={course.imgSrc}
                     loading="lazy"
                     sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 1216px"
-                    alt={course.title} // Update alt text for accessibility
+                    alt="MacBook mockup"
                     className="uui-heroheader04_image"
                   />
                 </div>
@@ -184,13 +226,12 @@ const CourseDetails = () => {
           </div>
         </div>
       </header>
-
       <div
         id="w-node-faaf701e-5001-aec5-33d1-067d1329b847-b798f64f"
         className="udesly-container"
       >
         <div className="udesly-title-wrapper-2">
-          <div className="udesly-overline-large">About Course</div>
+          <div className="udesly-overline-large">Course Explanation</div>
           <h2
             data-w-id="faaf701e-5001-aec5-33d1-067d1329b84b"
             style={{
@@ -200,7 +241,7 @@ const CourseDetails = () => {
             }}
             className="udesly-text-extrabold"
           >
-            Course definition with Coderz Academy .
+            What is the use of this course ?
           </h2>
         </div>
         <div className="udesly-information">
@@ -209,22 +250,19 @@ const CourseDetails = () => {
             className="udesly-info-block"
           >
             <p className="udesly-paragraph-large">{course.para1}</p>
-            <ul role="list" className="udesly-list-info"></ul>
             <p className="udesly-paragraph-large">{course.para2}</p>
+            <p className="udesly-paragraph-large">{course.para3}</p>
           </div>
           <div
             id="w-node-faaf701e-5001-aec5-33d1-067d1329b85d-b798f64f"
             className="udesly-info-block"
           >
-            <p className="udesly-paragraph-large">{course.para3}</p>
             <p className="udesly-paragraph-large">{course.para4}</p>
             <p className="udesly-paragraph-large">{course.para5}</p>
-            <p className="udesly-paragraph-large"></p>
-            <p className="udesly-paragraph-large"></p>
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
