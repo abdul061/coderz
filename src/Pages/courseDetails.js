@@ -155,7 +155,8 @@ const CourseDetails = () => {
   return (
     <div>
       <header className="uui-section_heroheader04">
-        <div className="uui-page-padding-10">
+        <div className="uui-page-padding-10"
+        id="oneRem">
           <div className="uui-container-large-4">
             <div className="uui-padding-vertical">
               <div className="w-layout-grid uui-heroheader04_component">

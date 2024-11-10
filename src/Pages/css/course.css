@@ -4810,14 +4810,14 @@ textarea.w-select {
 }
 /* Styles for the navbar links */
 
-  
-  /* Styles for active link */
-  .spark-nav-link-2.active {
-    font-weight: bold; /* Make the active link bold */
-    color: blue; /* Change the text color for the active link */
-    border-bottom: 1px solid blue; /* Add blue underline effect */
-  }
-  
-  /* Optionally, you can add hover effects */
+/* Styles for active link */
+.spark-nav-link-2.active {
+  font-weight: bold; /* Make the active link bold */
+  color: blue; /* Change the text color for the active link */
+  border-bottom: 1px solid blue; /* Add blue underline effect */
+}
 
-  
+/* Optionally, you can add hover effects */
+#oneRem {
+  margin-top: 1rem;
+}
