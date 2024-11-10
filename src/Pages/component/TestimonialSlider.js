@@ -9,7 +9,7 @@ const TestimonialSlider = () => {
       <div className="div1 eachdiv">
         <div className="userdetails">
           <div className="imgbox">
-            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt />
+          
           </div>
           <div className="detbox">
             <p className="name">Ashika Raghavan</p>
@@ -25,7 +25,7 @@ const TestimonialSlider = () => {
       <div className="div2 eachdiv">
         <div className="userdetails">
           <div className="imgbox">
-            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt />
+          
           </div>
           <div className="detbox">
             <p className="name">Hemprasath sankar</p>
@@ -41,7 +41,7 @@ const TestimonialSlider = () => {
       <div className="div3 eachdiv">
         <div className="userdetails">
           <div className="imgbox">
-            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt />
+          
           </div>
           <div className="detbox">
           <p className="name">Nandhagopalakrishnan</p>
@@ -57,7 +57,7 @@ const TestimonialSlider = () => {
       <div className="div4 eachdiv">
         <div className="userdetails">
           <div className="imgbox">
-            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt />
+           
           </div>
           <div className="detbox">
             <p className="name dark">Nisha Begam</p>
@@ -72,7 +72,7 @@ const TestimonialSlider = () => {
       <div className="div5 eachdiv">
         <div className="userdetails">
           <div className="imgbox">
-            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt />
+            
           </div>
           <div className="detbox">
             <p className="name">Patrick Abrams</p>
