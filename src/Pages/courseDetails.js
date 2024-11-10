@@ -214,7 +214,7 @@ const AboutSection = () => {
                 </div>
                 <div className="uui-heroheader04_image-wrapper">
                   <img
-                    src={course.imgSrc}
+                    src={courses.imgSrc}
                     loading="lazy"
                     sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 1216px"
                     alt="MacBook mockup"
@@ -249,16 +249,16 @@ const AboutSection = () => {
             id="w-node-faaf701e-5001-aec5-33d1-067d1329b84e-b798f64f"
             className="udesly-info-block"
           >
-            <p className="udesly-paragraph-large">{course.para1}</p>
-            <p className="udesly-paragraph-large">{course.para2}</p>
-            <p className="udesly-paragraph-large">{course.para3}</p>
+            <p className="udesly-paragraph-large">{courses.para1}</p>
+            <p className="udesly-paragraph-large">{courses.para2}</p>
+            <p className="udesly-paragraph-large">{courses.para3}</p>
           </div>
           <div
             id="w-node-faaf701e-5001-aec5-33d1-067d1329b85d-b798f64f"
             className="udesly-info-block"
           >
-            <p className="udesly-paragraph-large">{course.para4}</p>
-            <p className="udesly-paragraph-large">{course.para5}</p>
+            <p className="udesly-paragraph-large">{courses.para4}</p>
+            <p className="udesly-paragraph-large">{courses.para5}</p>
           </div>
         </div>
       </div>
