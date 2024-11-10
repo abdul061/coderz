@@ -1,161 +1,100 @@
-import React from "react";
+import React, { Fragment } from "react";
 import '../css/TestimonialSlider.css'
 const TestimonialSlider = () => {
   return (
-    <section className="uui-section_testimonial11-2">
-      <div className="uui-page-padding-2">
-        <div className="uui-container-large-2">
-          <div className="uui-padding-vertical-xhuge-2">
-            <div
-              data-delay="4000"
-              data-animation="cross"
-              className="uui-testimonial11_component-2 w-slider"
-              data-autoplay="false"
-              data-easing="ease"
-              data-hide-arrows="false"
-              data-disable-swipe="false"
-              data-autoplay-limit="0"
-              data-nav-spacing="6"
-              data-duration="500"
-              data-infinite="true"
-            >
-              <div className="uui-testimonial11_mask-2 w-slider-mask">
-                <div className="uui-testimonial11_slide-2 w-slide">
-                  <div className="w-layout-grid uui-testimonial11_content-2">
-                    <div className="uui-testimonial11_client-image-wrapper-2">
-                      <img
-                        src="https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246.jpg"
-                        loading="lazy"
-                        sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 44vw"
-                        srcSet="
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-500.jpg   500w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-800.jpg   800w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246-p-1080.jpg 1080w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/673061efab1bd3c65aabd707_IMG_20241110_130246.jpg        1600w
-                        "
-                        alt=""
-                        className="uui-testimonial11_client-image-2"
-                      />
-                    </div>
-                    <div
-                      id="w-node-_050bbd30-e64a-fcac-dafe-f970ef339c50-10c9a114"
-                      className="uui-testimonial11_content-right-2"
-                    >
-                      <div className="uui-testimonial11_rating-wrapper-2">
-                        <div className="uui-testimonial11_rating-icon-2 w-embed">
-                          <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clipPath="url(#clip0_28_8746)">
-                              <path
-                                d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z"
-                                fill="currentColor"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-                        <div className="uui-testimonial11_rating-icon-2 w-embed">
-                          <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clipPath="url(#clip0_28_8746)">
-                              <path
-                                d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z"
-                                fill="currentColor"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-                      </div>
-                      <h3 className="uui-heading-medium-2 text-weight-medium">
-                        I thought learning coding will be very difficult but the
-                        teachers thought very well.there teaching was efficient
-                        and easy to understand. Not only teaching the concepts
-                        they are also giving more exercises to practice which
-                        helps me to understand and remember the concepts very
-                        well.
-                      </h3>
-                      <div className="uui-testimonial11_client-2">
-                        <div className="uui-testimonial11_client-info-2">
-                          <div className="uui-heading-tiny-2">Nisha Begam</div>
-                          <div className="uui-text-size-medium-2">
-                            Computer Basics .
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="uui-testimonial11_slide-2 w-slide">
-                  <div className="w-layout-grid uui-testimonial11_content-2">
-                    <div className="uui-testimonial11_client-image-wrapper-2">
-                      <img
-                        src="https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246.jpg"
-                        loading="lazy"
-                        sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 45vw, 44vw"
-                        srcSet="
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246-p-500.jpg   500w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246-p-800.jpg   800w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246-p-1080.jpg 1080w,
-                          https://cdn.prod.website-files.com/66dd11c818ffc46b3daef514/67306326e2c258648caed59c_IMG_20241110_130246.jpg        1600w
-                        "
-                        alt=""
-                        className="uui-testimonial11_client-image-2"
-                      />
-                    </div>
-                    <div
-                      id="w-node-_050bbd30-e64a-fcac-dafe-f970ef339c50-10c9a114"
-                      className="uui-testimonial11_content-right-2"
-                    >
-                      <div className="uui-testimonial11_rating-wrapper-2">
-                        <div className="uui-testimonial11_rating-icon-2 w-embed">
-                          <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clipPath="url(#clip0_28_8746)">
-                              <path
-                                d="M9.53834 1.60996C9.70914 1.19932 10.2909 1.19932 10.4617 1.60996L12.5278 6.57744C12.5998 6.75056 12.7626 6.86885 12.9495 6.88383L18.3123 7.31376C18.7556 7.3493 18.9354 7.90256 18.5976 8.19189L14.5117 11.6919C14.3693 11.8139 14.3071 12.0053 14.3506 12.1876L15.5989 17.4208C15.7021 17.8534 15.2315 18.1954 14.8519 17.9635L10.2606 15.1592C10.1006 15.0615 9.89938 15.0615 9.73937 15.1592L5.14806 17.9635C4.76851 18.1954 4.29788 17.8534 4.40108 17.4208L5.64939 12.1876C5.69289 12.0053 5.6307 11.8139 5.48831 11.6919L1.40241 8.19189C1.06464 7.90256 1.24441 7.3493 1.68773 7.31376L7.05054 6.88383C7.23744 6.86885 7.40024 6.75056 7.47225 6.57744L9.53834 1.60996Z"
-                                fill="currentColor"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-                      </div>
-                      <h3 className="uui-heading-medium-2 text-weight-medium">
-                        Very good and interactive session. The learning curve
-                        was slow but very effective. It gave me a very
-                        understanding of computers, the OS, etc.
-                      </h3>
-                      <div className="uui-testimonial11_client-2">
-                        <div className="uui-testimonial11_client-info-2">
-                          <div className="uui-heading-tiny-2">Sivaraj</div>
-                          <div className="uui-text-size-medium-2">
-                            Computer Basics.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="uui-testimonial11_slider-navigation-2 w-slider-nav w-round" />
-            </div>
+<Fragment><div>
+  <div className="outerdiv">
+    <div className="innerdiv">
+      {/* div1 */}
+      <div className="div1 eachdiv">
+        <div className="userdetails">
+          <div className="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt />
+          </div>
+          <div className="detbox">
+            <p className="name">Ashika Raghavan</p>
+            <p className="designation">Advanced Python</p>
           </div>
         </div>
+        <div className="review">
+          <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
+          <p>I had the opportunity to learn C, C++, and Python, which greatly enhanced my programming skills. The courses were well-structured and provided a strong foundation in each language.The instructors were knowledgeable and always available to clarify doubts.Working on coding challenges and assignments further improved my problem-solving skills. Overall, CODERZ ACADEMY gave me confidence in my coding abilities and prepared me for more complex programming .</p>
+        </div>
       </div>
-    </section>
+      {/* div2 */}
+      <div className="div2 eachdiv">
+        <div className="userdetails">
+          <div className="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt />
+          </div>
+          <div className="detbox">
+            <p className="name">Nandhagopalakrishnan</p>
+            <p className="designation">tally Prime</p>
+          </div>
+        </div>
+        <div className="review">
+          <h4>The team was very supportive and kept me motivated</h4>
+          <p>Recently I finished my tally prime course in coderz Academy and I had a wonderful experience in this place. The way of teaching is so friendly. And the teaching style was so interactive and it was fun also. And I learned a lot about tally like payroll, budget, Godowns and cost center.And this academy was Good for beginners and professionals.</p>
+        </div>
+      </div>
+      {/* div3 */}
+      <div className="div3 eachdiv">
+        <div className="userdetails">
+          <div className="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt />
+          </div>
+          <div className="detbox">
+            <p className="name dark">Hemprasath sankar</p>
+            <p className="designation dark">Computer Basics</p>
+          </div>
+        </div>
+        <div className="review dark">
+          <h4>Such a life-changing experience. Highly recommended!</h4>
+          <p>What truly sets Coderz Academy apart is the dedication of the faculties. They don't just teach concepts they insist me on daily problem-solving to reinforce each lesson. This approach not only solidified my technical skills but also built my confidence and capabilities to tackle complex coding challenges.
+          </p>
+        </div>
+      </div>
+      {/* div4 */}
+      <div className="div4 eachdiv">
+        <div className="userdetails">
+          <div className="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt />
+          </div>
+          <div className="detbox">
+            <p className="name dark">Nisha Begam</p>
+            <p className="designation dark">Computer Basics</p>
+          </div>
+        </div>
+        <div className="review dark">
+          <h4>An overall wonderful and rewarding experience</h4>
+          <p>“ I thought learning coding will be very difficult but the teachers thought very well.there teaching was efficient and easy to understand. Not only teaching the concepts they are also giving more exercises to practice which helps me to understand and remember the concepts very well. ”</p>
+        </div>
+      </div>
+      {/* div5 */}
+      <div className="div5 eachdiv">
+        <div className="userdetails">
+          <div className="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt />
+          </div>
+          <div className="detbox">
+            <p className="name">Patrick Abrams</p>
+            <p className="designation">Verified Graduate</p>
+          </div>
+        </div>
+        <div className="review">
+          <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
+          <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br />
+    Coded by <a href="https://www.instagram.com/developer_sah/" target="_blank">Rahul Sah</a>.
+  </div>
+</div>
+
+</Fragment>
   );
 };
 
