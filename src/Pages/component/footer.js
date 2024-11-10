@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="spark-footer">
       <div className="spark-section-4 spark-shortened">
         <div className="spark-container-3 spark-centered-content">
-          <a
-            href="#"
+          <Link
+            to="#"
             className="spark-brand spark-margin-bottom-32px w-inline-block"
           >
             <img
@@ -14,23 +15,23 @@ const Footer = () => {
               src="https://cdn.prod.website-files.com/671cdc59e1dd19a8375837c8/67238b1eb19c1555668cadcc_M.jpeg" // Corrected 'assests' to 'assets'
               alt="Coderz Academy Logo"
             />
-          </a>
+          </Link>
           <div className="spark-flexed-row-of-links spark-centered-row">
-            <a href="/" className="spark-button-2 spark-light-button w-button">
+            <Link to="/" className="spark-button-2 spark-light-button w-button">
               Home
-            </a>
-            <a href="/about" className="spark-button-2 spark-light-button w-button">
+            </Link>
+            <Link to="/about" className="spark-button-2 spark-light-button w-button">
               About
-            </a>
-            <a href="/course" className="spark-button-2 spark-light-button w-button">
+            </Link>
+            <Link to="/course" className="spark-button-2 spark-light-button w-button">
               Course
-            </a>
-            <a href="/contact" className="spark-button-2 spark-light-button w-button">
+            </Link>
+            <Link to="/contact" className="spark-button-2 spark-light-button w-button">
               Contact
-            </a>
-            <a href="#" className="spark-button-2 spark-light-button w-button">
+            </Link>
+            <Link to="#" className="spark-button-2 spark-light-button w-button">
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -42,9 +43,9 @@ const Footer = () => {
               ADIZ CODEZ
             </p>
             <div className="spark-social-link-row">
-              <a
+              <Link
                 aria-label="Twitter"
-                href="#"
+                to="#"
                 className="spark-social-link w-inline-block"
               >
                 <div className="spark-social-icon-svg w-embed">
@@ -62,10 +63,10 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="Instagram"
-                href="#"
+                to="#"
                 className="spark-social-link w-inline-block"
               >
                 <div className="spark-social-icon-svg w-embed">
@@ -102,10 +103,10 @@ const Footer = () => {
                     </defs>
                   </svg>
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="LinkedIn"
-                href="#"
+                to="#"
                 className="spark-social-link w-inline-block"
               >
                 <div className="spark-social-icon-svg w-embed">
@@ -130,11 +131,11 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 aria-label="Facebook"
-                href="#"
+                to="#"
                 className="spark-social-link w-inline-block"
               >
                 <div className="spark-social-icon-svg w-embed">
@@ -151,7 +152,7 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
