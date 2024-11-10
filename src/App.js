@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact";
 import CourseDetails from './Pages/courseDetails'; 
 import ScrollToTop from "./Pages/component/ScrollToTop";
 import FooterLinks from "./Pages/component/FooterLinks";
+import ChatIcon from "./Pages/component/Chat";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function AppRoutes() {
         <Route path="/course" element={<Course />} />
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <ChatIcon />
       </Routes>
 
       {/* Conditionally render Footer based on the current route */}
