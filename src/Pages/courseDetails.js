@@ -173,7 +173,7 @@ const CourseDetails = () => {
                 </div>
                 <div className="uui-heroheader04_image-wrapper">
                   <img
-                    src={courses.imgSrc}
+                    src={course.imgSrc}
                     loading="lazy"
                     sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 1216px"
                     alt="MacBook mockup"
