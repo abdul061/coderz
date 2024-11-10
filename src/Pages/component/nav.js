@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <img src={`${process.env.REACT_APP_PUBLIC}/assets/img/Logo.jpeg`} height={50} alt="Logo" />
+          <img src={`${process.env.REACT_APP_PUBLIC}/assests/img/Logo.jpeg`} height={50} alt="Logo" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger toggled={showNavbar} toggle={setShowNavbar} />
