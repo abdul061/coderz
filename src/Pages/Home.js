@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import TestimonialSlider from "./component/TestimonialSlider";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -243,6 +244,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <TestimonialSlider />
     </div>
   );
 };
