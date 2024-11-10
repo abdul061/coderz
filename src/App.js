@@ -32,12 +32,13 @@ function AppRoutes() {
         <Route path="/course" element={<Course />} />
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/contact" element={<Contact />} />
-        <ChatIcon />
+        
       </Routes>
 
       {/* Conditionally render Footer based on the current route */}
       {location.pathname !== '/contact' && <Footer />}
       <FooterLinks />
+      <ChatIcon />
     </Fragment>
   );
 }
