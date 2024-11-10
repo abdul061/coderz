@@ -8,6 +8,7 @@ import Course from "./Pages/Course";
 import Contact from "./Pages/Contact";
 import CourseDetails from './Pages/courseDetails'; 
 import ScrollToTop from "./Pages/component/ScrollToTop";
+import FooterLinks from "./Pages/component/FooterLinks";
 function App() {
   return (
     <Router >
@@ -21,6 +22,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      {location.pathname !== "/contact" && <Footer />} {/* Show footer only if not on contact page */}
+      <FooterLinks />
     </Router>
   );
 }
