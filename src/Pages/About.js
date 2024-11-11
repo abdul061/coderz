@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/merge.css'
+import METRICS from './component/metrics';
 
 const About = () => {
   return (
@@ -31,29 +32,8 @@ const About = () => {
         <div className="spark-absolute-dark-background"></div>
       </section>
 
-      <section className="features-metrics">
-        <div className="container">
-          <div className="features-wrapper">
-            <div className="features-block">
-              <div className="features-title">500<span className="features-title-small">+</span></div>
-              <div>Enrolled Students </div>
-            </div>
-            <div className="features-block">
-              <div className="features-title">90<span className="features-title-small">%</span></div>
-              <div>success Rate </div>
-            </div>
-            <div className="features-block">
-              <div className="features-title">20+</div>
-              <div>Course Offered</div>
-            </div>
-            <div className="features-block">
-              <div className="features-title">2k<span className="features-title-small">+</span></div>
-              <div>Followers</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+{/* metrics goes here */}
+    <METRICS />
       <div className="udesly-container">
       <section className="udesly-title-wrapper-2">
         <header className="udesly-overline-large">About Me</header>
