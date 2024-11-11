@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/CD.css'
-
+import './css/merge.css'
 
 const About = () => {
   return (
