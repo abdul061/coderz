@@ -3840,12 +3840,12 @@ html {
     margin-right: auto;
   }
   
-  .features-metrics {
+  /* .features-metrics {
     background-color: #f5f7fa;
     border-bottom: 1px solid #e4ebf3;
     padding: 60px 30px;
     position: relative;
-  }
+  } */
   
   .container {
     width: 100%;
@@ -4253,9 +4253,9 @@ html {
       max-width: 728px;
     }
   
-    .features-wrapper {
+    /* .features-wrapper {
       justify-content: space-between;
-    }
+    } */
   }
   
   @media screen and (max-width: 767px) {
@@ -4505,11 +4505,11 @@ html {
       padding-bottom: 88px;
     }
   
-    .features-metrics {
+    /* .features-metrics {
       padding: 60px 15px;
-    }
+    } */
   
-    .features-wrapper {
+    /* .features-wrapper {
       flex-wrap: wrap;
       margin-bottom: -40px;
     }
@@ -4517,7 +4517,7 @@ html {
     .features-block {
       width: 50%;
       margin-bottom: 40px;
-    }
+    } */
   }
   
   @media screen and (max-width: 479px) {
