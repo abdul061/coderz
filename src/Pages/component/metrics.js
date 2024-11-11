@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/metrics'
+import '../css/metrics.css'
 
 function metrics() {
   return (
