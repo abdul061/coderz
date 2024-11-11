@@ -685,23 +685,23 @@ html {
     height: 20px;
   }
   
-  .w-container {
+  .w-cont {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .w-container:before, .w-container:after {
+  .w-cont:before, .w-cont:after {
     content: " ";
     grid-area: 1 / 1 / 2 / 2;
     display: table;
   }
   
-  .w-container:after {
+  .w-cont:after {
     clear: both;
   }
   
-  .w-container .w-row {
+  .w-cont .w-row {
     margin-left: -10px;
     margin-right: -10px;
   }
@@ -788,7 +788,7 @@ html {
   }
   
   @media screen and (max-width: 991px) {
-    .w-container {
+    .w-cont {
       max-width: 728px;
     }
   
@@ -864,7 +864,7 @@ html {
       display: none !important;
     }
   
-    .w-row, .w-container .w-row {
+    .w-row, .w-cont .w-row {
       margin-left: 0;
       margin-right: 0;
     }
@@ -925,7 +925,7 @@ html {
   }
   
   @media screen and (max-width: 479px) {
-    .w-container {
+    .w-cont {
       max-width: none;
     }
   
@@ -1437,7 +1437,7 @@ html {
     -webkit-transform: translate(0);
   }
   
-  .w-lightbox-backdrop, .w-lightbox-container {
+  .w-lightbox-backdrop, .w-lightbox-cont {
     -webkit-overflow-scrolling: touch;
     height: 100%;
     overflow: auto;
@@ -2289,14 +2289,14 @@ html {
     display: flex;
   }
   
-  .spark-container {
+  .spark-cont {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
   }
   
-  .spark-container.spark-primary-with-rounded-corners {
+  .spark-cont.spark-primary-with-rounded-corners {
     background-color: var(--spark-library--foreground-interactive);
     color: var(--spark-library--white);
     border-radius: 24px;
@@ -2856,7 +2856,7 @@ html {
     padding-bottom: 7rem;
   }
   
-  .rl-container-large {
+  .rl-cont-large {
     width: 100%;
     max-width: 80rem;
     margin-left: auto;
@@ -3010,7 +3010,7 @@ html {
     padding-bottom: 0;
   }
   
-  .spark-container-2 {
+  .spark-cont-2 {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -3019,7 +3019,7 @@ html {
     position: relative;
   }
   
-  .spark-container-2.spark-primary-with-rounded-corners {
+  .spark-cont-2.spark-primary-with-rounded-corners {
     background-color: var(--spark-library--foreground-interactive);
     color: var(--spark-library--white);
     border-radius: 24px;
@@ -3380,14 +3380,14 @@ html {
     margin-right: auto;
   }
   
-  .spark-container-3 {
+  .spark-cont-3 {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
   }
   
-  .spark-container-3.spark-centered-content {
+  .spark-cont-3.spark-centered-content {
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -3695,14 +3695,14 @@ html {
     margin-bottom: 0;
   }
   
-  .spark-container-4 {
+  .spark-cont-4 {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
   }
   
-  .spark-container-4.spark-primary-background {
+  .spark-cont-4.spark-primary-background {
     z-index: 2;
     background-color: var(--spark-library--foreground-interactive);
     color: var(--spark-library--white);
@@ -3845,7 +3845,7 @@ html {
     display: flex;
   }
   
-  .udesly-container {
+  .udesly-cont {
     width: 100%;
     max-width: 1216px;
     margin-left: auto;
@@ -3859,7 +3859,7 @@ html {
     position: relative;
   }
   
-  .container {
+  .cont {
     width: 100%;
     max-width: 940px;
     margin-left: auto;
@@ -4038,7 +4038,7 @@ html {
     padding-bottom: 7rem;
   }
   
-  .uui-container-large {
+  .uui-cont-large {
     width: 100%;
     max-width: 80rem;
     margin-left: auto;
@@ -4197,7 +4197,7 @@ html {
     padding-bottom: 7rem;
   }
   
-  .uui-container-large-2 {
+  .uui-cont-large-2 {
     width: 100%;
     max-width: 80rem;
     margin-left: auto;
@@ -4338,7 +4338,7 @@ html {
     margin-bottom: 64px;
   }
   
-  .udesly-container-2 {
+  .udesly-cont-2 {
     width: 100%;
     max-width: 1216px;
     margin-left: auto;
@@ -4352,7 +4352,7 @@ html {
     position: relative;
   }
   
-  .container-2 {
+  .cont-2 {
     width: 100%;
     max-width: 940px;
     margin-left: auto;
@@ -4444,7 +4444,7 @@ html {
       position: relative;
     }
   
-    .spark-container.spark-primary-with-rounded-corners {
+    .spark-cont.spark-primary-with-rounded-corners {
       padding: 32px;
     }
   
@@ -4617,7 +4617,7 @@ html {
       align-items: flex-start;
     }
   
-    .spark-container-2.spark-primary-with-rounded-corners {
+    .spark-cont-2.spark-primary-with-rounded-corners {
       padding: 32px;
     }
   
@@ -4740,7 +4740,7 @@ html {
       margin-bottom: 2rem;
     }
   
-    .spark-container-4.spark-primary-background {
+    .spark-cont-4.spark-primary-background {
       padding: 32px;
     }
   
@@ -4754,7 +4754,7 @@ html {
       grid-template-columns: 1fr;
     }
   
-    .container {
+    .cont {
       max-width: 728px;
     }
   
@@ -4800,7 +4800,7 @@ html {
       grid-template-columns: 2fr;
     }
   
-    .container-2 {
+    .cont-2 {
       max-width: 728px;
     }
   
@@ -4823,7 +4823,7 @@ html {
       padding: 16px;
     }
   
-    .spark-container {
+    .spark-cont {
       width: 100%;
     }
   
@@ -4955,7 +4955,7 @@ html {
       grid-row-gap: 24px;
     }
   
-    .spark-container-2 {
+    .spark-cont-2 {
       width: 100%;
     }
   
@@ -5016,7 +5016,7 @@ html {
       padding-right: 32px;
     }
   
-    .spark-container-3 {
+    .spark-cont-3 {
       width: 100%;
     }
   
@@ -5047,7 +5047,7 @@ html {
       margin-bottom: 32px;
     }
   
-    .spark-container-4 {
+    .spark-cont-4 {
       width: 100%;
     }
   
@@ -5257,7 +5257,7 @@ html {
       margin-bottom: .5rem;
     }
   
-    .spark-container.spark-primary-with-rounded-corners {
+    .spark-cont.spark-primary-with-rounded-corners {
       padding: 16px;
     }
   
@@ -5337,7 +5337,7 @@ html {
       align-items: center;
     }
   
-    .spark-container-2.spark-primary-with-rounded-corners {
+    .spark-cont-2.spark-primary-with-rounded-corners {
       padding: 16px;
     }
   
@@ -5452,7 +5452,7 @@ html {
       flex-wrap: wrap;
     }
   
-    .spark-container-4.spark-primary-background {
+    .spark-cont-4.spark-primary-background {
       padding: 20px;
     }
   
@@ -5468,13 +5468,13 @@ html {
       font-size: 2.5rem;
     }
   
-    .udesly-container {
+    .udesly-cont {
       max-width: none;
       margin-left: 0;
       margin-right: 0;
     }
   
-    .container {
+    .cont {
       max-width: none;
     }
   
@@ -5504,13 +5504,13 @@ html {
       grid-template-columns: 1fr;
     }
   
-    .udesly-container-2 {
+    .udesly-cont-2 {
       max-width: none;
       margin-left: 0;
       margin-right: 0;
     }
   
-    .container-2 {
+    .cont-2 {
       max-width: none;
     }
   }

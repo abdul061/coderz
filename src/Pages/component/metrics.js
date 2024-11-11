@@ -4,7 +4,7 @@ import '../css/metrics.css'
 function metrics() {
   return (
       <section className="feat-metrics">
-    <div className="container">
+    <div className="cont">
       <div className="feat-wrapper">
         <div className="feat-block">
           <div className="feat-title">500<span className="feat-title-small">+</span></div>
