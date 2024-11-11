@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import axios from "axios";
 import "./css/course.css";
 import { Link } from "react-router-dom";
+import METRICS from './component/metrics';
 const Course = () => {
   const HeroHeader = () => {
     return (
@@ -411,7 +412,7 @@ const Course = () => {
     <Fragment>
       <HeroSection />
       <Hero />
-      <FeaturesMetrics />
+      <METRICS />
       <CoursePage />
       <HeroHeader />
     </Fragment>
