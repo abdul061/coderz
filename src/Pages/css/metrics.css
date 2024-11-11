@@ -3852,7 +3852,7 @@ html {
     margin-right: auto;
   }
   
-  .features-metrics {
+  .feat-metrics {
     background-color: #f5f7fa;
     border-bottom: 1px solid #e4ebf3;
     padding: 60px 30px;
@@ -3866,13 +3866,13 @@ html {
     margin-right: auto;
   }
   
-  .features-wrapper {
+  .feat-wrapper {
     justify-content: space-around;
     align-items: center;
     display: flex;
   }
   
-  .features-block {
+  .feat-block {
     text-align: center;
     flex-direction: column;
     justify-content: flex-start;
@@ -3880,14 +3880,14 @@ html {
     display: flex;
   }
   
-  .features-title {
+  .feat-title {
     margin-bottom: 8px;
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
   }
   
-  .features-title-small {
+  .feat-title-small {
     font-size: 24px;
     line-height: 32px;
   }
@@ -4345,7 +4345,7 @@ html {
     margin-right: auto;
   }
   
-  .features-metrics-2 {
+  .feat-metrics-2 {
     background-color: #f5f7fa;
     border-bottom: 1px solid #e4ebf3;
     padding: 60px 30px;
@@ -4359,13 +4359,13 @@ html {
     margin-right: auto;
   }
   
-  .features-wrapper-2 {
+  .feat-wrapper-2 {
     justify-content: space-around;
     align-items: center;
     display: flex;
   }
   
-  .features-block-2 {
+  .feat-block-2 {
     text-align: center;
     flex-direction: column;
     justify-content: flex-start;
@@ -4373,14 +4373,14 @@ html {
     display: flex;
   }
   
-  .features-title-2 {
+  .feat-title-2 {
     margin-bottom: 8px;
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
   }
   
-  .features-title-small-2 {
+  .feat-title-small-2 {
     font-size: 24px;
     line-height: 32px;
   }
@@ -4758,7 +4758,7 @@ html {
       max-width: 728px;
     }
   
-    .features-wrapper {
+    .feat-wrapper {
       justify-content: space-between;
     }
   
@@ -4804,7 +4804,7 @@ html {
       max-width: 728px;
     }
   
-    .features-wrapper-2 {
+    .feat-wrapper-2 {
       justify-content: space-between;
     }
   }
@@ -5056,16 +5056,16 @@ html {
       padding-bottom: 88px;
     }
   
-    .features-metrics {
+    .feat-metrics {
       padding: 60px 15px;
     }
   
-    .features-wrapper {
+    .feat-wrapper {
       flex-wrap: wrap;
       margin-bottom: -40px;
     }
   
-    .features-block {
+    .feat-block {
       width: 50%;
       margin-bottom: 40px;
     }
@@ -5228,16 +5228,16 @@ html {
       grid-template-columns: 1fr;
     }
   
-    .features-metrics-2 {
+    .feat-metrics-2 {
       padding: 60px 15px;
     }
   
-    .features-wrapper-2 {
+    .feat-wrapper-2 {
       flex-wrap: wrap;
       margin-bottom: -40px;
     }
   
-    .features-block-2 {
+    .feat-block-2 {
       width: 50%;
       margin-bottom: 40px;
     }
