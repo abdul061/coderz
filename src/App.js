@@ -11,6 +11,7 @@ import ScrollToTop from "./Pages/component/ScrollToTop";
 import FooterLinks from "./Pages/component/FooterLinks";
 import ChatIcon from "./Pages/component/Chat";
 import Internship from "./Pages/Intern"
+import StudentDetails from "./Pages/StudentDetails";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function AppRoutes() {
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/internship" element={<Internship />}/>
+        <Route path="/internship/:id" element={<StudentDetails />}/>
       </Routes>
 
       {/* Conditionally render Footer based on the current route */}

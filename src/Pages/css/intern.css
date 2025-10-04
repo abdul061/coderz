@@ -1,139 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 .body-ip {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #e8f0fe; /* very light blue background */
-  color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
+.container-intern {
   width: 100%;
-  max-width: 900px;
-  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
-.search-container,
+
+.search-container, 
 .result-container {
   display: flex;
+  gap: 2rem;
   align-items: center;
-  justify-content: space-between;
-  background: #f0f6ff; /* solid soft pastel blue */
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* soft lift */
-  border: 1px solid #d0e0ff; /* subtle border for definition */
+  background: #fff;
+  margin: 20px;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right {
-  flex: 1;
-  padding: 20px;
+.search-container:hover, 
+.result-container:hover {
+  transform: translateY(-5px);
 }
 
 .search-box {
   display: flex;
   flex-direction: column;
-}
-
-.search-box h1 {
-  margin-bottom: 10px;
-  font-size: 28px;
-  font-weight: 700;
-  color: #1a1a1a;
-}
-
-.subtitle {
-  font-size: 15px;
-  margin-bottom: 20px;
-  color: #4b6cb7; /* subtle blue */
+  gap: 1rem;
 }
 
 .search-box input {
-  width: 100%;
-  padding: 14px;
-  margin: 12px 0;
-  border: 1px solid #d1d9e6;
-  border-radius: 12px;
-  outline: none;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 16px;
-  background: #f7f9fc;
-  color: #1a1a1a;
-  transition: 0.3s;
-}
-
-.search-box input:focus {
-  border-color: #3a7bd5; /* primary blue accent */
-}
-
-.search-box input[type="date"] {
-  color: #1a1a1a;
+  width: 100%;
 }
 
 .search-box button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  background: linear-gradient(135deg, #4facfe, #00f2fe); /* blue gradient */
+  padding: 12px;
+  background: #1976d2;
   color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 12px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
+  font-size: 16px;
 }
 
 .search-box button:hover {
-  background: linear-gradient(135deg, #3a7bd5, #00aaff);
+  background: #0d47a1;
 }
 
-.right h2 {
-  margin-bottom: 15px;
-  font-size: 26px;
-  color: #1a1a1a;
+.student-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
 }
 
-.right p {
-  margin: 8px 0;
+.student-card h2 {
+  margin-bottom: 0.5rem;
+  color: #1976d2;
+}
+
+.student-card p {
+  margin: 6px 0;
   font-size: 16px;
-  color: #333333;
+  color: #333;
 }
 
-.right button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+.student-card h3 {
+  margin-top: 1rem;
+  color: #1565c0;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.checklist li {
+  margin: 6px 0;
+  font-size: 15px;
+  background: #e3f2fd;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.back-btn {
+  padding: 10px 15px;
+  background: #e53935;
   color: #fff;
   border: none;
-  border-radius: 12px;
-  font-size: 16px;
+  border-radius: 6px;
   cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
+  margin-top: 1rem;
 }
 
-.right button:hover {
-  background: linear-gradient(135deg, #3a7bd5, #00aaff);
+.back-btn:hover {
+  background: #b71c1c;
 }
 
-/* Responsive */
+/* ✅ Responsive Design */
 @media (max-width: 768px) {
   .search-container,
   .result-container {
     flex-direction: column;
     text-align: center;
-    padding: 25px;
+    padding: 1.5rem;
+    gap: 1.5rem;
   }
-  .left {
-    margin-bottom: 20px;
+
+  .student-card {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .search-box input,
+  .search-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container,
+  .result-container {
+    padding: 1rem;
+  }
+
+  .search-box h1 {
+    font-size: 20px;
+  }
+
+  .search-box p {
+    font-size: 14px;
+  }
+
+  .student-card p {
+    font-size: 14px;
+  }
+
+  .checklist li {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
