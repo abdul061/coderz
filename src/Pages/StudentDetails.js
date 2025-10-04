@@ -19,24 +19,29 @@ export default function StudentDetails() {
     return acc;
   }, []);
 
-  useEffect(() => {
-    const fetchStudent = async () => {
-      try {
-        const response = await axios.post(
-          `${process.env.REACT_APP_PUBLIC_URL}api/searchStudent`,
-          { rollNo, dob } // backend expects dd-mm-yyyy
-        );
-        setStudent(response.data);
-      } catch (err) {
-        console.error("Error fetching student:", err);
-        alert(err.response?.data?.message || "Student not found!");
-      }
-    };
+const [loading, setLoading] = useState(true); // NEW
 
-    fetchStudent();
-  }, [rollNo, dob]);
+useEffect(() => {
+  const fetchStudent = async () => {
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_PUBLIC_URL}api/searchStudent`,
+        { rollNo, dob }
+      );
+      setStudent(response.data);
+    } catch (err) {
+      console.error("Error fetching student:", err);
+      setStudent(null);
+    } finally {
+      setLoading(false); // done fetching
+    }
+  };
 
-  if (!student) return <center><h1 style={{ textAlign: "center" }}>Not Found</h1></center>;
+  fetchStudent();
+}, [rollNo, dob]);
+
+if (loading) return <center><h1>Loading...</h1></center>;
+if (!student) return <center><h1>Not Found</h1></center>;
 
   return (
     <div
