@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Home from "./Pages/Home";
 import Navbar from "./Pages/component/nav";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import About from "./Pages/About";
 import Footer from "./Pages/component/footer";
 import Course from "./Pages/Course";
@@ -34,8 +34,8 @@ function AppRoutes() {
         <Route path="/course" element={<Course />} />
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/internship" element={<Internship />}/>
-        <Route path="/internship/:id" element={<StudentDetails />}/>
+        <Route path="/internship" element={<Internship />} />
+        <Route path="/internship/:id" element={<StudentDetails />} />
       </Routes>
 
       {/* Conditionally render Footer based on the current route */}
