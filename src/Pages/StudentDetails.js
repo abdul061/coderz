@@ -23,7 +23,7 @@ export default function StudentDetails() {
     const fetchStudent = async () => {
       try {
         const response = await axios.post(
-          `${process.env.REACT_APP_PUBLIC_URL}/api/searchStudent`,
+          `${process.env.REACT_APP_PUBLIC_URL}api/searchStudent`,
           { rollNo, dob } // backend expects dd-mm-yyyy
         );
         setStudent(response.data);
