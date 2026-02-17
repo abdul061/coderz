@@ -1,0 +1,76 @@
+/* ===============================
+   DEMO SECTION
+================================ */
+
+.demo {
+  position: relative;
+  text-align: center;
+  padding: 100px 10%;
+  background: linear-gradient(to bottom, #f8f9fb, #eef2f8);
+  overflow: hidden;
+}
+
+/* Heading */
+.demo h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ff5c35;   /* Orange like screenshot */
+  margin-bottom: 15px;
+}
+
+/* Sub Text */
+.demo p {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Button */
+.demo .btn-primary.large {
+  background: linear-gradient(135deg, #ff5c35, #ff7a45);
+  color: white;
+  padding: 16px 38px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 12px 25px rgba(255, 92, 53, 0.35);
+  transition: all 0.3s ease;
+}
+
+.demo .btn-primary.large:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 35px rgba(255, 92, 53, 0.45);
+}
+
+/* Bottom Wave Effect */
+.demo::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23eef2f8' fill-opacity='1' d='M0,224L120,213.3C240,203,480,181,720,176C960,171,1200,181,1320,186.7L1440,192L1440,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .demo {
+    padding: 70px 6%;
+  }
+
+  .demo h2 {
+    font-size: 28px;
+  }
+
+  .demo p {
+    font-size: 16px;
+  }
+
+  .demo .btn-primary.large {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}

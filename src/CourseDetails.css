@@ -1,0 +1,173 @@
+/* ===============================
+   MAIN WRAPPER
+================================ */
+
+.details-wrapper {
+  display: flex;
+  align-items: flex-start;   /* 🔥 critical alignment fix */
+  gap: 70px;
+  padding: 120px 10%;
+  background: linear-gradient(to bottom, #f4f6f9, #eef2f8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative Background Effects */
+
+
+/* ===============================
+   SIDEBAR
+================================ */
+
+.details-sidebar {
+  width: 45%;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  margin-top: 20px;  /* 🔥 visual balance fix */
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.sidebar-icon {
+  font-size: 26px;
+  color: #ff5c35;
+}
+
+.details-sidebar h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.duration {
+  color: #ff5c35;
+  font-weight: 600;
+  margin: 18px 0 28px 0;
+}
+
+.info-box {
+  margin-bottom: 25px;
+}
+
+.info-box h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #ff5c35;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ===============================
+   RIGHT CONTENT
+================================ */
+
+.details-content {
+  flex: 1;
+}
+
+.curriculum-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  color: #1f2937;
+}
+
+/* ===============================
+   TIMELINE
+================================ */
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.timeline-number {
+  min-width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff5c35, #ff8a50);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 10px 25px rgba(255,92,53,0.3);
+}
+
+.timeline-content {
+  flex: 1;   /* 🔥 prevents misalignment */
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.module-icon {
+  margin-right: 8px;
+  color: #ff5c35;
+  font-size: 14px;
+}
+
+.timeline-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.timeline-content li {
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+  .details-wrapper {
+    flex-direction: column;
+    padding: 80px 6%;
+  }
+
+  .details-sidebar {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .curriculum-title {
+    text-align: center;
+  }
+}

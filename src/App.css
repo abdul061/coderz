@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1e2a38;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links .active {
+  color: #ff6b35;
+  border-bottom: 2px solid #ff6b35;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #ff5c35, #ff7a45);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.small {
+  padding: 8px 15px;
+}
+
+.large {
+  padding: 14px 28px;
+}
+
+/* RESPONSIVE */
+
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+}
+/* =========================
+   BURGER
+========================= */
+
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Desktop button visible */
+.desktop-btn {
+  display: block;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+    z-index: 10000;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: white;
+
+    padding: 30px 0 40px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  /* Hide desktop button */
+  .desktop-btn {
+    display: none;
+  }
+
+  /* Show mobile button */
+  .mobile-btn {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .mobile-btn button {
+    width: 80%;
+  }
+}

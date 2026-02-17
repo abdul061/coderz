@@ -1,0 +1,129 @@
+/* ===============================
+   COURSES SECTION
+================================ */
+
+.courses-section {
+  padding: 100px 8%;
+  background: #f4f6f9;
+  text-align: center;
+}
+
+.courses-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title */
+
+.section-title-course {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.section-subtitle {
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Grid */
+
+.courses-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+
+.course-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* Icon */
+
+.course-icon {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Title */
+
+.course-card h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* Text */
+
+.course-card p {
+  font-size: 14px;
+  color: #6b7280;
+  min-height: 40px;
+}
+
+/* Button */
+
+.course-btn {
+  margin-top: 20px;
+ background: linear-gradient(135deg, #ff5c35, #ff7a45);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+/* Icon Wrapper (Main Circle) */
+.icon-wrapper {
+  width: 90px;
+  height: 90px;
+  background: #eef2f7;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.course-btn:hover {
+  background: #e14e2b;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-course-img{
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
