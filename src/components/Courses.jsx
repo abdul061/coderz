@@ -22,7 +22,7 @@ const CoursesSection = () => {
             </div>
             <h4>Full Stack Web Development</h4>
             <p>Build robust web applications.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/WebDevelopment")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/Full Stack Web Development")}>Learn More</button>
           </div>
 
           <div className="course-card">
@@ -31,7 +31,7 @@ const CoursesSection = () => {
             </div>
             <h4>Python Programming</h4>
             <p>Master Python from basics to advanced.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/Python")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/python")}>Learn More</button>
           </div>
 
           <div className="course-card">
@@ -41,7 +41,7 @@ const CoursesSection = () => {
             </div>
             <h4>Data Science & AI</h4>
             <p>Learn Machine Learning & Data Analytics.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/DataScience")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/Data Analyst Program")}>Learn More</button>
           </div>
 
           <div className="course-card">

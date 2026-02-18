@@ -20,7 +20,12 @@ import { ReactComponent as JavaIcon } from "../assets/image/java.svg";
 // ✅ PNG Image
 import FullStack from "../assets/image/fullstack.png";
 import VSCode from "../assets/image/vscode.jpeg";
-
+import Cprogram from "../assets/image/c-program.png";
+import CPP from '../assets/image/cpp.png';
+import DSA from '../assets/image/DSA.png';
+import SQL from '../assets/image/SQL.png';
+import PowerBI  from '../assets/image/powerbi.png';
+import ML from '../assets/image/ML.png';
 /* ===============================
    TECH ICON MAP (SMALL ICONS)
 ================================ */
@@ -35,7 +40,12 @@ const techIcons = {
   django: <SiDjango size={20} color="#0c4b33" />,
   python: <PythonIcon width={22} height={22} />,
   java: <JavaIcon width={22} height={22} />,
-  VScode: <img src={VSCode} alt="VS Code" className="main-course-img" />
+  VScode: <img src={VSCode} alt="VS Code" className="main-course-img" />,
+  Cprogram : <img src={Cprogram} alt="C Programming" className="main-course-img" />,
+  CPP : <img src={CPP} alt="C++ Programming" className="main-course-img" /> ,
+  DSA : <img src={DSA} alt="DSA" className="main-course-img" />,
+  SQL : <img src={SQL} alt="SQL" className="main-course-img" />,
+  PowerBI : <img src={PowerBI} alt="Power-BI" className="main-course-img" />
 };
 
 /* ===============================
@@ -52,6 +62,9 @@ const mainIcons = {
   ),
   python: <PythonIcon width={40} height={40} />,
   java: <JavaIcon width={40} height={40} />,
+  DSA: <img src={DSA} alt="DSA" className="main-course-img" />,
+  Cprogram : <img src={Cprogram} alt="C Programming" className="main-course-img" />,
+  ML : <img src={ML} alt="Machine Learning" className="main-course-img" />  
   
 };
 

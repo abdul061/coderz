@@ -1,90 +1,118 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../css/merge.css'
-import METRICS from '../components/metrics';
+import React from "react";
+import "../About.css";
+
+import about1 from "../assets/image/about1.jpg";
+import about2 from "../assets/image/about2.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-page">
 
+      {/* ================= HERO SECTION ================= */}
+      <section className="about-hero container">
 
-      <section className="spark-section-5">
-        <div className="spark-container-4 spark-primary-background w-container">
-          <div className="spark-flex-row-3 spark-split-and-wrapped">
-            <div>
-              <p>Get Started Now</p>
-              <h2>Start your journey</h2>
-              <p className="spark-hero-sub-paragraph-3 spark-secondary-font-color">
-                We believe that every student has the potential to become a great
-                coder. Our coding program is designed specifically for students
-                starting in 6th grade, combining fun with essential skills in
-                programming, problem-solving, and creativity.
-              </p>
-            </div>
-            <div className="spark-flex-row-3 spark-right">
-              <Link to="/course" className="spark-lightbox-button w-inline-block w-lightbox">
-                Courses
-              </Link>
-              <Link to="/contact" className="spark-button-3 spark-dark-button w-button">Get Started</Link>
-            </div>
-          </div>
+        <div className="about-text">
+          <p className="breadcrumb">Home › About Us</p>
+
+          <h1>About Coderz Academy</h1>
+
+          <p>
+            Coderz Academy is focused on making <b>students job-ready</b> 
+            through <b>practical training, clear concepts,</b> and 
+            <b> continuous mentorship.</b>
+          </p>
+
+          <p>
+            We believe learning to code should be simple, structured, and hands-on.
+            Our goal is not just to teach programming languages, but to help students
+            truly understand how technology works and how it is used in real-world applications.
+          </p>
+
+          <p>
+            At <b>Coderz Academy</b>, we focus on building strong fundamentals that help students
+            succeed in academics, interviews, and industry projects.
+          </p>
         </div>
-        <div className="spark-absolute-dark-background"></div>
+
+        <div className="about-image">
+          <img src={about1} alt="About Illustration" />
+        </div>
+
       </section>
 
-{/* metrics goes here */}
-    <METRICS />
-      <div className="udesly-container">
-      <section className="udesly-title-wrapper-2">
-        <header className="udesly-overline-large">About Me</header>
-        <h2
-          className="udesly-text-extrabold"
-          style={{
-            transform: 'translate3d(0, 15px, 0) scale3d(1, 1, 1)',
-            opacity: 0,
-          }}
-        >
-          What made me pop into design?
-        </h2>
-      </section>
 
-      <section className="udesly-information">
-        <article className="udesly-info-block">
-          <p className="udesly-paragraph-large">
-            Coderz Academy is dedicated to ensuring a strong foundation in computer education for students of all ages. Located in Panruti, we offer courses from basic computer skills to advanced programming languages like Python and Java. Our experienced instructors nurture future tech leaders by equipping students with practical skills for today’s digital landscape.
+      {/* ================= WHAT WE DO ================= */}
+      <section className="what-we-do container">
+
+        <div className="what-text">
+          <h2>What We Do</h2>
+
+          <p>
+            We provide professional training in the latest technologies through:
           </p>
-          <ul role="list" className="udesly-list-info">
-            <li className="list-item-privacy">
-              <span className="udesly-span-black udesly-text-medium">
-                Empowering students with essential tech skills through courses in programming, web development, and computer basics to create future leaders.
-              </span>
-            </li>
-            <li className="list-item-privacy">
-              <span className="udesly-span-black udesly-text-medium">
-                Fostering creativity and critical thinking in an innovative learning environment at Coderz Academy, equipping students with essential coding and technology skills.
-              </span>
-            </li>
-            <li className="list-item-privacy">
-              <span className="udesly-span-black udesly-text-medium">
-                Emphasizing customized learning based on individual needs, allowing each student to develop at their own pace.
-              </span>
-            </li>
+
+          <ul>
+            <li>✔ Live instructor-led classes</li>
+            <li>✔ Step-by-step concept explanation</li>
+            <li>✔ Hands-on coding practice</li>
+            <li>✔ Real-time project development</li>
+            <li>✔ Exam and interview-oriented preparation</li>
           </ul>
-          <p className="udesly-paragraph-large">
-            Coderz Academy’s courses are tailored to each student, supporting them in developing skills at their own pace and proficiency.
-          </p>
-        </article>
 
-        <article className="udesly-info-block">
-          <p className="udesly-paragraph-large">
-            Located in Panruti, Cuddalore district, Coderz Academy teaches computing and programming from basics to advanced levels. Our classes cover Microsoft Office, C, C++, Python, Java, HTML, CSS, JavaScript, Tally Prime, and more, focusing on building skills for high-tech careers.
+          <p>
+            Our courses are designed to bridge the gap between 
+            <b> theory and practical implementation.</b>
           </p>
-          <p className="udesly-paragraph-large">
-            We support students through interactive coding opportunities and personalized tutoring. Our dedicated teachers encourage creativity and critical thinking, providing learners with a strong foundation for tech careers.
-          </p>
-        </article>
+        </div>
+
+        <div className="what-image">
+          <img src={about2} alt="Training Illustration" />
+        </div>
+
       </section>
-    </div>
+
+
+      {/* ================= APPROACH + MISSION ================= */}
+      <section className="approach-section container">
+
+        {/* LEFT CARD */}
+        <div className="approach">
+          <h2>Our Teaching Approach</h2>
+
+          <ul>
+            <li>✔ Live instructor-led classes</li>
+            <li>✔ Step-by-step concept explanation</li>
+            <li>✔ Hands-on coding practice</li>
+            <li>✔ Real-time project development</li>
+            <li>✔ Exam & interview-oriented preparation</li>
+          </ul>
+        </div>
+
+        {/* RIGHT CARD */}
+        <div className="mission">
+
+          <h2>Our Mission</h2>
+
+          <p>
+            Our mission is to empower students with 
+            <b> industry-relevant skills,</b> practical knowledge, 
+            and the confidence needed to crack exams, interviews, 
+            and real-world challenges.
+          </p>
+
+          <h3>Why Choose Coderz Academy?</h3>
+
+          <ul>
+            <li>✔ Experienced and supportive trainers</li>
+            <li>✔ Exam & interview-oriented notes</li>
+            <li>✔ Practical, real-time project exposure</li>
+            <li>✔ Continuous doubt support and mentorship</li>
+          </ul>
+
+        </div>
+
+      </section>
+
     </div>
   );
 };

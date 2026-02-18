@@ -7,6 +7,7 @@ import WhyChoose from "../components/FAQSection";
 import Demo from "../components/Demo";
 import ChatButton from "../components/ChatButton";
 import "../App.css";
+import Testimonial from "../components/Testimonial";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Features />
       <Courses />
       <WhyChoose />
+      <Testimonial />
       <Demo />
     </>
   );

@@ -1,0 +1,168 @@
+.about-page {
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef2f8 100%);
+
+}
+
+.container {
+  width: 88%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 0 30px 0;
+}
+
+/* ================= HERO ================= */
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #8a94a6;
+  margin-bottom: 15px;
+}
+
+.about-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2d3d;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #4a5568;
+  margin-bottom: 18px;
+}
+
+.about-text b {
+  color: #1f2d3d;
+  font-weight: 600;
+}
+
+.about-image img {
+  width: 480px;
+  max-width: 100%;
+}
+
+/* ================= WHAT WE DO ================= */
+
+.what-we-do {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.what-text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f2d3d;
+}
+
+.what-text p {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.what-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.what-text li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #2d3748;
+}
+
+.what-image img {
+  width: 420px;
+  max-width: 100%;
+}
+
+/* ================= APPROACH SECTION ================= */
+
+.approach-section {
+  display: flex;
+  gap: 60px;
+  margin-top: 80px;
+}
+
+.approach,
+.mission {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.approach h2,
+.mission h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1f2d3d;
+}
+
+.approach ul,
+.mission ul {
+  list-style: none;
+  padding: 0;
+}
+
+.approach li,
+.mission li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.mission p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.mission h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .about-hero,
+  .what-we-do,
+  .approach-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img,
+  .what-image img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 40px;
+  }
+
+  .approach,
+  .mission {
+    padding: 30px;
+  }
+
+}

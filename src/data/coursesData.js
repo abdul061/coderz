@@ -1,6 +1,6 @@
 export const courses = [
   {
-    id: "Java",
+    id: "Full Stack Web Development",
     title: "Full Stack Web Development",
     duration: "4 Months",
     icon: "laptop",
@@ -102,7 +102,7 @@ export const courses = [
   },
     {
     id: "Programming Foundations: C, C++ & Java",
-    icon: "laptop",
+    icon: "Cprogram",
     title: "Programming Foundations: C, C++ & Python",
     duration: "Total Duration: 60 Days, C & C++ (Combined): 30 Days, Python: 30 Days",
     level: "Beginner to Intermediate",
@@ -113,7 +113,7 @@ export const courses = [
     description:
       "Comprehensive DSA training focused on placements, interviews, and competitive coding.",
 
-    tools: ["VScode"],
+    tools: ["VScode", "Cprogram", "CPP", "python"],
     whoCanJoin:
       "CSE / IT Students, Job Seekers, Placement Preparation Aspirants",
 
@@ -208,7 +208,7 @@ export const courses = [
      CORE JAVA
   =============================== */
   {
-    id: 5,
+    id: "Java",
     icon: "java",
     title: "Core Java Programming",
     duration: "1 Month (30 Days)",
@@ -220,7 +220,7 @@ export const courses = [
     description:
       "Strong Java fundamentals with deep OOP foundation and practical mini projects.",
 
-    tools: ["java"],
+    tools: ["VScode", "CPP", "java"],
     whoCanJoin:
       "Beginners, BCA/BSc/BTech students, aspiring Java developers",
 
@@ -235,10 +235,48 @@ export const courses = [
     ],
 
     syllabus: [
-      { module: "Java Basics & Setup" },
-      { module: "Control Statements & Methods" },
-      { module: "Object-Oriented Programming" },
-      { module: "Collections, Exceptions & Mini Project" }
+      {
+        title: "Java Basics & Setup",
+        topics: [
+          "Introduction to Java & JVM",
+          "JDK, JRE, JVM",
+          "Installing Java & IDE",
+          "Variables & data types",
+          "Operators",
+          "Input / Output"
+        ]
+      }, {
+        title: "Control Statements & Methods",
+        topics: [
+         "Conditional statements (if, switch)",
+         "Loops (for, while, do-while)",
+         "Methods",
+         "Method overloading",
+         "Command line arguments"
+        ]
+      },
+      {
+        title: "Object-Oriented Programming (OOP)",
+        topics: [
+         "Classes & Objects",
+         "Constructors",
+         "Inheritance",
+         "Polymorphism",
+         "Abstraction",
+         "Encapsulation"
+        ]
+      },
+      {
+        title: "Collections, Exceptions & Mini Project",
+        topics: [
+        "Arrays",
+        "Collections Framework (List, Set, Map)",
+        "Exception handling",
+        "Packages",
+        "Basic Java coding standards"
+        ]
+      },
+      
     ]
   },
 
@@ -246,7 +284,7 @@ export const courses = [
      CBSE CLASS 12 CS
   =============================== */
   {
-    id: 6,
+    id: "12th-cs",
     icon: "python",
     title: "CBSE Class 12 – Computer Science (Python + MySQL)",
     duration: "3 Months (90 Days)",
@@ -258,7 +296,7 @@ export const courses = [
     description:
       "Complete CBSE 12th Computer Science syllabus including Python, MySQL, practical & board preparation.",
 
-    tools: ["python"],
+    tools: ["python", "SQL"],
     whoCanJoin:
       "CBSE Class 12 Students (Computer Science Stream)",
 
@@ -273,11 +311,55 @@ export const courses = [
     ],
 
     syllabus: [
-      { module: "Python Basics & Programming Logic" },
-      { module: "Data Structures & Functions in Python" },
-      { module: "File Handling & OOP" },
-      { module: "MySQL & Database Connectivity" },
-      { module: "Practical, Project & Board Revision" }
+       {
+        title: "Python Basics & Programming Logic",
+        topics: [
+"Introduction to Python",
+"Data types & variables",
+"Operators",
+"Conditional statements",
+"Loops (for, while)",
+"Basic programs"
+        ]
+      },
+             {
+        title: "Data Structures & Functions in Python",
+        topics: [
+"Strings",
+"Lists",
+"Tuples",
+"Dictionaries",
+"Functions & recursion"
+        ]
+      },
+      {
+        title: "File Handling & OOP in Python",
+        topics: [
+"File handling (text & binary files)",
+"Classes & objects",
+"Constructors",
+"Basic exception handling"
+        ]
+      },
+            {
+        title: "MySQL & Database Connectivity",
+        topics: [
+"Database concepts",
+"MySQL installation",
+"DDL & DML commands",
+"Select queries",
+"Python–MySQL connectivity"
+        ]
+      },
+       {
+        title: " Practical, Project & Board Revision",
+        topics: [
+"CBSE practical programs",
+"Viva questions",
+"Project file preparation",
+"Sample paper solving"
+        ]
+      },
     ]
   },
   /* ===============================
@@ -285,9 +367,9 @@ export const courses = [
 ================================ */
 
 {
-  id: 7,
-  icon: "python",
-  title: "Data Analytics Program",
+  id: "DSA",
+  icon: "DSA",
+  title: "Data Structures & Algorithms (DSA)",
   duration: "6 Months (24 Weeks)",
   level: "Beginner → Job-Ready",
   mode: "Online / Offline",
@@ -297,7 +379,7 @@ export const courses = [
   description:
     "Complete Data Analytics training covering Excel, SQL, Python & Power BI with real-world projects.",
 
-  tools: ["python"],
+  tools: ["python", "SQL", "PowerBI"],
   whoCanJoin:
     "Beginners, Graduates, Career Switchers, Business Analysts",
 
@@ -313,12 +395,89 @@ export const courses = [
   ],
 
   syllabus: [
-    { module: "Data Fundamentals & Excel" },
-    { module: "Statistics for Data Analysis" },
-    { module: "SQL for Data Analysis" },
-    { module: "Python for Data Analysis" },
-    { module: "Power BI & Data Visualization" },
-    { module: "Real-World Analytics & Capstone" }
+{
+        title: "Programming & Complexity Basics",
+        topics: [
+"Programming revision (C / C++ / Java / Python)",
+"Input / Output handling",
+"Problem-solving approach",
+"Time & Space Complexity",
+"Big-O notation"
+        ]
+      },
+      {
+        title: "Arrays & Strings",
+        topics: [
+"1D & 2D arrays",
+"Sliding window technique",
+"String manipulation",
+"Searching techniques",
+"Two-pointer approach"
+        ]
+      },
+            {
+        title: "Recursion & Backtracking",
+        topics: [
+"Recursion basics",
+"Recursive problem solving",
+"Backtracking techniques",
+"Classic problems"
+        ]
+      },
+      {
+        title: "Linked Lists",
+        topics: [
+"Singly & doubly linked lists",
+"Insertion & deletion",
+"Circular linked list",
+"Applications"
+        ]
+      },
+            {
+        title: "Stack & Queues",
+        topics: [
+"Stack operations",
+"Queue operations",
+"Implementation using arrays & linked lists",
+"Applications"
+        ]
+      },
+        {
+        title: "Trees",
+        topics: [
+"Tree data structure",
+"Binary trees",
+"Tree traversal (preorder, inorder, postorder)",
+"Applications"
+        ]
+      },
+         {
+        title: " Graphs",
+        topics: [
+"Graph representation",
+"BFS & DFS",
+"Shortest path basics",
+"Graph applications"
+        ]
+      },
+       {
+        title: "Sorting & Searching Algorithms",
+        topics: [
+  "Graph representation",
+  "BFS & DFS",
+  "Shortest path basics",
+  "Graph applications"
+        ]
+      },
+       {
+        title: "Interview Problems & Practice",
+        topics: [
+"Common interview questions",
+"Problem-solving patterns",
+"Competitive coding intro",
+"Mock tests"
+        ]
+      },
   ]
 },
 
@@ -327,7 +486,7 @@ export const courses = [
 ================================ */
 
 {
-  id: 8,
+  id: "Data Analyst Program",
   icon: "python",
   title: "Data Science Program",
   duration: "6 Months (24 Weeks)",
@@ -339,7 +498,7 @@ export const courses = [
   description:
     "Industry-ready Data Science program including Python, Statistics, SQL & Machine Learning.",
 
-  tools: ["python"],
+  tools: ["python", "SQL", "PowerBI"],
   whoCanJoin:
     "Graduates, IT professionals, aspiring Data Scientists",
 
@@ -355,12 +514,55 @@ export const courses = [
   ],
 
   syllabus: [
-    { module: "Python Programming for Data Science" },
-    { module: "Statistics & Mathematics" },
-    { module: "Data Analysis & Visualization" },
-    { module: "SQL & Databases" },
-    { module: "Machine Learning" },
-    { module: "Advanced Topics & Capstone" }
+   {
+        title: " Data Fundamentals & Excel",
+        topics: [
+"Introduction to Data Analytics",
+"Types of data",
+"Excel basics & shortcuts",
+"Data cleaning & formatting",
+"Formulas & functions",
+"Pivot tables & charts"
+        ]
+      },
+      {
+        title: "SQL for Data Analysis",
+        topics: [
+"Database concepts",
+"SQL queries (SELECT, WHERE, JOIN)",
+"Group By & Aggregate functions",
+"Subqueries",
+"Views & indexing"
+        ]
+      },      {
+        title: "Python for Data Analysis",
+        topics: [
+"Python basics",
+"NumPy",
+"Pandas",
+"Data cleaning & manipulation",
+"Data visualization (Matplotlib, Seaborn)"
+        ]
+      }, {
+        title: "Power BI & Data Visualization",
+        topics: [
+"Power BI interface",
+"Data modeling",
+"DAX basics",
+"Interactive dashboards",
+"Reports & storytelling"
+        ]
+      },
+      {
+        title: "Real-World Analytics & Capstone",
+        topics: [
+"End-to-end data analysis workflow",
+"Business problem solving",
+"KPI analysis",
+"Data presentation techniques",
+"Resume & interview preparation"
+        ]
+      },
   ]
 },
 
@@ -369,8 +571,8 @@ export const courses = [
 ================================ */
 
 {
-  id: 9,
-  icon: "python",
+  id: "ML",
+  icon: "ML",
   title: "Machine Learning with Python",
   duration: "5 Months (20 Weeks)",
   level: "Beginner → Intermediate",

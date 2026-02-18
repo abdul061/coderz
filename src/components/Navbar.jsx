@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // 🔥 Close menu when route changes
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
 
   return (
     <nav className="navbar">
@@ -29,11 +34,11 @@ const Navbar = () => {
         <li className={location.pathname === "/internship" ? "active" : ""}>
           <Link to="/internship">Certificate</Link>
         </li>
+
         <li className={location.pathname === "/contact" ? "active" : ""}>
           <Link to="/contact">Contact</Link>
         </li>
 
-        {/* Mobile Button */}
         <li className="mobile-btn">
           <Link to="/contact">
             <button className="btn-primary">Get in Touch</button>
@@ -41,7 +46,6 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Desktop Button */}
       <Link to="/contact" className="desktop-btn">
         <button className="btn-primary">Get in Touch</button>
       </Link>
