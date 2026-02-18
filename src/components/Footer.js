@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import LOGO from "../assets/img/Logo.jpeg";
 const Footer = () => {
   return (
     <footer className="spark-footer">
@@ -12,7 +12,7 @@ const Footer = () => {
           >
             <img
               loading="lazy"
-              src={`${process.env.REACT_APP_PUBLIC}/assests/img/Logo.jpeg`} // Corrected 'assests' to 'assets'
+              src={LOGO}
               alt="Coderz Academy Logo"
             />
           </Link>
