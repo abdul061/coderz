@@ -161,7 +161,7 @@ const FAQSection = () => {
         <p>
           <strong>Still have questions?</strong> 👉 Contact us anytime, we're here to help!
         </p>
-        <button>Contact Us</button>
+        <button onClick={() => window.open("https://coderzacademy.tech/contact", "_blank")}>Contact Us</button>
       </div>
 
     </section>
