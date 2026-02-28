@@ -37,7 +37,7 @@ function AppRoutes() {
         <Route path="/courses/:id" element={<CourseDetailsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/internship" element={<Internship />} />
-        <Route path="/internship/:id" element={<StudentDetails />} />
+        <Route path="/#/internship/:id" element={<StudentDetails />} />
       </Routes>
 
       {location.pathname !== "/contact" && <Footer />}

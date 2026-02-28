@@ -18,7 +18,7 @@ export default function Intern() {
     try {
       const formattedDob = formatDate(dob); // dd-mm-yyyy
       // Option 1: Navigate with params (fetch details in details page)
-      navigate(`/internship/${rollNo}-${formatDate(dob)}`);
+      navigate(`/#/internship/${rollNo}-${formatDate(dob)}`);
 
       // Option 2: If you want to send student data directly (less common), 
       // you could fetch here and use navigate with state:
@@ -63,6 +63,7 @@ export default function Intern() {
               />
               <input
                 type="date"
+                placeholder="MM-DD-YYYY"
                 value={dob}
                 onChange={(e) => setDOB(e.target.value)}
               />
