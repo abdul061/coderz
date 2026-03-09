@@ -1,0 +1,31 @@
+.category-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:30px;
+}
+
+.category-card{
+  padding:25px;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  text-align:center;
+  transition:0.3s;
+}
+
+.category-card:hover{
+  transform:translateY(-6px);
+}
+
+.tech-icons{
+  margin:15px 0;
+}
+
+.explore-btn{
+  display:inline-block;
+  margin-top:10px;
+  color:white;
+  background:#ff5a3c;
+  padding:10px 18px;
+  border-radius:6px;
+}

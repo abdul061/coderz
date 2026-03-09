@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LOGO from "../assets/image/fullstack.png";
+import LOGO from "../assets/image/Logo.jpeg";
 const Footer = () => {
   return (
     <footer className="spark-footer">

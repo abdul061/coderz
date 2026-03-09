@@ -14,41 +14,41 @@ export default function StudentDetails() {
   const pad = (n) => (n.toString().length === 1 ? `0${n}` : n);
 
   // Normalize DOB into DD-MM-YYYY (best-effort detection)
-  const parseAndNormalizeDob = (parts) => {
-    // parts: array of strings, expected length 3 (like ["04","08","2007"])
-    if (parts.length !== 3) return parts.join("-");
+  // const parseAndNormalizeDob = (parts) => {
+  //   // parts: array of strings, expected length 3 (like ["04","08","2007"])
+  //   if (parts.length !== 3) return parts.join("-");
 
-    const [a, b, c] = parts;
-    // try to detect year position
-    if (a.length === 4) {
-      // a is year => a-b-c is YYYY-MM-DD => return DD-MM-YYYY
-      return `${pad(c)}-${pad(b)}-${a}`;
-    }
-    if (c.length === 4) {
-      // c is year => a-b-c where a and b are day/month or month/day.
-      const nA = Number(a);
-      const nB = Number(b);
-      // if first part > 12 it's definitely day
-      if (nA > 12 && nA <= 31) {
-        return `${pad(nA)}-${pad(nB)}-${c}`; // a = day, b = month
-      }
-      // if second part > 12 then second is day
-      if (nB > 12 && nB <= 31) {
-        return `${pad(nB)}-${pad(nA)}-${c}`; // b = day, a = month
-      }
-      // ambiguous (both <=12). Assume input is DD-MM-YYYY (most common for you)
-      return `${pad(nA)}-${pad(nB)}-${c}`;
-    }
-    // fallback: join
-    return parts.join("-");
-  };
+  //   const [a, b, c] = parts;
+  //   // try to detect year position
+  //   if (a.length === 4) {
+  //     // a is year => a-b-c is YYYY-MM-DD => return DD-MM-YYYY
+  //     return `${pad(c)}-${pad(b)}-${a}`;
+  //   }
+  //   if (c.length === 4) {
+  //     // c is year => a-b-c where a and b are day/month or month/day.
+  //     const nA = Number(a);
+  //     const nB = Number(b);
+  //     // if first part > 12 it's definitely day
+  //     if (nA > 12 && nA <= 31) {
+  //       return `${pad(nA)}-${pad(nB)}-${c}`; // a = day, b = month
+  //     }
+  //     // if second part > 12 then second is day
+  //     if (nB > 12 && nB <= 31) {
+  //       return `${pad(nB)}-${pad(nA)}-${c}`; // b = day, a = month
+  //     }
+  //     // ambiguous (both <=12). Assume input is DD-MM-YYYY (most common for you)
+  //     return `${pad(nA)}-${pad(nB)}-${c}`;
+  //   }
+  //   // fallback: join
+  //   return parts.join("-");
+  // };
 
   // Split id into rollNo and dobParts
   // id format assumed: "<roll>-<part1>-<part2>-<part3>"
   const [rollNo, ...dobParts] = id.split("-");
 
   // create normalizedDob used for both display and request
-  const normalizedDob = parseAndNormalizeDob(dobParts);
+  const normalizedDob = dobParts
 
   useEffect(() => {
     const fetchStudent = async () => {

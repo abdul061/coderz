@@ -1,6 +1,6 @@
 import React from "react";
 import CourseCard from "../components/CourseCard";
-import { courses } from "../data/coursesData";
+import { categories } from "../data/categoriesData";
 import '../Courses.css'
 
 const CoursesPage = () => {
@@ -25,8 +25,12 @@ const CoursesPage = () => {
       {/* ===== COURSES GRID SECTION ===== */}
       <div className="courses-page">
         <div className="courses-grid">
-          {courses.map((course) => (
-            <CourseCard key={course.id} course={course} />
+          {categories.map((category)=>(
+            <CourseCard
+              key={category.slug}
+              course={category}
+              variant="category"
+            />
           ))}
         </div>
       </div>

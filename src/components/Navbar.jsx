@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";   
+import LOGO from "../assets/image/Logo.jpeg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -12,7 +13,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">{"</>"} Coderz Academy</div>
+      <div className="logo">
+                   <img
+                   className="logo"
+                    loading="lazy"
+                    src={LOGO}
+                    alt="Coderz Academy Logo"
+                  /></div>
 
       <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
         ☰

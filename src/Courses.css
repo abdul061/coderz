@@ -109,7 +109,7 @@
 .course-header {
   display: flex;
   gap: 25px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Left Icon Circle */

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CoursesPage from "./pages/CoursesPage";
@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import Internship from "./pages/Intern";
 import StudentDetails from "./pages/StudentDetails";
 import ScrollToTop from "./components/ScrollToTop";
+import CategoryCourses from "./components/CategoryCourses";
 
 function App() {
   return (
@@ -20,8 +21,6 @@ function App() {
     </Router>
   );
 }
-
-
 
 function AppRoutes() {
   const location = useLocation();
@@ -34,10 +33,11 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/courses/:id" element={<CourseDetailsPage />} />
+        <Route path="/courses/:category/:id" element={<CourseDetailsPage />} />
+        <Route path="/courses/:category" element={<CategoryCourses />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/internship" element={<Internship />} />
-        <Route path="/#/internship/:id" element={<StudentDetails />} />
+        <Route path="/internship/:id" element={<StudentDetails />} />
       </Routes>
 
       {location.pathname !== "/contact" && <Footer />}

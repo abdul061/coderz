@@ -1,71 +1,1471 @@
 export const courses = [
   {
-    id: "Full Stack Web Development",
+    id: "fullstack-web-development",
+    category: "fullstack",
     title: "Full Stack Web Development",
-    duration: "4 Months",
+    duration: "6 Months",
     icon: "laptop",
-    tools: ["html", "css", "js", "react", "node", "mongo"],
+
+    tools: ["HTML", "CSS", "JS", "React", "Node", "MongoDB"],
+
     whoCanJoin: "Beginners, Aspiring Web Developers",
-    build: "Dynamic web applications like e-commerce sites and dashboards.",
+
+    build: "Dynamic web applications like e-commerce platforms and dashboards.",
+
     syllabus: [
       {
         title: "HTML & CSS",
         topics: [
-          "HTML Basics",
-          "Forms & Tables",
-          "CSS Styling",
-          "Responsive Design"
-        ]
+          "HTML5 structure & semantic tags",
+          "Forms, tables, media",
+          "CSS fundamentals",
+          "Box model & positioning",
+          "Flexbox & Grid",
+          "Responsive design",
+          "Basic UI/UX practices"
+        
+        ],
       },
       {
         title: "JavaScript & React",
         topics: [
-          "JavaScript ES6",
-          "DOM Manipulation",
-          "React Basics",
-          "Hooks & Routing"
-        ]
+          "JavaScript basics",
+          "Variables & data types",
+          "Operators & conditions",
+          "Loops",
+          "Functions & scope",
+          "Arrays & objects",
+          "DOM manipulation",
+          "Events",
+        ],
+      },
+       {
+        title: "Advanced JavaScript & Git",
+        topics: [
+          "ES6+ features",
+          "Arrow functions",
+          "Destructuring",
+          "Promises",
+          "Async / Await",
+          "Error handling",
+          "Git & GitHub",
+          "Version control workflow"
+        ],
       },
       {
-        title: "HTML & CSS",
+        title: "React.js – Frontend Development",
         topics: [
-          "HTML Basics",
-          "Forms & Tables",
-          "CSS Styling",
-          "Responsive Design"
-        ]
+          "React fundamentals",
+          "Components & JSX",
+          "Props & State",
+          "Hooks (useState, useEffect, useContext)",
+          "React Router",
+          "API integration",
+          "Basic performance optimization"
+        ],
+      },   
+      {
+        title: "Backend Development – Node.js & Express.js",
+        topics: [
+          "Node.js fundamentals",
+          "Express.js framework",
+          "REST API creation",
+          "Middleware",
+          "Authentication & authorization",
+          "Error handling"
+        ],
       },
       {
-        title: "JavaScript & React",
+        title: "Databases – MySQL & MongoDB",
         topics: [
-          "JavaScript ES6",
-          "DOM Manipulation",
-          "React Basics",
-          "Hooks & Routing"
-        ]
-      }
-    ]
+          "Database fundamentals",
+          "MySQL CRUD operations",
+          "MongoDB collections & documents",
+          "Connecting databases with backend"
+        ],
+      },
+      {
+        title: "Full Stack Integration & Deployment",
+        topics: [
+          "Frontend + Backend integration",
+          "Authentication flow",
+          "Environment variables",
+          "Basic deployment concepts"
+        ],
+      },
+       {
+        title: "Final Capstone Project (Ongoing + Final Month)",
+        topics: [
+          "Online Course Platform",
+          "Student Management System",
+          "Inventory / Billing System",
+          "Blog or E-commerce Website"
+        ],
+      },
+    ],
   },
 
   {
-    id: "python",
-    title: "Python Programming",
-    duration: "3 Months",
-    icon: "python",
-    tools: ["python", "django"],
-    whoCanJoin: "Absolute Beginners, Automation Enthusiasts",
-    build: "Python scripts, automation tools, and web applications.",
+    id: "Java-Full-Stack-Web-Development-Program",
+    category: "fullstack",
+    title: "Java Full Stack Web Development Program",
+    duration: "6 Months",
+    icon: "JAVA",
+
+    tools: ["HTML", "CSS", "JS", "JAVA", "MYSQL", "GIT"],
+
+    whoCanJoin: "Beginners",
+
+    build: "Build real-world full stack applications.",
+
     syllabus: [
-      {
-        title: "Python Basics",
+       {
+        title: "Web Fundamentals – HTML & CSS",
         topics: [
-          "Variables",
-          "Loops",
-          "Functions",
-          "OOP"
-        ]
+          "HTML5 & semantic tags",
+          "Forms, tables, media",
+          "CSS fundamentals",
+          "Box model & positioning",
+          "Flexbox & Grid",
+          "Responsive design"
+         ],
+      },
+       {
+        title: "JavaScript Fundamentals",
+        topics: [
+          "JavaScript basics",
+          "Data types & operators",
+          "Conditions & loops",
+          "Functions & scope",
+          "Arrays & objects",
+          "DOM manipulation",
+          "Events"
+         ],
+      },
+        {
+        title: "Core Java Programming",
+        topics: [
+          "Java basics & syntax",
+          "OOP concepts",
+          "Constructors & methods",
+          "Inheritance & polymorphism",
+          "Exception handling",
+          "Collections framework",
+          "Multithreading basics"
+         ],
+      },
+       {
+        title: "JDBC & Database (MySQL)",
+        topics: [
+          "JJDBC architecture",
+          "Database fundamentals",
+          "Connecting Java with MySQL",
+          "CRUD operations",
+          "SQL queries",
+          "Joins & constraints"
+         ],
+      },
+       {
+        title: "Spring Boot & REST API",
+        topics: [
+          "Spring Boot fundamentals",
+          "MVC architecture",
+          "RESTful services",
+          "CRUD APIs",
+          "Validation",
+          "Exception handling",
+          "Basic security concepts"
+         ],
+      },
+       {
+        title: "Full Stack Integration & Deployment",
+        topics: [
+          "Frontend + Backend integration",
+          "REST API consumption",
+          "Authentication flow",
+          "Environment variables",
+          "Basic deployment concepts"
+         ],
       },
       {
+        title: "Final Capstone Project (Ongoing)",
+        topics: [
+          "Student Management System",
+          "Online Course Platform",
+          "Inventory / Billing System",
+          "Employee Management Portal"
+         ],
+      },
+    ],
+  },
+    
+  {
+    id: "Python-Full-Stack-Web-Development-Program",
+    category: "fullstack",
+    title: "Python Full Stack Web Development Program",
+    duration: "6 Months",
+    icon: "PYTHON",
+    tools: ["HTML", "CSS", "JS", "PYTHON", "MYSQL", "GIT"],
+
+    whoCanJoin: "Beginners",
+
+    build: "Build real-world full stack applications.",
+
+    syllabus: [
+       {
+        title: "Web Fundamentals – HTML & CSS",
+        topics: [
+          "HTML5 & semantic tags",
+          "Forms, tables, media",
+          "CSS fundamentals",
+          "Box model & positioning",
+          "Flexbox & Grid",
+          "Responsive design"
+         ],
+      },
+       {
+        title: "JavaScript Fundamentals",
+        topics: [
+          "JavaScript basics",
+          "Data types & operators",
+          "Conditions & loops",
+          "Functions & scope",
+          "Arrays & objects",
+          "DOM manipulation",
+          "Events"
+         ],
+      },
+        {
+        title: "Core Python Programming",
+        topics: [
+          "Python basics & syntax",
+          "Variables & data types",
+          "Control statements",
+          "Functions & modules",
+          "Lists, tuples, sets, dictionaries",
+          "File handling",
+          "Exception handling",
+          "OOP concepts in Python"
+         ],
+      },
+       {
+        title: "Database & ORM (MySQL)",
+        topics: [
+          "Database fundamentals",
+          "MySQL CRUD operations",
+          "SQL queries",
+          "Joins & constraints",
+          "Django ORM basics"
+         ],
+      },
+       {
+        title: "Django Framework & REST API",
+        topics: [
+          "Django architecture (MTV)",
+          "Models, views & templates",
+          "Forms & validations",
+          "Authentication & authorization",
+          "REST API with Django REST Framework",
+          "CRUD operations",
+          "Exception handling"
+         ],
+      },
+       {
+        title: "Full Stack Integration & Deployment",
+        topics: [
+          "Frontend + Backend integration",
+          "REST API consumption",
+          "Authentication flow",
+          "Environment variables",
+          "Basic deployment concepts"
+         ],
+      },
+      {
+        title: "Final Capstone Project (Ongoing)",
+        topics: [
+          "Student Management System",
+          "Online Course Platform",
+          "Inventory / Billing System",
+          "Employee Management Portal"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Frontend-Development",
+    category: "fullstack",
+    title: "Frontend Development",
+    duration: "3 Months",
+    icon: "frontend",
+    tools: ["HTML", "CSS", "JS",  "GIT"],
+
+    whoCanJoin: "Beginners",
+
+    build: "Build real-world full stack applications.",
+
+    syllabus: [
+       {
+        title: "Web Basics & HTML",
+        topics: [
+          "How the web works",
+          "HTML structure & tags",
+          "Forms & inputs",
+          "Tables & media",
+          "Semantic HTML"
+         ],
+      },
+       {
+        title: "CSS & Responsive Design",
+        topics: [
+          "CSS selectors & properties",
+          "Box model",
+          "Flexbox & Grid",
+          "Responsive design",
+          "Media queries",
+          "Basic animations"
+         ],
+      },
+        {
+        title: "JavaScript Fundamentals",
+        topics: [
+          "Variables & data types",
+          "Conditions & loops",
+          "Functions",
+          "Arrays & objects",
+          "DOM manipulation",
+          "Events"
+         ],
+      },
+       {
+        title: "Advanced JavaScript",
+        topics: [
+          "ES6 features",
+          "Arrow functions",
+          "Promises & async/await",
+          "API integration (Fetch)",
+          "Local storage"
+         ],
+      },
+       {
+        title: "React OR Angular Framework",
+        topics: [
+          "Components & JSX",
+          "Props & State",
+          "Hooks",
+          "Routing",
+          "API integration"
+         ],
+      },
+       {
+        title: "Project & Deployment",
+        topics: [
+          "Git & GitHub",
+          "Hosting (Netlify / Vercel)",
+          "Performance basics",
+          "Resume & portfolio guidance"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Backend-Development",
+    category: "fullstack",
+    title: "Backend Development",
+    duration: "3 Months",
+    icon: "backend",
+    tools: ["Python", "Django", "MySQL", "GIT"],
+
+    whoCanJoin: "Beginners",
+
+    build: "Build real-world full stack applications.",
+
+    syllabus: [
+       {
+        title: "Backend Fundamentals & Web Basics",
+        topics: [
+          "Client–Server architecture",
+          "HTTP & HTTPS",
+          "RESTful APIs",
+          "Request & Response cycle",
+          "JSON"
+         ],
+      },
+       {
+        title: "Node.js Fundamentals",
+        topics: [
+          "Node.js architecture",
+          "npm & package.json",
+          "Modules",
+          "File system",
+          "Event loop"
+         ],
+      },
+        {
+        title: "Express.js Framework",
+        topics: [
+          "Express setup",
+          "Routing",
+          "Middleware",
+          "Controllers & services",
+          "Error handling"
+         ],
+      },
+       {
+        title: "Database – SQL & NoSQL",
+        topics: [
+          "Database concepts",
+          "MySQL (tables, joins, queries)",
+          "MongoDB (CRUD, schema design)",
+          "Mongoose ORM"
+         ],
+      },
+       {
+        title: "Authentication & Security",
+        topics: [
+          "Authentication vs Authorization",
+          "JWT",
+          "Password hashing (bcrypt)",
+          "Role-based access",
+          "Environment variables"
+         ],
+      },
+       {
+        title: "Advanced Backend Concepts",
+        topics: [
+          "API pagination & filtering",
+          "File uploads", 
+      "Email service",
+"Payment gateway (intro)",
+"Performance optimization",
+          
+],
+      },
+             {
+        title: "Testing, Deployment & DevOps Basics",
+        topics: [
+          "API testing",
+"Logging",
+"Deployment",
+"Server basics",
+"CI/CD intro",
+          
+],
+      },
+    ],
+  },
+
+//Data science and AI courses will be added here in the future
+
+  {
+    id: "Data Analytics program",
+    category: "datascience",
+    title: "Data Analytics program",
+    duration: "6 Months",
+    icon: "datascience",
+    tools: ["Python", "SQL", "PowerBI", "Excel"],
+    whoCanJoin: "Beginners",
+
+    build: "Build dashboards, reports, and real-world data analysis projects.",
+
+    syllabus: [
+       {
+        title: "Data Fundamentals & Excel",
+        topics: [
+          "Introduction to Data Analytics",
+          "Types of data",
+          "Excel basics & shortcuts",
+          "Data cleaning & formatting",
+          "Formulas & functions",
+          "Pivot tables & charts"
+         ],
+      },
+       {
+        title: "Statistics for Data Analysis",
+        topics: [
+          "Descriptive statistics",
+          "Mean, median, mode",
+          "Variance & standard deviation",
+          "Probability basics",
+          "Correlation & regression",
+          "Hypothesis testing (intro)"
+         ],
+      },
+        {
+        title: "SQL for Data Analysis",
+        topics: [
+          "Database concepts",
+          "SQL queries (SELECT, WHERE, JOIN)",
+          "Group By & Aggregate functions",
+          "Subqueries",
+          "Views & indexing"
+         ],
+      },
+       {
+        title: "Python for Data Analysis",
+        topics: [
+          "Python basics",
+          "NumPy",
+          "Pandas",
+          "Data cleaning & manipulation",
+          "Data visualization (Matplotlib, Seaborn)"
+         ],
+      },
+       {
+        title: "Power BI & Data Visualization",
+        topics: [
+          "Power BI interface",
+          "Data modeling",
+          "DAX basics",
+          "Interactive dashboards",
+          "Reports & storytelling"
+         ],
+      },
+       {
+        title: "Real-World Analytics & Capstone",
+        topics: [
+          "End-to-end data analysis workflow",
+          "Business problem solving",
+          "KPI analysis",
+          "Data presentation techniques",
+          "Resume & interview preparation"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Data Science Program",
+    category: "datascience",
+    title: "Data Science Program",
+    duration: "6 Months",
+    icon: "datascience",
+    tools: ["Python", "SQL", "PowerBI", "Excel"],
+    whoCanJoin: "Beginners",
+
+    build: "Build dashboards, reports, and real-world data analysis projects.",
+
+    syllabus: [
+       {
+        title: "Python Programming for Data Science",
+        topics: [
+          "Python basics & syntax",
+          "Variables & data types",
+          "Control statements",
+          "Functions & modules",
+          "Data structures (list, tuple, set, dict)",
+          "File handling",
+          "OOP basics"
+         ],
+      },
+       {
+        title: "Statistics & Mathematics for Data Science",
+        topics: [
+          "Descriptive statistics",
+          "Mean, median, mode",
+          "Variance & standard deviation",
+          "Probability basics",
+          "Correlation & regression",
+          "Hypothesis testing (intro)"
+         ],
+      },
+        {
+        title: "SQL for Data Analysis",
+        topics: [
+          "Database concepts",
+          "SQL queries (SELECT, WHERE, JOIN)",
+          "Group By & Aggregate functions",
+          "Subqueries",
+          "Views & indexing"
+         ],
+      },
+       {
+        title: "Machine Learning",
+        topics: [
+          "Machine Learning concepts",
+          "Supervised learning",
+          "Regression algorithms",
+          "Classification algorithms",
+          "Model evaluation",
+          "Feature engineering",
+          "Introduction to Scikit-learn"
+
+         ],
+      },
+       {
+        title: "Advanced Topics & Capstone",
+        topics: [
+          "Unsupervised learning",
+          "Clustering (K-Means)",
+          "Dimensionality reduction",
+          "Introduction to Deep Learning",
+          "Model deployment basics",
+          "Resume & interview preparation"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Machine Learning with Python",
+    category: "datascience",
+    title: "Machine Learning with Python",
+    duration: "6 Months",
+    icon: "datascience",
+    tools: ["Python"],
+    whoCanJoin: "Beginners",
+
+    build: "Build dashboards, reports, and real-world data analysis projects.",
+
+    syllabus: [
+       {
+        title: "Python Foundations for Machine Learning",
+        topics: [
+          "Python basics & syntax",
+          "Variables & data types",
+          "Control statements",
+          "Functions & modules",
+          "Data structures",
+          "File handling",
+          "OOP basics"
+         ],
+      },
+       {
+        title: "Mathematics & Statistics for ML",
+        topics: [
+          "Descriptive statistics",
+          "Probability basics",
+          "Mean, median, variance",
+          "Correlation & covariance",
+          "Linear algebra fundamentals",
+          "Gradient intuition"
+         ],
+      },
+        {
+        title: "Data Analysis & Visualization",
+        topics: [
+          "NumPy arrays & operations",
+          "Pandas dataframes",
+          "Data cleaning & preprocessing",
+          "Handling missing values",
+          "Data visualization",
+          "Exploratory Data Analysis (EDA)"
+         ],
+      },
+       {
+        title: "Supervised Machine Learning",
+        topics: [
+          "Machine learning workflow",
+          "Linear regression",
+          "Logistic regression",
+          "K-Nearest Neighbors (KNN)",
+          "Decision Trees",
+          "Random Forest",
+          "Model evaluation metrics"
+
+         ],
+      },
+       {
+        title: "Unsupervised Machine Learning",
+        topics: [
+          "Clustering concepts",
+          "K-Means clustering",
+          "Hierarchical clustering",
+          "Dimensionality reduction (PCA)",
+          "Anomaly detection basics"
+         ],
+      },
+             {
+        title: "Model Optimization & Deployment Basics",
+        topics: [
+          "Feature engineering",
+          "Hyperparameter tuning",
+          "Cross-validation",
+          "Model saving & loading",
+          "Introduction to deployment",
+          "ML project best practices"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Artificial Intelligence & Machine Learning Program",
+    category: "datascience",
+    title: "Artificial Intelligence & Machine Learning Program",
+    duration: "6 Months",
+    icon: "datascience",
+    tools: ["Python"],
+    whoCanJoin: "Beginners",
+
+    build: "Build dashboards, reports, and real-world data analysis projects.",
+
+    syllabus: [
+       {
+        title: "Python Foundations for AI & ML",
+        topics: [
+          "Python basics & syntax",
+          "Variables & data types",
+          "Control statements",
+          "Functions & modules",
+          "Data structures",
+          "File handling",
+          "OOP basics"
+         ],
+      },
+       {
+        title: "Mathematics & Statistics for AI & ML",
+        topics: [
+          "Descriptive statistics",
+          "Probability basics",
+          "Mean, median, variance",
+          "Correlation & covariance",
+          "Linear algebra fundamentals",
+          "Gradient intuition"
+         ],
+      },
+        {
+        title: "Data Analysis & Visualization",
+        topics: [
+          "NumPy arrays & operations",
+          "Pandas dataframes",
+          "Data cleaning & preprocessing",
+          "Handling missing values",
+          "Data visualization",
+          "Exploratory Data Analysis (EDA)"
+         ],
+      },
+       {
+        title: "Supervised Machine Learning",
+        topics: [
+          "Machine learning workflow",
+          "Linear regression",
+          "Logistic regression",
+          "K-Nearest Neighbors (KNN)",
+          "Decision Trees",
+          "Random Forest",
+          "Model evaluation metrics"
+
+         ],
+      },
+       {
+        title: "Unsupervised Machine Learning",
+        topics: [
+          "Clustering concepts",
+          "K-Means clustering",
+          "Hierarchical clustering",
+          "Dimensionality reduction (PCA)",
+          "Anomaly detection basics"
+         ],
+      },
+             {
+        title: "Model Optimization & Deployment Basics",
+        topics: [
+          "Feature engineering",
+          "Hyperparameter tuning",
+          "Cross-validation",
+          "Model saving & loading",
+          "Introduction to deployment",
+          "ML project best practices"
+         ],
+      },
+                   {
+        title: "AI Applications & Capstone Project",
+        topics: [
+          "Natural Language Processing (NLP) basics",
+          "Chatbot fundamentals",
+          "Recommendation systems",
+          "Model deployment basics",
+          "AI ethics & best practices"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "MS-Office",
+    category: "Officeandbusiness",
+    title: "MS-Office",
+    duration: "30 Days",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: Office productivity + job readiness",
+
+    syllabus: [
+       {
+        title: "Computer Fundamentals & MS Office Basics",
+        topics: [
+          "Computer basics",
+          "Operating systems",
+          "File management",
+          "MS Word basics",
+          "MS Excel basics",
+          "MS PowerPoint basics"
+         ],
+      },
+       {
+        title: "MS WORD",
+        topics: [
+          " MS Word interface & shortcuts",
+          "Text formatting & styles",
+          "Page setup, headers & footers",
+          "Tables, images, shapes",
+          "Mail Merge"
+         ],
+      },
+        {
+        title: "MS EXCEL",
+        topics: [
+          "Excel basics",
+          "Formulas & functions (SUM, IF, VLOOKUP)",
+          "Charts & graphs",
+          "Sorting, filtering & Pivot Tables"
+         ],
+      },
+       {
+        title: "MS POWERPOINT",
+        topics: [
+          "Slide layouts & themes",
+          "Animations & transitions",
+          "Presentation techniques"
+
+         ],
+      },
+       {
+        title: "Email & CHATGPT Basics",
+        topics: [
+          "Email composing",
+          "Attachments & signatures",
+          "Calendar scheduling"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Masters in Accountancy with Tally Prime",
+    category: "Officeandbusiness",
+    title: "Masters in Accountancy with Tally Prime",
+    duration: "30 Days",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: Office productivity + job readiness",
+
+    syllabus: [
+       {
+        title: "Accounting Fundamentals",
+        topics: [
+          "Basics of Accounting",
+          "Golden rules of accounting",
+          "Journal entries & ledger",
+          "Mini Project: Journal & ledger for small business"
+         ],
+      },
+       {
+        title: "Introduction to Tally Prime",
+        topics: [
+          "Company creation",
+          "Ledger & voucher entries",
+          "Mini Project: Company setup with transactions"
+         ],
+      },
+        {
+        title: "Practical Accounting in Tally",
+        topics: [
+          "Purchase & sales",
+          "Trial balance",
+          "P&L and Balance Sheet",
+          "Mini Project: Complete trading business accounts"
+         ],
+      },
+       {
+        title: "GST with Tally Prime",
+        topics: [
+          'GST basics',
+          'GST entries & returns',
+          'Mini Project: GST billing & reports'
+         ],
+      },
+       {
+        title: "Payroll & Inventory",
+        topics: [
+          "Payroll processing",
+          "Inventory management",
+          "Mini Project: Salary sheet & stock report"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Business Analytics",
+    category: "Officeandbusiness",
+    title: "Masters in Accountancy with Tally Prime",
+    duration: "30 Days",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: Office productivity + job readiness",
+
+    syllabus: [
+       {
+        title: "Business Analytics Fundamentals",
+        topics: [
+          "What is Business Analytics",
+          "Types: Descriptive, Diagnostic, Predictive",
+          "Business decision-making",
+          "Data lifecycle",
+          "KPIs & metrics"
+         ],
+      },
+       {
+        title: "Advanced Excel for Analytics",
+        topics: [
+          "Excel basics & data formatting",
+          "Functions (IF, VLOOKUP, XLOOKUP, INDEX-MATCH)",
+          "Pivot tables & charts",
+          "Data cleaning",
+          "Conditional formatting",
+          "What-if analysis",
+          "Dashboards"
+         ],
+      },
+        {
+        title: "SQL for Data Analysis",
+        topics: [
+          "Database concepts",
+          "SQL queries (SELECT, WHERE, JOIN)",
+          "Grouping & aggregation",
+          "Subqueries",
+          "Views & indexes"
+         ],
+      },
+        {
+        title: "Power BI",
+        topics: [
+          "Power BI interface",
+          "Data modeling",
+          "DAX basics",
+          "Visualizations",
+          "Reports & dashboards",
+          "Publishing & sharing"
+         ],
+      },
+       {
+        title: "Capstone Project & Case Studies",
+        topics: [
+          "Real-world business case studies",
+          "End-to-end data analysis",
+          "Presentation & storytelling"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Advanced Excel & Power BI",
+    category: "Officeandbusiness",
+    title: "Advanced Excel & Power BI",
+    duration: "30 Days",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: Office productivity + job readiness",
+
+    syllabus: [
+       {
+        title: "Excel Foundations & Data Handling",
+        topics: [
+          "Data types & formatting",
+          "Data cleaning techniques",
+          "Sorting & filtering",
+          "Text functions",
+          "Date & time functions"
+         ],
+      },
+       {
+        title: "Advanced Excel Functions",
+        topics: [
+          "Lookup functions (VLOOKUP, XLOOKUP, INDEX-MATCH)",
+          "Logical functions (IF, IFS)",
+          "Statistical & financial functions",
+          "Error handling"
+         ],
+      },
+        {
+        title: "Pivot Tables & Dashboards",
+        topics: [
+          "Pivot tables & pivot charts",
+          "Slicers & timelines",
+          "Interactive dashboards",
+          "What-if analysis"
+         ],
+      },
+        {
+        title: "Power BI Fundamentals",
+        topics: [
+          "Power BI interface",
+          "Data import & transformation",
+          "Relationships & modeling",
+          "Visualizations"
+         ],
+      },
+       {
+        title: "Power BI Advanced & Publishing",
+        topics: [
+          "DAX basics",
+          "Calculated columns & measures",
+          "Advanced visuals",
+          "Publishing & sharing reports"
+         ],
+      },
+    ],
+  },
+
+//DESIGNING COURSES WILL BE ADDED HERE IN THE FUTURE
+  {
+    id: "UI/UX Design Program",
+    category: "Officeandbusiness",
+    title: "UI/UX Design Program",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: UI/UX design skills + job readiness",
+
+    syllabus: [
+       {
+        title: "Introduction to UI/UX & Design Fundamentals",
+        topics: [
+          "What is UI vs UX",
+          "Design thinking process",
+          "User-centered design",
+          "Color theory",
+          "Typography",
+          "Layout & visual hierarchy",
+          "Accessibility basics"
+         ],
+      },
+       {
+        title: "UX Research & User Analysis",
+        topics: [
+          "User research methods",
+          "User personas",
+          "User journey mapping",
+          "Problem statements",
+          "Information architecture",
+          "UX documentation"
+         ],
+      },
+        {
+        title: "Wireframing & Prototyping",
+        topics: [
+          "Low-fidelity wireframes",
+          "High-fidelity wireframes",
+          "Mobile & web layouts",
+          "Interactive prototyping",
+          "Micro-interactions"
+         ],
+      },
+        {
+        title: "UI Design & Design Systems",
+        topics: [
+          "UI components & patterns",
+          "Design systems",
+          "Buttons, forms & navigation",
+          "Responsive design",
+          "UI for web & mobile apps"
+         ],
+      },
+       {
+        title: "Usability Testing & UX Optimization",
+        topics: [
+          "Usability testing methods",
+          "A/B testing basics",
+          "UX metrics",
+          "Heuristic evaluation",
+          "UX improvements & iteration"
+         ],
+      },
+             {
+        title: "Portfolio Building & Capstone Project",
+        topics: [
+          "UX case study writing",
+          "Portfolio creation",
+          "Design presentation skills",
+          "Resume & interview preparation",
+          "Freelancing & career guidance"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Graphic Design",
+    category: "Officeandbusiness",
+    title: "Graphic Design",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: UI/UX design skills + job readiness",
+
+    syllabus: [
+       {
+        title: "Design Fundamentals",
+        topics: [
+          "What is Graphic Design",
+          "Design principles (color, typography, layout)",
+          "Branding basics",
+          "Understanding design briefs"
+         ],
+      },
+       {
+        title: "Canva for Graphic Design",
+        topics: [
+          "Canva interface & tools",
+          "Social media creatives",
+          "Posters, flyers & banners",
+          "Business cards & brochures",
+          "Presentations",
+          "Brand kits"
+         ],
+      },
+        {
+        title: "Photoshop Basics",
+        topics: [
+          "Photoshop workspace",
+          "Layers & masks",
+          "Selection tools",
+          "Image retouching",
+          "Text effects"
+         ],
+      },
+        {
+        title: "Advanced Photoshop",
+        topics: [
+          "Advanced masking",
+          "Photo manipulation",
+          "Mockups",
+          "Digital ads",
+          "Exporting for web & print"
+         ],
+      },
+       {
+        title: "Portfolio & Freelancing Basics",
+        topics: [
+          "Design portfolio creation",
+          "Client communication",
+          "Freelancing platforms intro",
+          "Pricing & proposals"
+         ],
+      },
+
+    ],
+  },
+
+  {
+    id: "Web Design",
+    category: "Officeandbusiness",
+    title: "Web Design",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Outcome: UI/UX design skills + job readiness",
+
+    syllabus: [
+       {
+        title: "Web & UI Design Fundamentals",
+        topics: [
+          "How websites work",
+          "UI vs UX",
+          "Design principles",
+          "Color theory",
+          "Typography basics",
+          "Layout concepts"
+         ],
+      },
+       {
+        title: "UI Design Tools & Prototyping",
+        topics: [
+          "Figma interface",
+          "Wireframes & mockups",
+          "Buttons, cards & components",
+          "Mobile & desktop layouts",
+          "Design systems"
+         ],
+      },
+        {
+        title: "HTML Fundamentals",
+        topics: [
+          "HTML structure",
+          "Forms & inputs",
+          "Semantic HTML",
+          "Media embedding"
+         ],
+      },
+        {
+        title: "CSS Basics & Layouts",
+        topics: [
+          "CSS selectors",
+          "Box model",
+          "Flexbox",
+          "Grid",
+          "Responsive design"
+         ],
+      },
+       {
+        title: "Basic JavaScript for UI",
+        topics: [
+          "JavaScript basics",
+          "DOM manipulation",
+          "Events",
+          "Form validation"
+         ],
+      },
+       {
+        title: "Website Deployment & Portfolio",
+        topics: [
+          "Website optimization",
+          "Hosting basics",
+          "Git & GitHub",
+          "Portfolio building"      
+         ],
+      },
+    ],
+  },
+
+  //CORE PROGRAMMING COURSES WILL BE ADDED HERE IN THE FUTURE
+  {
+    id: "C,-C++-&-Python-Programming",
+    category: "CPC",
+    title: "C, C++ & Python Programming Course",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Programming Foundations: C, C++ & Python",
+
+    syllabus: [
+       {
+        title: "Programming Fundamentals (C)",
+        topics: [
+          "Programming basics",
+          "Algorithms & flowcharts",
+          "Data types & variables",
+          "Input / Output",
+          "Mini Project: Basic calculator"
+         ],
+      },
+       {
+        title: "Control Structures & Arrays (C)",
+        topics: [
+          "if-else, switch",
+          "Loops",
+          "1D & 2D arrays",
+          "Mini Project: Student marks management system"
+         ],
+      },
+        {
+        title: "Functions, Pointers & File Handling (C)",
+        topics: [
+          "Functions",
+          "Pointers",
+          "File Handling",
+          "Mini Project: File-based student management system"
+         ],
+      },
+        {
+        title: "C++ Basics & OOP",
+        topics: [
+          "C++ syntax",
+          "Classes & objects",
+          "Inheritance",
+          "Polymorphism",
+         ],
+      },
+       {
+        title: "Advanced C++ Concepts",
+        topics: [
+          "Inheritance & polymorphism",
+          "STL basics",
+          "Exception handling",
+          "Mini Project: Library or banking system"
+         ],
+      },
+       {
+        title: "Python Basics",
+        topics: [
+          "Syntax",
+          "Variables & data types",
+          "Input / Output",
+          "Mini Project: Calculator"
+         ],
+      },
+      {
+        title: "Control Flow & Functions in Python",
+        topics: [
+          "if-else",
+          "Loops",
+          "Functions",
+          "Mini Project: Number operations"
+         ],
+      },
+ {
+        title: "Data Structures & OOP in Python",
+        topics: [
+          "List, tuple, set, dictionary",
+          "Mini Project: Contact management system"
+         ],
+      },
+       {
+        title: "OOP & File Handling in Python",
+        topics: [
+          "Classes & objects",
+          "File handling",
+          "Exception handling",
+          "Mini Project: Student record system"
+         ],
+      },
+   {
+        title: "Libraries & Final Project",
+        topics: [
+          "Modules",
+          "Intro to NumPy & Pandas",
+          "Mini Project: Automation or data mini project"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "C,-C++-&-JAVA-Programming",
+    category: "CPC",
+    title: "C, C++ & JAVA Programming Course",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Programming Foundations: C, C++ & Java",
+
+    syllabus: [
+       {
+        title: "Programming Fundamentals (C)",
+        topics: [
+          "Programming basics",
+          "Algorithms & flowcharts",
+          "Data types & variables",
+          "Input / Output",
+          "Mini Project: Basic calculator"
+         ],
+      },
+       {
+        title: "Control Structures & Arrays (C)",
+        topics: [
+          "if-else, switch",
+          "Loops",
+          "1D & 2D arrays",
+          "Mini Project: Student marks management system"
+         ],
+      },
+        {
+        title: "Functions, Pointers & File Handling (C)",
+        topics: [
+          "Functions",
+          "Pointers",
+          "File Handling",
+          "Mini Project: File-based student management system"
+         ],
+      },
+        {
+        title: "C++ Basics & OOP",
+        topics: [
+          "C++ syntax",
+          "Classes & objects",
+          "Inheritance",
+          "Polymorphism",
+         ],
+      },
+       {
+        title: "Advanced C++ Concepts",
+        topics: [
+          "Inheritance & polymorphism",
+          "STL basics",
+          "Exception handling",
+          "Mini Project: Library or banking system"
+         ],
+      },
+       {
+        title: "Java Basics & Environment",
+        topics: [
+          "Java overview",
+          "JVM, JRE, JDK",
+          "Data types & variables",
+          "Input / Output"
+         ],
+      },
+      {
+        title: "Control Statements & Arrays",
+        topics: [
+          "if-else",
+          "Loops",
+          "Functions",
+          "Mini Project: Number operations"
+         ],
+      },
+ {
+        title: "OOP Concepts in Java",
+        topics: [
+          "Classes & objects",
+          "Constructors",
+          "Encapsulation",
+          "Inheritance"
+         ],
+      },
+       {
+        title: "Polymorphism & Exception Handling",
+        topics: [
+          "Method overloading & overriding",
+          "Exception handling",
+          "Packages"
+         ],
+      },
+   {
+        title: "File Handling & Collections",
+        topics: [
+          "File input/output",
+          "Collections framework (List, Set, Map)"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Python-Programming",
+    category: "CPC",
+    title: "Python Programming (Beginner Level)",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "Programming Foundations: C, C++ & Python",
+
+    syllabus: [
+       {
+        title: "Python Basics & Syntax",
+        topics: [
+          "Introduction to Python",
+          "Installing Python & IDE",
+          "Variables & data types",
+          "Operators",
+          "Input / Output"
+         ],
+      },
+       {
         title: "Control Statements & Functions",
         topics: [
           "Conditional statements (if, else, elif)",
@@ -73,1009 +1473,244 @@ export const courses = [
           "Loop control (break, continue)",
           "Functions",
           "Built-in functions"
-        ]
+         ],
       },
-      {
+        {
         title: "Python Data Structures",
         topics: [
-         "Strings",
-         "Lists",
-         "Tuples",
-         "Sets",
-         "Dictionaries"
-        ]
+          "List",
+          "Tuple",
+          "Set",
+          "Dictionary"
+         ],
       },
-            {
+        {
         title: "File Handling, Errors & Mini Projects",
         topics: [
-      "File handling (read, write, append)",
-      "Exception handling",
-      "Basic modules",
-      "Python coding best practices",
-      "MySql Connectivity",
-       "Mini Projects",
-       "Student Management System",
-       "File-based record system"
-        ]
-      }
-    ]
-  },
-    {
-    id: "Programming Foundations: C, C++ & Java",
-    icon: "Cprogram",
-    title: "Programming Foundations: C, C++ & Python",
-    duration: "Total Duration: 60 Days, C & C++ (Combined): 30 Days, Python: 30 Days",
-    level: "Beginner to Intermediate",
-    mode: "Classroom / Online",
-    price: "₹30,000",
-    certificate: true,
-
-    description:
-      "Comprehensive DSA training focused on placements, interviews, and competitive coding.",
-
-    tools: ["VScode", "Cprogram", "CPP", "python"],
-    whoCanJoin:
-      "CSE / IT Students, Job Seekers, Placement Preparation Aspirants",
-
-    build:
-      "Problem-solving systems, interview solutions, algorithm optimization techniques.",
-
-    skills: [
-      "Strong DSA fundamentals",
-      "Optimized problem solving",
-      "Coding interview confidence",
-      "Competitive programming basics"
+          "File handling (read, write, append)",
+          "Exception handling",
+          "Basic modules",
+          "Python coding best practices",
+          "MySql Connectivity"
+         ],
+      },
     ],
-
-    syllabus: [
-      { title: "Programming Fundamentals (C)" , 
-        topics: [
-          "Programming concepts",
-          "Algorithms & flowcharts",
-          "Data types & variables",
-          "Input / Output"
-        ]},
-        { title: "Control Structures & Arrays (C)" , 
-        topics: [
-       "if, if-else",
-       "switch-case",
-       "for, while, do-while loops",
-       "1D & 2D arrays"
-        ]},
-        { title: "Functions, Pointers & File Handling (C)" , 
-        topics: [
-      "Functions",
-      "Pointers",
-      "Strings",
-      "File handling (read/write)"
-        ]},
-        { title: "C++ Basics & OOP Concepts" , 
-        topics: [
-    "C++ syntax & structure",
-    "Classes & objects",
-    "Constructors & destructors"
-        ]},
-        { title: "Advanced C++ Concepts" , 
-        topics: [
-    "Inheritance & polymorphism",
-    "Function overloading",
-    "STL basics (vector, map)",
-    "Exception handling"
-        ]},
- { title: "Java Basics & Environment" , 
-        topics: [
-   "Java overview",
-   "JVM, JRE, JDK",
-   "Data types & variables",
-   "Input / Output"
-        ]},
-  { title: "Control Statements & Arrays" , 
-        topics: [
-   "Java overview",
-   "JVM, JRE, JDK",
-   "Data types & variables",
-   "Input / Output"
-        ]},
-          { title: "OOP Concepts in Java" , 
-        topics: [
-   "Classes & objects",
-   "Constructors",
-   "Encapsulation",
-   "Inheritance"
-        ]},
-          { title: "OOP Concepts in Java" , 
-        topics: [
-   "Classes & objects",
-   "Constructors",
-   "Encapsulation",
-   "Inheritance"
-        ]},
-        { title: " Polymorphism & Exception Handling" , 
-        topics: [
-   "Method overloading & overriding",
-   "Exception handling",
-   "Packages"
-        ]},
-                { title: "File Handling & Collections" , 
-        topics: [
-   "File input/output",
-   "Collections framework (List, Set, Map)"
-        ]},
-    ]
   },
 
-  /* ===============================
-     CORE JAVA
-  =============================== */
   {
-    id: "Java",
-    icon: "java",
-    title: "Core Java Programming",
-    duration: "1 Month (30 Days)",
-    level: "Beginner Level",
-    mode: "Online / Offline",
-    price: "₹15,000",
-    certificate: true,
+    id: "Core-Java-Programming-(Beginner-Level)",
+    category: "CPC",
+    title: "Core Java Programming (Beginner Level)",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
 
-    description:
-      "Strong Java fundamentals with deep OOP foundation and practical mini projects.",
-
-    tools: ["VScode", "CPP", "java"],
-    whoCanJoin:
-      "Beginners, BCA/BSc/BTech students, aspiring Java developers",
-
-    build:
-      "Banking systems, employee management systems, student management systems.",
-
-    skills: [
-      "Java fundamentals",
-      "Strong OOP concepts",
-      "Problem-solving skills",
-      "Foundation for Java Full Stack"
-    ],
+    build: "Core Java Programming (Beginner Level)",
 
     syllabus: [
-      {
+       {
         title: "Java Basics & Setup",
         topics: [
-          "Introduction to Java & JVM",
-          "JDK, JRE, JVM",
+          "Introduction to Java",
           "Installing Java & IDE",
           "Variables & data types",
           "Operators",
           "Input / Output"
-        ]
-      }, {
-        title: "Control Statements & Methods",
-        topics: [
-         "Conditional statements (if, switch)",
-         "Loops (for, while, do-while)",
-         "Methods",
-         "Method overloading",
-         "Command line arguments"
-        ]
+         ],
       },
-      {
+       {
+        title: "Control Statements & Functions",
+        topics: [
+          "Conditional statements (if, switch)",
+          "Loops (for, while, do-while)",
+          "Methods",
+          "Method overloading",
+          "Command line arguments"
+         ],
+      },
+        {
         title: "Object-Oriented Programming (OOP)",
         topics: [
-         "Classes & Objects",
-         "Constructors",
-         "Inheritance",
-         "Polymorphism",
-         "Abstraction",
-         "Encapsulation"
-        ]
+          "Classes & Objects",
+          "Constructors",
+          "Inheritance",
+          "Polymorphism",
+          "Abstraction",
+          "Encapsulation"
+         ],
       },
-      {
+        {
         title: "Collections, Exceptions & Mini Project",
         topics: [
-        "Arrays",
-        "Collections Framework (List, Set, Map)",
-        "Exception handling",
-        "Packages",
-        "Basic Java coding standards"
-        ]
+          "Arrays",
+          "Collections Framework (List, Set, Map)",
+          "Exception handling",
+          "Packages",
+          "Basic Java coding standards"
+         ],
       },
-      
-    ]
+    ],
   },
 
-  /* ===============================
-     CBSE CLASS 12 CS
-  =============================== */
   {
-    id: "12th-cs",
-    icon: "python",
-    title: "CBSE Class 12 – Computer Science (Python + MySQL)",
-    duration: "3 Months (90 Days)",
-    level: "Board Level",
-    mode: "Offline / Online",
-    price: "₹12,000",
-    certificate: false,
+    id: "Data-Structures-&-Algorithms-(DSA)",
+    category: "CPC",
+    title: "Data Structures & Algorithms (DSA)",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
 
-    description:
-      "Complete CBSE 12th Computer Science syllabus including Python, MySQL, practical & board preparation.",
+    build: "Data Structures & Algorithms (DSA)",
 
-    tools: ["python", "SQL"],
-    whoCanJoin:
-      "CBSE Class 12 Students (Computer Science Stream)",
-
-    build:
-      "Python + MySQL based board project (Student Management / Library System).",
-
-    skills: [
-      "Strong Python programming",
-      "MySQL query writing",
-      "Board exam confidence",
-      "Practical & project readiness"
+    syllabus: [
+       {
+        title: "Programming & Complexity Basics",
+        topics: [
+          "Programming revision (C / C++ / Java / Python)",
+          "Input / Output handling",
+          "Problem-solving approach",
+          "Time & Space Complexity",
+          "Big-O notation"
+         ],
+      },
+       {
+        title: "Arrays & Strings",
+        topics: [
+          "1D & 2D arrays",
+          "Sliding window technique",
+          "String manipulation",
+          "Searching techniques",
+          "Two-pointer approach"
+         ],
+      },
+        {
+        title: "Recursion & Backtracking",
+        topics: [
+          "Recursion basics",
+          "Recursive problem solving",
+          "Backtracking techniques",
+          "Classic problems"
+         ],
+      },
+        {
+        title: "Linked List",
+        topics: [
+          "Singly & doubly linked lists",
+          "Insertion & deletion",
+          "Circular linked list",
+          "Applications"
+         ],
+      },
+              {
+        title: "Stack & Queue",
+        topics: [
+          "Stack implementation",
+          "Queue & Deque",
+          "Expression evaluation",
+          "Real-world applications"
+         ],
+      },
+                    {
+        title: "Trees",
+        topics: [
+          "Binary trees",
+          "Tree traversals",
+          "Binary Search Tree (BST)",
+          "Tree applications"
+         ],
+      },
+                          {
+        title: "Graphs",
+        topics: [
+          "Graph representation",
+          "BFS & DFS",
+          "Shortest path basics",
+          "Graph applications"
+         ],
+      },
+        {
+        title: "Sorting & Searching Algorithms",
+        topics: [
+          "Bubble, Selection, Insertion",
+          "Merge & Quick sort",
+          "Binary search",
+          "Performance comparison"
+         ],
+      },
+              {
+        title: "Interview Problems & Practice",
+        topics: [
+          "Common interview questions",
+          "Problem-solving patterns",
+          "Competitive coding intro",
+          "Mock tests"
+         ],
+      },
     ],
+  },
+
+  {
+    id: "CBSE Class 12 – Computer Science (Python + MySQL)",
+    category: "CPC",
+    title: "CBSE Class 12 – Computer Science (Python + MySQL)",
+    duration: "6 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "CBSE Class 12 – Computer Science (Python + MySQL)",
 
     syllabus: [
        {
         title: "Python Basics & Programming Logic",
         topics: [
-"Introduction to Python",
-"Data types & variables",
-"Operators",
-"Conditional statements",
-"Loops (for, while)",
-"Basic programs"
-        ]
+          "Introduction to Python",
+          "Data types & variables",
+          "Operators",
+          "Conditional statements",
+          "Loops (for, while)",
+          "Basic programs"
+         ],
       },
-             {
+       {
         title: "Data Structures & Functions in Python",
         topics: [
-"Strings",
-"Lists",
-"Tuples",
-"Dictionaries",
-"Functions & recursion"
-        ]
-      },
-      {
-        title: "File Handling & OOP in Python",
-        topics: [
-"File handling (text & binary files)",
-"Classes & objects",
-"Constructors",
-"Basic exception handling"
-        ]
-      },
-            {
-        title: "MySQL & Database Connectivity",
-        topics: [
-"Database concepts",
-"MySQL installation",
-"DDL & DML commands",
-"Select queries",
-"Python–MySQL connectivity"
-        ]
-      },
-       {
-        title: " Practical, Project & Board Revision",
-        topics: [
-"CBSE practical programs",
-"Viva questions",
-"Project file preparation",
-"Sample paper solving"
-        ]
-      },
-    ]
-  },
-  /* ===============================
-   DATA ANALYTICS PROGRAM
-================================ */
-
-{
-  id: "DSA",
-  icon: "DSA",
-  title: "Data Structures & Algorithms (DSA)",
-  duration: "6 Months (24 Weeks)",
-  level: "Beginner → Job-Ready",
-  mode: "Online / Offline",
-  price: "₹35,000",
-  certificate: true,
-
-  description:
-    "Complete Data Analytics training covering Excel, SQL, Python & Power BI with real-world projects.",
-
-  tools: ["python", "SQL", "PowerBI"],
-  whoCanJoin:
-    "Beginners, Graduates, Career Switchers, Business Analysts",
-
-  build:
-    "Business dashboards, SQL data analysis systems, Power BI analytics reports.",
-
-  skills: [
-    "Data cleaning & preprocessing",
-    "SQL querying & analysis",
-    "Statistical analysis",
-    "Python for analytics",
-    "Power BI dashboards"
-  ],
-
-  syllabus: [
-{
-        title: "Programming & Complexity Basics",
-        topics: [
-"Programming revision (C / C++ / Java / Python)",
-"Input / Output handling",
-"Problem-solving approach",
-"Time & Space Complexity",
-"Big-O notation"
-        ]
-      },
-      {
-        title: "Arrays & Strings",
-        topics: [
-"1D & 2D arrays",
-"Sliding window technique",
-"String manipulation",
-"Searching techniques",
-"Two-pointer approach"
-        ]
-      },
-            {
-        title: "Recursion & Backtracking",
-        topics: [
-"Recursion basics",
-"Recursive problem solving",
-"Backtracking techniques",
-"Classic problems"
-        ]
-      },
-      {
-        title: "Linked Lists",
-        topics: [
-"Singly & doubly linked lists",
-"Insertion & deletion",
-"Circular linked list",
-"Applications"
-        ]
-      },
-            {
-        title: "Stack & Queues",
-        topics: [
-"Stack operations",
-"Queue operations",
-"Implementation using arrays & linked lists",
-"Applications"
-        ]
+          "Strings",
+          "Lists",
+          "Tuples",
+          "Dictionaries",
+          "Functions & recursion"
+         ],
       },
         {
-        title: "Trees",
+        title: "File Handling & OOP",
         topics: [
-"Tree data structure",
-"Binary trees",
-"Tree traversal (preorder, inorder, postorder)",
-"Applications"
-        ]
+          "File handling (text & binary files)",
+          "Classes & objects",
+          "Constructors",
+          "Basic exception handling"
+         ],
       },
-         {
-        title: " Graphs",
+        {
+        title: "MySQL & Database Connectivity",
         topics: [
-"Graph representation",
-"BFS & DFS",
-"Shortest path basics",
-"Graph applications"
-        ]
+          "Database concepts",
+          "MySQL installation",
+          "DDL & DML commands",
+          "Select queries",
+          "Python–MySQL connectivity"
+         ],
       },
-       {
-        title: "Sorting & Searching Algorithms",
+              {
+        title: "Practical, Project & Board Revision",
         topics: [
-  "Graph representation",
-  "BFS & DFS",
-  "Shortest path basics",
-  "Graph applications"
-        ]
-      },
-       {
-        title: "Interview Problems & Practice",
-        topics: [
-"Common interview questions",
-"Problem-solving patterns",
-"Competitive coding intro",
-"Mock tests"
-        ]
-      },
-  ]
-},
-
-/* ===============================
-   DATA SCIENCE PROGRAM
-================================ */
-
-{
-  id: "Data Analyst Program",
-  icon: "python",
-  title: "Data Science Program",
-  duration: "6 Months (24 Weeks)",
-  level: "Beginner → Industry-Ready",
-  mode: "Online / Offline",
-  price: "₹45,000",
-  certificate: true,
-
-  description:
-    "Industry-ready Data Science program including Python, Statistics, SQL & Machine Learning.",
-
-  tools: ["python", "SQL", "PowerBI"],
-  whoCanJoin:
-    "Graduates, IT professionals, aspiring Data Scientists",
-
-  build:
-    "Prediction systems, classification models, end-to-end data science projects.",
-
-  skills: [
-    "Python for Data Science",
-    "Statistical analysis",
-    "Data visualization",
-    "Machine learning models",
-    "Portfolio-ready projects"
-  ],
-
-  syllabus: [
-   {
-        title: " Data Fundamentals & Excel",
-        topics: [
-"Introduction to Data Analytics",
-"Types of data",
-"Excel basics & shortcuts",
-"Data cleaning & formatting",
-"Formulas & functions",
-"Pivot tables & charts"
-        ]
-      },
-      {
-        title: "SQL for Data Analysis",
-        topics: [
-"Database concepts",
-"SQL queries (SELECT, WHERE, JOIN)",
-"Group By & Aggregate functions",
-"Subqueries",
-"Views & indexing"
-        ]
-      },      {
-        title: "Python for Data Analysis",
-        topics: [
-"Python basics",
-"NumPy",
-"Pandas",
-"Data cleaning & manipulation",
-"Data visualization (Matplotlib, Seaborn)"
-        ]
-      }, {
-        title: "Power BI & Data Visualization",
-        topics: [
-"Power BI interface",
-"Data modeling",
-"DAX basics",
-"Interactive dashboards",
-"Reports & storytelling"
-        ]
-      },
-      {
-        title: "Real-World Analytics & Capstone",
-        topics: [
-"End-to-end data analysis workflow",
-"Business problem solving",
-"KPI analysis",
-"Data presentation techniques",
-"Resume & interview preparation"
-        ]
-      },
-  ]
-},
-
-/* ===============================
-   MACHINE LEARNING WITH PYTHON
-================================ */
-
-{
-  id: "ML",
-  icon: "ML",
-  title: "Machine Learning with Python",
-  duration: "5 Months (20 Weeks)",
-  level: "Beginner → Intermediate",
-  mode: "Online / Offline",
-  price: "₹40,000",
-  certificate: true,
-
-  description:
-    "Comprehensive Machine Learning program covering supervised, unsupervised ML and deployment basics.",
-
-  tools: ["python"],
-  whoCanJoin:
-    "Students & professionals interested in Machine Learning",
-
-  build:
-    "House price prediction system, customer segmentation, ML end-to-end projects.",
-
-  skills: [
-    "Supervised & unsupervised learning",
-    "Model evaluation & tuning",
-    "Data preprocessing",
-    "ML deployment basics"
-  ],
-
-  syllabus: [
-    { module: "Python Foundations for ML" },
-    { module: "Mathematics & Statistics for ML" },
-    { module: "Data Analysis & Visualization" },
-    { module: "Supervised Machine Learning" },
-    { module: "Unsupervised Machine Learning" },
-    { module: "Model Optimization & Deployment" }
-  ]
-},
-
-/* ===============================
-   AI & MACHINE LEARNING PROGRAM
-================================ */
-
-{
-  id: 10,
-  icon: "python",
-  title: "Artificial Intelligence & Machine Learning Program",
-  duration: "6 Months (24 Weeks)",
-  level: "Beginner → Industry-Ready",
-  mode: "Online / Offline",
-  price: "₹55,000",
-  certificate: true,
-
-  description:
-    "Advanced AI & ML training including Deep Learning, NLP and real-world AI applications.",
-
-  tools: ["python"],
-  whoCanJoin:
-    "Aspiring AI Engineers, ML Engineers, Data Science Enthusiasts",
-
-  build:
-    "Image classification system, chatbot, recommendation system, end-to-end AI project.",
-
-  skills: [
-    "Machine learning algorithms",
-    "Deep learning fundamentals",
-    "Neural networks",
-    "NLP basics",
-    "AI model deployment"
-  ],
-
-  syllabus: [
-    { module: "Python Foundations for AI & ML" },
-    { module: "Mathematics & Statistics" },
-    { module: "Data Analysis & Visualization" },
-    { module: "Machine Learning Algorithms" },
-    { module: "Deep Learning & Neural Networks" },
-    { module: "AI Applications & Capstone Project" }
-  ]
-},
-/* ===============================
-   UI / UX DESIGN PROGRAM
-================================ */
-
-{
-  id: 11,
-  icon: "laptop",
-  title: "UI / UX Design Program",
-  duration: "6 Months (24 Weeks)",
-  level: "Beginner → Job-Ready",
-  mode: "Online / Offline",
-  price: "₹40,000",
-  certificate: true,
-
-  description:
-    "Comprehensive UI/UX training covering research, wireframing, prototyping, usability testing and portfolio building.",
-
-  tools: ["figma"],
-  whoCanJoin:
-    "Students, Career Switchers, Designers, Freelancers",
-
-  build:
-    "End-to-end UI/UX case studies for web & mobile applications.",
-
-  skills: [
-    "UI design principles",
-    "UX research & usability testing",
-    "Wireframing & prototyping",
-    "Design systems",
-    "Portfolio-ready projects"
-  ],
-
-  syllabus: [
-    { module: "UI/UX Fundamentals & Design Thinking" },
-    { module: "UX Research & User Analysis" },
-    { module: "Wireframing & Prototyping" },
-    { module: "UI Design & Design Systems" },
-    { module: "Usability Testing & Optimization" },
-    { module: "Portfolio & Capstone Project" }
-  ]
-},
-
-/* ===============================
-   GRAPHIC DESIGN PROGRAM
-================================ */
-
-{
-  id: 12,
-  icon: "laptop",
-  title: "Graphic Design Program (Canva + Photoshop)",
-  duration: "2.5 Months (75 Days)",
-  level: "Beginner → Intermediate",
-  mode: "Online / Offline",
-  price: "₹20,000",
-  certificate: true,
-
-  description:
-    "Professional graphic design training using Canva & Adobe Photoshop for branding, marketing and creative design.",
-
-  tools: ["photoshop"],
-  whoCanJoin:
-    "Students, Freelancers, Entrepreneurs, Marketing Aspirants",
-
-  build:
-    "Social media creatives, posters, branding kits, ad banners & portfolio projects.",
-
-  skills: [
-    "Design fundamentals",
-    "Branding & layout design",
-    "Photo editing & retouching",
-    "Creative marketing visuals",
-    "Portfolio development"
-  ],
-
-  syllabus: [
-    { module: "Design Fundamentals" },
-    { module: "Canva for Graphic Design" },
-    { module: "Photoshop Basics" },
-    { module: "Advanced Photoshop Techniques" },
-    { module: "Portfolio & Freelancing Basics" }
-  ]
-},
-
-/* ===============================
-   WEB DESIGN PROGRAM
-================================ */
-
-{
-  id: 13,
-  icon: "laptop",
-  title: "Web Design Program (UI + Frontend Basics)",
-  duration: "2 Months (60 Days)",
-  level: "Beginner",
-  mode: "Online / Offline",
-  price: "₹22,000",
-  certificate: true,
-
-  description:
-    "Complete web design training including UI design tools and frontend basics (HTML, CSS, JavaScript).",
-
-  tools: ["html", "css", "js"],
-  whoCanJoin:
-    "Students, Designers, Entrepreneurs, Freelancers",
-
-  build:
-    "Responsive websites, landing pages and UI portfolio projects.",
-
-  skills: [
-    "UI layout design",
-    "Responsive web design",
-    "HTML & CSS fundamentals",
-    "Basic JavaScript interaction",
-    "Website deployment"
-  ],
-
-  syllabus: [
-    { module: "Web & UI Design Fundamentals" },
-    { module: "Figma & UI Prototyping" },
-    { module: "HTML Fundamentals" },
-    { module: "CSS & Responsive Layouts" },
-    { module: "Basic JavaScript for UI" },
-    { module: "Website Deployment & Portfolio" }
-  ]
-},{
-  id: 14,
-  icon: "laptop",
-  title: "Full Stack Web Development (MERN)",
-  duration: "6 Months (24 Weeks)",
-  level: "Beginner → Job-Ready",
-  mode: "Online / Offline",
-  price: "₹45,000",
-  certificate: true,
-
-  description:
-    "Complete MERN stack training covering frontend, backend, databases and deployment with real-time projects.",
-
-  tools: ["html", "css", "js", "react", "node", "mongo"],
-
-  whoCanJoin:
-    "Students, job seekers, aspiring full stack developers",
-
-  build:
-    "End-to-end MERN applications with authentication and deployment.",
-
-  skills: [
-    "Frontend with React",
-    "Backend with Node & Express",
-    "MongoDB database handling",
-    "REST API development",
-    "Deployment-ready projects"
-  ],
-
-  syllabus: [
-    { module: "HTML & CSS Fundamentals" },
-    { module: "JavaScript & Advanced JS" },
-    { module: "React.js Development" },
-    { module: "Node.js & Express Backend" },
-    { module: "MongoDB & MySQL Databases" },
-    { module: "Integration & Deployment" },
-    { module: "Final Capstone Project" }
-  ]
-},{
-  id: 20,
-  icon: "laptop",
-  title: "Android App Development (Java / Kotlin)",
-  duration: "3 Months (90 Days)",
-  level: "Beginner → Intermediate",
-  mode: "Online / Offline",
-  price: "₹35,000",
-  certificate: true,
-
-  description:
-    "Comprehensive Android development program covering UI, navigation, APIs, databases and Play Store deployment.",
-
-  tools: ["java"],
-
-  whoCanJoin:
-    "Students, job seekers, aspiring mobile app developers",
-
-  build:
-    "Complete Android apps with API integration, Firebase & Play Store deployment.",
-
-  skills: [
-    "Android UI development",
-    "App lifecycle management",
-    "API integration",
-    "Database handling (SQLite/Room)",
-    "App deployment to Play Store"
-  ],
-
-  syllabus: [
-    { module: "Android & Java/Kotlin Basics" },
-    { module: "UI Design & Layouts" },
-    { module: "Activities, Fragments & Navigation" },
-    { module: "Data Storage & API Integration" },
-    { module: "Advanced Android Concepts" },
-    { module: "Deployment & Capstone Project" }
-  ]
-},
-{
-  id: 21,
-  icon: "laptop",
-  title: "Flutter App Development",
-  duration: "3 Months (180 Hours)",
-  level: "Beginner → Industry-Ready",
-  mode: "Online / Classroom",
-  price: "₹38,000",
-  certificate: true,
-
-  description:
-    "Cross-platform mobile app development using Flutter & Dart with API and Firebase integration.",
-
-  tools: ["js"],
-
-  whoCanJoin:
-    "Students, aspiring cross-platform developers",
-
-  build:
-    "Real-time Flutter apps with API, Firebase and database integration.",
-
-  skills: [
-    "Flutter UI development",
-    "Dart programming",
-    "State management",
-    "API integration",
-    "Firebase integration",
-    "App deployment"
-  ],
-
-  syllabus: [
-    { module: "Introduction to Flutter & Setup" },
-    { module: "Dart Programming Fundamentals" },
-    { module: "Flutter UI & Widgets" },
-    { module: "Navigation & Forms" },
-    { module: "State Management & API Integration" },
-    { module: "Database & Firebase Integration" },
-    { module: "Advanced Flutter Concepts" },
-    { module: "Deployment & Capstone Project" }
-  ]
-},{
-  id: 22,
-  icon: "laptop",
-  title: "React Native App Development",
-  duration: "3 Months (180 Hours)",
-  level: "Beginner → Industry-Ready",
-  mode: "Online / Classroom",
-  price: "₹38,000",
-  certificate: true,
-
-  description:
-    "Cross-platform mobile app development using React Native with API and Firebase integration.",
-
-  tools: ["react", "js"],
-
-  whoCanJoin:
-    "Students, JavaScript learners, aspiring mobile developers",
-
-  build:
-    "Cross-platform mobile apps with API integration and Firebase backend.",
-
-  skills: [
-    "React Native fundamentals",
-    "JavaScript ES6",
-    "Navigation & state management",
-    "API integration",
-    "Firebase integration",
-    "App deployment"
-  ],
-
-  syllabus: [
-    { module: "Introduction to React Native & Setup" },
-    { module: "JavaScript & ES6 Fundamentals" },
-    { module: "React Fundamentals" },
-    { module: "React Native UI & Styling" },
-    { module: "Navigation & State Management" },
-    { module: "API Integration & Firebase" },
-    { module: "Advanced Concepts" },
-    { module: "Deployment & Capstone Project" }
-  ]
-},{
-  id: 23,
-  icon: "laptop",
-  title: "Masters in MS Office",
-  duration: "30 Days",
-  level: "Beginner",
-  mode: "Online / Offline",
-  price: "₹10,000",
-  certificate: true,
-
-  description:
-    "Complete MS Office training covering Word, Excel, PowerPoint, Email and office productivity tools.",
-
-  tools: ["excel"],
-
-  whoCanJoin:
-    "Students, Office Staff, Job Seekers, Beginners",
-
-  build:
-    "Professional resumes, reports, dashboards, presentations and automated office workflows.",
-
-  skills: [
-    "MS Word documentation",
-    "Excel formulas & dashboards",
-    "PowerPoint presentation design",
-    "Email workflow management",
-    "Office productivity skills"
-  ],
-
-  syllabus: [
-    { module: "Computer Fundamentals & MS Office Basics" },
-    { module: "MS Word (Resume, Letters, Mail Merge)" },
-    { module: "MS Excel (Formulas, Pivot, Dashboard)" },
-    { module: "MS PowerPoint" },
-    { module: "Email & Professional Communication" },
-    { module: "Final Project & Assessment" }
-  ]
-},{
-  id: 24,
-  icon: "laptop",
-  title: "Masters in Accountancy with Tally Prime",
-  duration: "30 Days",
-  level: "Beginner → Intermediate",
-  mode: "Online / Offline",
-  price: "₹15,000",
-  certificate: true,
-
-  description:
-    "Complete accounting training including GST, payroll, inventory and Tally Prime software.",
-
-  tools: ["excel"],
-
-  whoCanJoin:
-    "Commerce Students, Accountants, Job Seekers, Business Owners",
-
-  build:
-    "Complete business accounting system with GST billing and payroll management.",
-
-  skills: [
-    "Accounting fundamentals",
-    "Tally Prime operations",
-    "GST billing & returns",
-    "Payroll processing",
-    "Inventory management"
-  ],
-
-  syllabus: [
-    { module: "Accounting Fundamentals" },
-    { module: "Introduction to Tally Prime" },
-    { module: "Practical Accounting in Tally" },
-    { module: "GST with Tally Prime" },
-    { module: "Payroll & Inventory Management" },
-    { module: "Final Business Accounting Project" }
-  ]
-},{
-  id: 25,
-  icon: "python",
-  title: "Business Analytics (Excel + SQL + Power BI)",
-  duration: "3 Months (90 Days)",
-  level: "Beginner → Intermediate",
-  mode: "Online / Offline",
-  price: "₹35,000",
-  certificate: true,
-
-  description:
-    "Job-ready Business Analytics program covering Excel, SQL and Power BI with real-world dashboards.",
-
-  tools: ["excel"],
-
-  whoCanJoin:
-    "Students, Working Professionals, Career Switchers",
-
-  build:
-    "Interactive dashboards, SQL-based business analysis and KPI reports.",
-
-  skills: [
-    "Advanced Excel analytics",
-    "SQL querying",
-    "Dashboard creation",
-    "Power BI data modeling",
-    "Business data storytelling"
-  ],
-
-  syllabus: [
-    { module: "Business Analytics Fundamentals" },
-    { module: "Advanced Excel for Analytics" },
-    { module: "SQL for Data Analysis" },
-    { module: "Power BI Visualization & Modeling" },
-    { module: "Capstone Project & Case Studies" }
-  ]
-},
-{
-  id: 26,
-  icon: "python",
-  title: "Advanced Excel & Power BI",
-  duration: "2 Months (60 Days)",
-  level: "Intermediate",
-  mode: "Online / Offline",
-  price: "₹28,000",
-  certificate: true,
-
-  description:
-    "Advanced Excel and Power BI program focused on dashboards, DAX, modeling and business reporting.",
-
-  tools: ["excel"],
-
-  whoCanJoin:
-    "Students, Data Analysts, Business Professionals",
-
-  build:
-    "Interactive dashboards and advanced business reporting systems.",
-
-  skills: [
-    "Advanced Excel formulas",
-    "Pivot dashboards",
-    "Power BI modeling",
-    "DAX calculations",
-    "Business reporting"
-  ],
-
-  syllabus: [
-    { module: "Excel Foundations & Data Handling" },
-    { module: "Advanced Excel Functions" },
-    { module: "Pivot Tables & Dashboards" },
-    { module: "Power BI Fundamentals" },
-    { module: "Power BI Advanced & Publishing" }
-  ]
-}
-
-
-
+          "CBSE practical programs",
+          "Viva questions",
+          "Project file preparation",
+          "Sample paper solving"
+         ],
+      }
+    ],
+  },
+  
 ];
+  
