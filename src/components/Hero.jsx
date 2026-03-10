@@ -1,10 +1,13 @@
 import React from "react";
+import {useState} from'react';
 import "../css/Hero.css";
 import HeroImage from "../assets/image/21429.png";
 import { useNavigate } from "react-router-dom";
+import EnrollModal from "./EnrollModal";
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [showModal , setShowModal] = useState(false);
   return (
     <section className="hero">
       <div className="hero-left">
@@ -15,7 +18,7 @@ const Hero = () => {
         <p>Learn the Skills to Code Your Future.</p>
 
         <div className="hero-buttons">
-          <button className="btn-primary-hero" onClick={() => navigate("/courses")}>Get Started</button>
+          <button className="btn-primary-hero" onClick={() => setShowModal(true)}>Get Started</button>
           <button className="btn-outline-hero" onClick={() => navigate("/courses")}>View Courses</button>
         </div>
       </div>
@@ -26,6 +29,9 @@ const Hero = () => {
           alt="student"
         />
       </div>
+          <EnrollModal show={showModal}
+      onClose={()=>setShowModal(false)}
+      />
     </section>
   );
 };

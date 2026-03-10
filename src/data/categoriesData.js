@@ -1,20 +1,19 @@
 export const categories = [
-{
-  slug: "fullstack",
-  title: "Full Stack Development",
-  whoCanJoin:"Beginners",
-build:"Build real-world full stack applications.",
-  duration: "Multiple Programs",
-  icon: "laptop"
+  {
+    slug: "Officeandbusiness",
+    title: "Office and Business Tools",
+    whoCanJoin:"Beginners",
+    build:"Build real-world full stack applications.",
+    duration: "Multiple Programs",
+    icon: "officeandbusiness"
 },
-
 {
-  slug: "datascience",
-  title: "Data Science & AI",
-  whoCanJoin:"Beginners",
-  build:"Build real-world full stack applications.",
-  duration: "Multiple Programs",
-  icon: "python"
+    slug: "kidzcoding",
+    title: "Kids Coding Level 1 - 3 ",
+    whoCanJoin:"6-16 years",
+    build:"To strengthen logic & problem-solving and gradually introduce kids to: Advanced Scratch logic",
+    duration: "Multiple Programs",
+    icon: "kidz"
 },
 {
     slug: "CPC",
@@ -22,30 +21,40 @@ build:"Build real-world full stack applications.",
     whoCanJoin:"Beginners",
     build:"Build real-world full stack applications.",
     duration: "Multiple Programs",
-    icon: "robot"
+    icon: "coreprogram"
 },
 {
-    slug: "designcourses",
+  slug: "fullstack",
+  title: "Full Stack Development",
+  whoCanJoin:"Beginners",
+  build:"Build real-world full stack applications.",
+  duration: "Multiple Programs",
+  icon: "laptop"
+},
+{
+  slug: "datascience",
+  title: "Data Science & AI",
+  whoCanJoin:"Beginners",
+  build:"Build real-world full stack applications.",
+  duration: "Multiple Programs",
+  icon: "Python"
+},
+
+{
+    slug: "design",
     title: "Designing",
     whoCanJoin:"Beginners",
     build:"Build real-world full stack applications.",
     duration: "Multiple Programs",
-    icon: "robot"
+    icon: "design"
 },
-{
-    slug: "officeandbusiness",
-    title: "Office and Business Tools",
-    whoCanJoin:"Beginners",
-    build:"Build real-world full stack applications.",
-    duration: "Multiple Programs",
-    icon: "robot"
-},
+
 {
     slug: "MobileDevelopment",
     title: "Mobile App Development",
     whoCanJoin:"Beginners",
     build:"Build real-world full stack applications.",
     duration: "Multiple Programs",
-    icon: "robot"
+    icon: "mobile"
 },
 ];

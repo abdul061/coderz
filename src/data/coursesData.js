@@ -464,7 +464,7 @@ export const courses = [
     title: "Data Analytics program",
     duration: "6 Months",
     icon: "datascience",
-    tools: ["Python", "SQL", "PowerBI", "Excel"],
+    tools: ["Python", "MySQL", "PowerBI", "MS Excel"],
     whoCanJoin: "Beginners",
 
     build: "Build dashboards, reports, and real-world data analysis projects.",
@@ -541,7 +541,7 @@ export const courses = [
     title: "Data Science Program",
     duration: "6 Months",
     icon: "datascience",
-    tools: ["Python", "SQL", "PowerBI", "Excel"],
+    tools: ["Python", "MySQL", "PowerBI", "MS Excel"],
     whoCanJoin: "Beginners",
 
     build: "Build dashboards, reports, and real-world data analysis projects.",
@@ -783,6 +783,8 @@ export const courses = [
     ],
   },
 
+
+  //MS office 
   {
     id: "MS-Office",
     category: "Officeandbusiness",
@@ -790,6 +792,7 @@ export const courses = [
     duration: "30 Days",
     icon: "datascience",
     whoCanJoin: "Beginners",
+    tools:["Notepad" , "MS Paint" ,  "MS Excel", "MS Powerpoint", "Internet", "Chatgpt"],
 
     build: "Outcome: Office productivity + job readiness",
 
@@ -853,7 +856,7 @@ export const courses = [
     whoCanJoin: "Beginners",
 
     build: "Outcome: Office productivity + job readiness",
-
+    tools:["Notepad",  "MS Excel", "Tally Prime", "Internet", "Chatgpt"],
     syllabus: [
        {
         title: "Accounting Fundamentals",
@@ -907,7 +910,7 @@ export const courses = [
     duration: "30 Days",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["Notepad",  "MS Excel", "PowerBI", "Internet", "Chatgpt"],
     build: "Outcome: Office productivity + job readiness",
 
     syllabus: [
@@ -974,7 +977,7 @@ export const courses = [
     whoCanJoin: "Beginners",
 
     build: "Outcome: Office productivity + job readiness",
-
+    tools:["Notepad" , "MS Paint" ,  "MS Excel", "MS Powerpoint", "Tally Prime", "Internet", "Chatgpt"],
     syllabus: [
        {
         title: "Excel Foundations & Data Handling",
@@ -1028,7 +1031,7 @@ export const courses = [
 //DESIGNING COURSES WILL BE ADDED HERE IN THE FUTURE
   {
     id: "UI/UX Design Program",
-    category: "Officeandbusiness",
+    category: "design",
     title: "UI/UX Design Program",
     duration: "6 Months",
     icon: "datascience",
@@ -1105,7 +1108,7 @@ export const courses = [
 
   {
     id: "Graphic Design",
-    category: "Officeandbusiness",
+    category: "design",
     title: "Graphic Design",
     duration: "6 Months",
     icon: "datascience",
@@ -1169,7 +1172,7 @@ export const courses = [
 
   {
     id: "Web Design",
-    category: "Officeandbusiness",
+    category: "design",
     title: "Web Design",
     duration: "6 Months",
     icon: "datascience",
@@ -1247,7 +1250,7 @@ export const courses = [
     duration: "6 Months",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["CodeBlock", "Idle"],
     build: "Programming Foundations: C, C++ & Python",
 
     syllabus: [
@@ -1349,7 +1352,7 @@ export const courses = [
     duration: "6 Months",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["CodeBlock", "Eclipse"],
     build: "Programming Foundations: C, C++ & Java",
 
     syllabus: [
@@ -1451,7 +1454,7 @@ export const courses = [
     duration: "6 Months",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["CodeBlock", "Idle"],
     build: "Programming Foundations: C, C++ & Python",
 
     syllabus: [
@@ -1504,7 +1507,7 @@ export const courses = [
     duration: "6 Months",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["CodeBlock", "Eclipse"],
     build: "Core Java Programming (Beginner Level)",
 
     syllabus: [
@@ -1559,7 +1562,7 @@ export const courses = [
     duration: "6 Months",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["CodeBlock", "Idle"],
     build: "Data Structures & Algorithms (DSA)",
 
     syllabus: [
@@ -1656,7 +1659,7 @@ export const courses = [
     duration: "6 Months",
     icon: "datascience",
     whoCanJoin: "Beginners",
-
+    tools:["Python", "MySQL"],
     build: "CBSE Class 12 – Computer Science (Python + MySQL)",
 
     syllabus: [
@@ -1711,6 +1714,178 @@ export const courses = [
       }
     ],
   },
-  
+  //kidz coding courses will be added here in the future
+
+    {
+    id: "Fun Coding with Scratch",
+    category: "kidzcoding",
+    title: "Fun Coding with Scratch",
+    duration: "1 Month",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "To introduce kids to coding through play, helping them develop skills like problem-solving, creativity, and logical thinking by creating interactive stories, games, and animations using Scratch's visual programming blocks.",
+
+    syllabus: [
+       {
+        title: "Introduction to Coding & Scratch",
+        topics: [
+          "What is coding? (explained using stories & games)",
+          "Introduction to Scratch interface",
+          "Sprites & stage",
+          "Drag-and-drop coding blocks",
+          "Making characters move"
+         ],
+      },
+       {
+        title: "Motion, Looks & Sound",
+        topics: [
+          "Motion blocks (move, turn, glide)",
+          "Looks blocks (costumes, size, effects)",
+          "Sound blocks (play sounds, record voice)",
+          "Creating simple animations"
+         ],
+      },
+        {
+        title: "Logic & Game Concepts",
+        topics: [
+          "Events (when clicked, when key pressed)",
+          "Loops (repeat, forever)",
+          "Basic conditions (if / else)",
+          "Simple game logic"
+         ],
+      },
+        {
+        title: "Mini Projects & Presentation",
+        topics: [
+          "Combining all concepts",
+          "Designing own project",
+          "Debugging mistakes",
+          "Explaining their project"
+         ],
+      },
+    ],
+  },
+
+      {
+    id: "Coding & App Development Program",
+    category: "kidzcoding",
+    title: "Coding & App Development Program",
+    duration: "3 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "To introduce kids to coding through play, helping them develop skills like problem-solving, creativity, and logical thinking by creating interactive stories, games, and animations using Scratch's visual programming blocks.",
+
+    syllabus: [
+       {
+        title: "Scratch (Advanced Level)",
+        topics: [
+          "Review of Scratch basics",
+          "Advanced motion & animation",
+          "Events & broadcast messages",
+          "Loops & nested loops",
+          "Conditions (if / if-else)",
+          "Variables & operators",
+          "Cloning & scoring logic",
+          "Debugging projects"
+         ],
+      },
+       {
+        title: "Python Programming (Basic)",
+        topics: [
+          "What is Python & why use it",
+          "Python setup & IDE",
+          "Variables & data types",
+          "Input / output",
+          "Conditions (if / else)",
+          "Loops (for / while)",
+          "Simple functions",
+          "Basic problem-solving"
+         ],
+      },
+        {
+        title: "MIT App Inventor (Mobile Apps)",
+        topics: [
+          "Introduction to mobile apps",
+          "MIT App Inventor interface",
+          "UI components (buttons, labels, images)",
+          "Events & logic blocks",
+          "Screen navigation",
+          "Using sensors (camera, sound)",
+          "App testing on mobile",
+          "Basic app publishing concept"
+         ],
+      },
+        {
+        title: "Mini Projects & Presentation",
+        topics: [
+          "Combining all concepts",
+          "Designing own project",
+          "Debugging mistakes",
+          "Explaining their project"
+         ],
+      },
+    ],
+  },
+
+  {
+    id: "Web Design for Kids",
+    category: "kidzcoding",
+    title: "Web Design for Kids",
+    duration: "3 Months",
+    icon: "datascience",
+    whoCanJoin: "Beginners",
+
+    build: "To introduce kids to coding through play, helping them develop skills like problem-solving, creativity, and logical thinking by creating interactive stories, games, and animations using Scratch's visual programming blocks.",
+
+    syllabus: [
+       {
+        title: "Introduction to Web & HTML Basics",
+        topics: [
+          "What is a website?",
+          "How the internet works (kid-friendly explanation)",
+          "Introduction to HTML",
+          "HTML structure (html, head, body)",
+          "Headings, paragraphs, text formatting",
+          "Images & links",
+          "Lists (ordered & unordered)"
+         ],
+      },
+       {
+        title: "HTML Pages & Personal Webpage",
+        topics: [
+          "What is a website?",
+          "How the internet works (kid-friendly explanation)",
+          "Introduction to HTML",
+          "HTML structure (html, head, body)",
+          "Headings, paragraphs, text formatting",
+          "Images & links",
+          "Lists (ordered & unordered)"
+         ],
+      },
+        {
+        title: "Styling with CSS (Design & Creativity)",
+        topics: [
+          "What is CSS?",
+          "Colors, fonts, text styles",
+          "Backgrounds & borders",
+          "Layout basics (box model)",
+          "Hover effects & simple animations",
+          "Responsive design basics"
+         ],
+      },
+        {
+        title: "Mini Portfolio & Basic JavaScript",
+        topics: [
+        "Introduction to JavaScript (very basic)",
+        "Button click actions",
+        "Alert messages",
+        "Form validation (simple)",
+        "Improving website interaction"
+         ],
+      },
+    ],
+  },
 ];
   

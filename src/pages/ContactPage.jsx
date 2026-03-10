@@ -53,7 +53,7 @@ const ContactPage = () => {
             </div>{" "}
             <div>
               {" "}
-              <h4>+91 98765 43210</h4> <p>Call Us</p>{" "}
+              <h4>+91 80723 87798</h4> <p>Call Us</p>{" "}
             </div>{" "}
           </div>{" "}
           <div className="info-card">
@@ -75,7 +75,7 @@ const ContactPage = () => {
             </div>{" "}
             <div>
               {" "}
-              <h4>28 Sg Devanathan Street</h4>{" "}
+              <h4>44B st devanand street</h4>{" "}
               <p>Panruti – 607106, Tamil Nadu</p>{" "}
             </div>{" "}
           </div>{" "}

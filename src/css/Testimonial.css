@@ -1,3 +1,7 @@
+/* ===============================
+SECTION
+================================ */
+
 .testimonial-section {
   padding: 100px 5%;
   background: #f7f9fc;
@@ -10,36 +14,66 @@
   margin-bottom: 50px;
 }
 
-/* Wrapper */
+/* ===============================
+WRAPPER
+================================ */
+
 .slider-wrapper {
   position: relative;
   padding: 0 70px;
 }
 
-/* Slider */
+/* ===============================
+SLIDER
+================================ */
+
 .testimonial-slider {
   display: flex;
   gap: 30px;
+
   overflow-x: auto;
   scroll-behavior: smooth;
+
   scrollbar-width: none;
+
+  padding-bottom: 10px;
 }
 
 .testimonial-slider::-webkit-scrollbar {
   display: none;
 }
 
-/* Card */
+/* ===============================
+CARD
+================================ */
+
 .testimonial-card {
-  min-width: 320px;
+  flex: 0 0 calc((100% - 60px) / 3);
+  /* 3 cards visible */
+
   background: #ffffff;
   padding: 30px;
+
   border-radius: 16px;
+
   box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+
   text-align: left;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Card Header */
+/* Hover animation */
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+CARD HEADER
+================================ */
+
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -69,21 +103,33 @@
   line-height: 1.6;
 }
 
-/* Arrows */
+/* ===============================
+ARROWS
+================================ */
+
 .arrow {
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
   border: none;
+
   background: white;
+
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
   font-size: 16px;
+
   cursor: pointer;
+
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
   z-index: 10;
+
   transition: 0.3s ease;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +148,22 @@
   color: white;
 }
 
-/* Responsive */
+/* ===============================
+TABLET
+================================ */
+
+@media (max-width: 992px) {
+
+  .testimonial-card {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+}
+
+/* ===============================
+MOBILE
+================================ */
+
 @media (max-width: 768px) {
 
   .slider-wrapper {
@@ -110,11 +171,34 @@
   }
 
   .testimonial-card {
-    min-width: 280px;
+    flex: 0 0 100%;
   }
 
   .arrow {
     display: none;
   }
 
+}
+
+/* ===============================
+OPTIONAL SNAP SCROLL
+================================ */
+
+.testimonial-slider{
+  scroll-snap-type: x mandatory;
+}
+
+.testimonial-card{
+  scroll-snap-align: start;
+}
+.center-card{
+background:#fff7f2;
+
+transform:scale(1.05);
+
+box-shadow:0 20px 50px rgba(255,107,53,0.25);
+
+border:1px solid rgba(255,107,53,0.3);
+
+transition:all .3s ease;
 }

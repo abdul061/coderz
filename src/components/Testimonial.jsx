@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../css/Testimonial.css";
 
@@ -82,24 +82,106 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
+
   const sliderRef = useRef(null);
+  const [centerIndex, setCenterIndex] = useState(0);
+
+  const scrollAmount = 350;
 
   const scrollLeft = () => {
     sliderRef.current.scrollBy({
-      left: -350,
+      left: -scrollAmount,
       behavior: "smooth"
     });
   };
 
   const scrollRight = () => {
     sliderRef.current.scrollBy({
-      left: 350,
+      left: scrollAmount,
       behavior: "smooth"
     });
   };
 
+  /* ===============================
+     AUTO SCROLL + LOOP
+  =============================== */
+
+  useEffect(() => {
+
+    const slider = sliderRef.current;
+
+    const interval = setInterval(() => {
+
+      slider.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+
+      const maxScroll = slider.scrollWidth / 2;
+
+      if (slider.scrollLeft >= maxScroll) {
+        slider.scrollTo({
+          left: slider.scrollLeft - maxScroll,
+          behavior: "auto"
+        });
+      }
+
+    }, 3000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
+  /* ===============================
+     DETECT CENTER CARD
+  =============================== */
+
+  useEffect(() => {
+
+    const slider = sliderRef.current;
+
+    const handleScroll = () => {
+
+      const cards = slider.querySelectorAll(".testimonial-card");
+
+      const sliderCenter =
+        slider.scrollLeft + slider.offsetWidth / 2;
+
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      cards.forEach((card, index) => {
+
+        const cardCenter =
+          card.offsetLeft + card.offsetWidth / 2;
+
+        const distance = Math.abs(sliderCenter - cardCenter);
+
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+
+      });
+
+      setCenterIndex(closestIndex);
+
+    };
+
+    slider.addEventListener("scroll", handleScroll);
+
+    return () => slider.removeEventListener("scroll", handleScroll);
+
+  }, []);
+
+  /* duplicate list for infinite scroll */
+
+  const infiniteTestimonials = [...testimonials, ...testimonials];
+
   return (
+
     <section className="testimonial-section">
+
       <h2>What Our Learners Are Saying!</h2>
 
       <div className="slider-wrapper">
@@ -109,21 +191,31 @@ const Testimonial = () => {
         </button>
 
         <div className="testimonial-slider" ref={sliderRef}>
-          {testimonials.map((item, index) => (
-            <div className="testimonial-card" key={index}>
+
+          {infiniteTestimonials.map((item, index) => (
+
+            <div
+              key={index}
+              className={`testimonial-card ${
+                index === centerIndex ? "center-card" : ""
+              }`}
+            >
 
               <div className="card-header">
                 <div>
                   <h3>{item.name}</h3>
                   <p className="role">{item.role}</p>
                 </div>
+
                 <span className="time">{item.time}</span>
               </div>
 
               <p className="review">{item.review}</p>
 
             </div>
+
           ))}
+
         </div>
 
         <button className="arrow right" onClick={scrollRight}>
@@ -131,6 +223,7 @@ const Testimonial = () => {
         </button>
 
       </div>
+
     </section>
   );
 };

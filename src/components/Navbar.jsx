@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
+      <div className="spark-brand w-inline-block">
                    <img
                    className="logo"
                     loading="lazy"
