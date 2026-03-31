@@ -12,10 +12,12 @@ import Internship from "./pages/Intern";
 import StudentDetails from "./pages/StudentDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import CategoryCourses from "./components/CategoryCourses";
+import WhatsAppFloat from "./components/WhatsAppFloat.jsx";
 
 function App() {
   return (
     <Router>
+      <WhatsAppFloat />
       <ScrollToTop />
       <AppRoutes />
     </Router>

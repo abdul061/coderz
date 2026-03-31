@@ -24,7 +24,7 @@ const ContactPage = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch("https://c-back-three.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const ContactPage = () => {
       });
 
       const data = await res.json();
-      setStatus("Message sent successfully!");
+      setStatus(data.message);
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       setStatus("Error sending message");
@@ -64,7 +64,7 @@ const ContactPage = () => {
             </div>{" "}
             <div>
               {" "}
-              <h4>info@coderzacademy.tech</h4> <p>Email Us</p>{" "}
+              <h4>contactcoderz@gmail.com</h4> <p>Email Us</p>{" "}
             </div>{" "}
           </div>{" "}
           <div className="info-card">

@@ -104,7 +104,7 @@
   background: #f4f6fb;
   padding: 28px;
   border-radius: 12px;
-  max-width: 420px;
+  width: 420px;
   box-shadow:
     0 15px 35px rgba(0,0,0,0.08),
     inset 0 1px 1px rgba(255,255,255,0.6);

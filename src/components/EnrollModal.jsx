@@ -13,7 +13,7 @@ const handleSubmit = async (e) => {
     setSubmit(false)
   try {
 
-    const response = await fetch("http://localhost:5000/api/enroll", {
+    const response = await fetch("https://c-back-three.vercel.app/api/enroll", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -23,7 +23,7 @@ const Footer = () => {
             <Link to="/about" className="spark-button-2 spark-light-button w-button">
               About
             </Link>
-            <Link to="/course" className="spark-button-2 spark-light-button w-button">
+            <Link to="/courses" className="spark-button-2 spark-light-button w-button">
               Course
             </Link>
             <Link to="/contact" className="spark-button-2 spark-light-button w-button">

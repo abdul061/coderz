@@ -2,6 +2,7 @@ import React from "react";
 import { FaCode, FaPython, FaRobot, FaJava } from "react-icons/fa";
 import "../css/CoursesSection.css";
 import { useNavigate } from "react-router-dom";
+import { ReactComponent as PythonIcon } from "../assets/image/python.svg";
 
 const CoursesSection = () => {
   const navigate = useNavigate();
@@ -22,16 +23,16 @@ const CoursesSection = () => {
             </div>
             <h4>Full Stack Web Development</h4>
             <p>Build robust web applications.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/Full Stack Web Development")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/fullstack")}>Learn More</button>
           </div>
 
           <div className="course-card">
             <div className="course-icon">
-             <FaPython size={50} color="#3776AB" />
+             <PythonIcon width={50} height={50} color="#3776AB" />
             </div>
             <h4>Python Programming</h4>
             <p>Master Python from basics to advanced.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/python")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/CPC")}>Learn More</button>
           </div>
 
           <div className="course-card">
@@ -41,7 +42,7 @@ const CoursesSection = () => {
             </div>
             <h4>Data Science & AI</h4>
             <p>Learn Machine Learning & Data Analytics.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/Data Analyst Program")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/datascience")}>Learn More</button>
           </div>
 
           <div className="course-card">
@@ -51,7 +52,7 @@ const CoursesSection = () => {
             </div>
             <h4>Java with Spring Boot</h4>
             <p>Develop powerful Java applications.</p>
-            <button className="course-btn" onClick={() => navigate("/courses/Java")}>Learn More</button>
+            <button className="course-btn" onClick={() => navigate("/courses/CPC")}>Learn More</button>
           </div>
 
         </div>

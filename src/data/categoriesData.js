@@ -50,7 +50,7 @@ export const categories = [
 },
 
 {
-    slug: "MobileDevelopment",
+    slug: "MobileDevlopment",
     title: "Mobile App Development",
     whoCanJoin:"Beginners",
     build:"Build real-world full stack applications.",

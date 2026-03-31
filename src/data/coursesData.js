@@ -1887,5 +1887,300 @@ export const courses = [
       },
     ],
   },
+
+  //Mobile  Data 
+    {
+    id: "Android App Development",
+    category: "MobileDevlopment",
+    title: "Android App Development",
+    duration: "3 Months",
+    icon: "datascience",
+    whoCanJoin: "Students, Job Seekers, Aspiring Mobile App Developers",
+
+    build: "Strong knowledege in Android  Application devlopment..",
+
+    syllabus: [
+       {
+        title: "Android & Java/Kotlin Basics",
+        topics: [
+          "Java / Kotlin fundamentals",
+          "OOP concepts",
+          "Android Studio setup",
+          "Gradle basics"
+         ],
+      },
+       {
+        title: "UI Design & Layouts",
+        topics: [
+          "XML layouts",
+          "Views & ViewGroups",
+          "Material Design",
+          "RecyclerView",
+          "ConstraintLayout"
+         ],
+      },
+        {
+        title: "Activities, Fragments & Navigation",
+        topics: [
+          "Activity lifecycle",
+          "Fragments",
+          "Intents",
+          "Navigation components"
+         ],
+      },
+        {
+        title: "Data Storage & APIs",
+        topics: [
+        "SharedPreferences",
+        "SQLite & Room database",
+        "REST API integration",
+        "JSON parsing"
+         ],
+      },
+              {
+        title: "Advanced Android Concepts",
+        topics: [
+        "Background services",
+        "Notifications",
+        "Permissions",
+        "Firebase basics (Auth, DB)"
+         ],
+      },
+              {
+        title: "App Deployment & Capstone",
+        topics: [
+        "App testing",
+        "Debugging",
+        "Play Store guidelines",
+        "APK/AAB generation"
+         ],
+      },
+    ],
+  },
+      {
+    id: "Flutter App Development – Detailed Syllabus",
+    category: "MobileDevlopment",
+    title: "Flutter App Development – Detailed Syllabus",
+    duration: "3 Months",
+    icon: "datascience",
+    whoCanJoin: "Students, Job Seekers, Aspiring Mobile App Developers",
+
+    build: "Strong knowledege in Android  Application devlopment..",
+
+    syllabus: [
+       {
+        title: "Introduction to Mobile App Development & Flutter",
+        topics: [
+          "Introduction to Mobile App Development",
+"Native vs Hybrid vs Cross-platform apps",
+"Overview of Flutter & Dart",
+"Flutter architecture",
+"Installing Flutter SDK",
+"Setting up Android Studio / VS Code",
+"Flutter project structure",
+"Running first Flutter app"
+         ],
+      },
+       {
+        title: "Dart Programming Fundamentals",
+        topics: [
+          "Dart syntax & keywords",
+          "Variables, data types",
+          "Operators",
+          "Conditional statements",
+          "Loops",
+          "Functions",
+          "Object-Oriented Programming (OOP)",
+          "Classes & objects",
+          "Constructors",
+          "Inheritance",
+          "Polymorphism",
+          "Abstraction & encapsulation",
+          "Lists, Maps & Sets",
+          "Null safety"
+         ],
+      },
+        {
+        title: "Activities, Fragments & Navigation",
+        topics: [
+          "Activity lifecycle",
+          "Fragments",
+          "Intents",
+          "Navigation components"
+         ],
+      },
+        {
+        title: "Flutter UI Basics & Widgets",
+        topics: [
+        "Introduction to Widgets",
+        "Stateless vs Stateful widgets",
+        "Material Design & Cupertino widgets",
+        "Scaffold, AppBar, Container",
+        "Text, Image, Icon widgets",
+        "Buttons (Elevated, Text, Icon)",
+        "Row, Column, Stack",
+        "Padding, Margin, Alignment",
+        "MediaQuery & Responsive UI basics"
+         ],
+      },
+              {
+        title: ": State Management & API Integration",
+        topics: [
+        "Understanding State Management",
+"setState()",
+"Provider basics",
+"Future & Async/Await",
+"REST API concepts",
+"HTTP package",
+"JSON parsing",
+"Displaying API data in UI",
+"Error handling"
+         ],
+      },
+                    {
+        title: "Database & Firebase Integration",
+        topics: [
+        "Local storage concepts",
+"SQLite database",
+"CRUD operations",
+"Introduction to Firebase",
+"Firebase Authentication",
+"Firebase Firestore",
+"Firebase Storage",
+"Push notifications (overview)"
+         ],
+      },
+              {
+        title: "App Deployment & Capstone",
+        topics: [
+        "App testing",
+        "Debugging",
+        "Play Store guidelines",
+        "APK/AAB generation"
+         ],
+      },
+    ],
+  },
+        {
+    id: "React Native App Development – Detailed Syllabus",
+    category: "MobileDevlopment",
+    title: "React Native App Development – Detailed Syllabus",
+    duration: "3 Months",
+    icon: "datascience",
+    whoCanJoin: "Students, Job Seekers, Aspiring Mobile App Developers",
+
+    build: "Strong knowledege in Android  Application devlopment using REACT NATIVE.",
+
+    syllabus: [
+       {
+        title: "Introduction to Mobile App Development & React Native",
+        topics: [
+          "Introduction to Mobile App Development",
+"Native vs Hybrid vs Cross-platform apps",
+"Overview of React Native",
+"How React Native works",
+"React Native architecture",
+"Environment setup",
+"Installing Node.js & npm",
+"Setting up Android Studio / Emulator",
+"Creating first React Native app"
+         ],
+      },
+       {
+        title: "JavaScript & ES6 Fundamentals",
+        topics: [
+          "JavaScript basics",
+"Variables & data types",
+"Operators",
+"Conditional statements",
+"Loops",
+"Functions",
+"Arrow functions",
+"ES6 features",
+"let & const",
+"Destructuring",
+"Spread & Rest operators",
+"Template literals",
+"Arrays & Objects",
+"Classes & OOP basics"
+         ],
+      },
+        {
+        title: "React Fundamentals",
+        topics: [
+          "Introduction to React",
+"JSX",
+"Components (Functional Components)",
+"Props & State",
+"Event handling",
+"Conditional rendering",
+"Lists & keys",
+"Component lifecycle (Hooks overview)",
+"useState & useEffect hooks"
+         ],
+      },
+        {
+        title: "React Native UI Components & Styling",
+        topics: [
+        "Core React Native components",
+"View, Text, Image, ScrollView",
+"Button & Touchable components",
+"Styling with StyleSheet",
+"Flexbox layout system",
+"Responsive UI design",
+"Platform-specific components",
+"Custom reusable components"
+         ],
+      },
+              {
+        title: ": State Management & API Integration",
+        topics: [
+        "Understanding State Management",
+"setState()",
+"Provider basics",
+"Future & Async/Await",
+"REST API concepts",
+"HTTP package",
+"JSON parsing",
+"Displaying API data in UI",
+"Error handling"
+         ],
+      },
+                    {
+        title: "Database & Firebase Integration",
+        topics: [
+        "Local storage concepts",
+"SQLite database",
+"CRUD operations",
+"Introduction to Firebase",
+"Firebase Authentication",
+"Firebase Firestore",
+"Firebase Storage",
+"Push notifications (overview)"
+         ],
+      },
+                    {
+        title: "Advanced React Native Concepts",
+        topics: [
+        "Custom hooks",
+"Performance optimization",
+"Animations (Animated API)",
+"Gesture handling",
+"Push notifications (overview)",
+"App security basics",
+"Debugging & testing"
+         ],
+      },
+              {
+        title: "App Deployment & Capstone",
+        topics: [
+        "App testing",
+        "Debugging",
+        "Play Store guidelines",
+        "APK/AAB generation"
+         ],
+      },
+    ],
+  },
 ];
   
